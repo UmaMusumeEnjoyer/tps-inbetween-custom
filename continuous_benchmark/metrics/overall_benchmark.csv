@@ -1,0 +1,18 @@
+Chỉ số (Metric),Miêu tả ngắn & Hướng tối ưu,AnimeInbet,tps-inbetween,tps-finetuned-v0.1,tps-finetuned-v0.2,tps-finetuned-v0.3,tps-finetuned-v1.0,AnimeInterp,UPR-Net,uniVIP
+Chamfer Distance (CD),Khoảng cách trung bình giữa các điểm nét vẽ (Thấp hơn là tốt),0.0431,0.0011,0.0031,0.0017,0.0021,0.0010,N/A,N/A,N/A
+Weighted CD (WCD),CD có trọng số ưu tiên các nét vẽ chính (Thấp hơn là tốt),0.0431,0.0015,0.0033,0.0020,0.0022,0.0012,N/A,N/A,N/A
+Hausdorff Distance,Khoảng cách lớn nhất giữa các nét; đo độ lệch nhiễu (Thấp hơn là tốt),0.2993,0.1654,0.1250,0.1180,0.1150,0.1080,N/A,N/A,N/A
+Line IoU,"Tỷ lệ diện tích chồng phủ của nét vẽ (Cao hơn là tốt, max 1.0)",0.2673,0.4125,0.5842,0.6420,0.6850,0.7120,N/A,N/A,N/A
+Disconnection Rate,Tỷ lệ nét vẽ bị đứt gãy không mong muốn (Thấp hơn là tốt),0.8421,3.5440,1.0000,0.4520,0.3850,0.3200,N/A,N/A,N/A
+EMD,Chi phí tối thiểu biến đổi phân bố điểm nét vẽ (Thấp hơn là tốt),N/A,0.0639,0.0410,0.0380,0.0350,0.0310,N/A,N/A,N/A
+RRLD,Sai lệch sau khi chuyển nét vẽ vector sang dạng pixel (Thấp hơn là tốt),28098.7,0.3968,0.2150,0.1850,0.1650,0.1450,N/A,N/A,N/A
+PSNR (dB),Độ chính xác toán học ở mức pixel (Cao hơn là tốt),N/A,14.1716,15.1124,21.0455,20.1901,18.7451,29.6176,29.3598,29.3603
+SSIM,"Độ tương đồng cấu trúc, độ sáng và tương phản (Cao hơn là tốt, max 1.0)",N/A,0.2235,0.7910,0.9080,0.8934,0.9127,0.9386,0.9349,0.9367
+LPIPS,Độ sai lệch hình ảnh đánh giá theo thị giác AI (Thấp hơn là tốt),N/A,0.5473,0.1420,0.0840,0.0780,0.0710,0.0665,0.0613,0.0651
+IE (Interpolation Error),Lỗi sai lệch pixel giữa khung hình tạo ra và thực tế (Thấp hơn là tốt),N/A,40.8025,12.7464,4.8210,4.1200,3.8200,5.4093,2.9200,0.0110
+FVD,Độ chân thực và nhất quán chuyển động toàn chuỗi video (Thấp hơn là tốt),N/A,N/A,N/A,N/A,N/A,N/A,N/A,82.5822,N/A
+Warping Error,Lỗi biến dạng pixel theo luồng quang học (Thấp hơn là tốt),N/A,N/A,N/A,N/A,N/A,N/A,N/A,0.0198,N/A
+Arbitrary t Support,Khả năng chèn khung hình tại vị trí mốc thời gian t bất kỳ,❌ Không,✅ Có,✅ Có,✅ Có,✅ Có,✅ Có,❌ Không (Cố định t=0.5),✅ Có,✅ Có
+Inference Speed,Thời gian xử lý 1 khung hình (ms) / Tốc độ khung hình (FPS),397.04 ms (2.64 FPS),140.65 ms (7.11 FPS),1360.28 ms (CPU),1319.33 ms (CPU),52.30 ms (19.12 FPS),47.52 ms (21.04 FPS),2128.60 ms (0.50 FPS),248.61 ms (4.02 FPS),143.86 ms (7.00 FPS)
+VRAM Peak (MB),Dung lượng bộ nhớ GPU tối đa tiêu thụ,691.85 MB,538.70 MB,< 1000 MB,< 1000 MB,< 1000 MB,< 1000 MB,2936.00 MB,3340.00 MB,850.02 MB
+Fine-tuning Speed,Tốc độ tinh chỉnh mô hình,N/A,N/A,~4.1h (25ep/Kaggle),~2.2h (Dual-T4),~4.2h (20ep/Dual-T4),~1.8h (30ep/Dual-T4),N/A,N/A,N/A

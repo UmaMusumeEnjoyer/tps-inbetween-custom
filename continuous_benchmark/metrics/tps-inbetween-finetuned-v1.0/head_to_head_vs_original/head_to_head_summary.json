@@ -1,0 +1,36 @@
+{
+  "total_val_samples": 620,
+  "orig_model_weights": "models/tps-inbetween/tps-inbetween/ckpt/model_latest.pt",
+  "v10_model_weights": "checkpoints/production_candidates/model_tps_v1.0_production.pt",
+  "original_metrics": {
+    "psnr_mean": 15.025074677419354,
+    "psnr_std": 2.191263452923226,
+    "ssim_mean": 0.86277,
+    "ssim_std": 0.0636588659564611,
+    "ghost_pixels_mean": 2999.482258064516,
+    "stroke_recall_mean": 0.8661296774193549,
+    "chamfer_distance_mean": 0.0013839967741935484,
+    "ie_mae_mean": 11.154154354838708,
+    "infer_ms_mean": 17.742290322580644,
+    "fps": 56.3625091134541
+  },
+  "v10_metrics": {
+    "psnr_mean": 18.764503387096774,
+    "psnr_std": 2.7559665540979927,
+    "ssim_mean": 0.9127498387096774,
+    "ssim_std": 0.051122339406600596,
+    "ghost_pixels_mean": 18159.553225806452,
+    "stroke_recall_mean": 0.9353648387096775,
+    "chamfer_distance_mean": 0.0010068790322580647,
+    "ie_mae_mean": 7.5092151612903235,
+    "infer_ms_mean": 63.96224193548387,
+    "fps": 15.634223719185135
+  },
+  "head_to_head_gain": {
+    "psnr_gain_db": 3.7394287096774192,
+    "ssim_gain": 0.04997983870967737,
+    "stroke_recall_gain": 0.06923516129032259,
+    "chamfer_improvement": 0.0003771177419354837,
+    "mae_reduction": 3.6449391935483844
+  }
+}

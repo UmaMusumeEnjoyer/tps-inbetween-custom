@@ -1,0 +1,1 @@
+clip_name,model,resolution,chamfer_distance,weighted_cd,lpips,emd,rrld,psnr,ssim,ie_mae,fvd,warping_error,hausdorff_dist,line_iou,disconnection_rate,arbitrary_t_support,inference_ms,fps,vram_peak_mb,finetune_speed

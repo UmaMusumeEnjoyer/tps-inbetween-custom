@@ -1,0 +1,34 @@
+{
+  "dataset_name": "sakuga_golden_dataset_tps_ready_v1_patch3_clean",
+  "description": "Sakuga Golden Dataset TPS-Ready V3.0 Clean Filtered for Mixamo TPS Finetune (5,262 Golden Triplets, delta_f <= 6, wsds >= 0.65)",
+  "assembled_at": "2026-10-25 12:26:22",
+  "total_triplets": 5262,
+  "train_triplets": 4461,
+  "val_triplets": 801,
+  "total_frames": 15786,
+  "total_matches": 5262,
+  "format": "540p lineart PNG + GlueStick SIFT/SuperPoint .npy",
+  "quality_filter": "Ph\u1ec5u l\u1ecdc 3 t\u1ea7ng + V3 Quality Engine (Local Topological Consistency + Patch Occlusion Scorer)",
+  "source_components": {
+    "v1_patch2_baseline": {
+      "source": "sakuga_golden_dataset_tps_ready_v1_patch2",
+      "triplets_count": 6734,
+      "clip_range": "clip_000001 -> clip_006734"
+    },
+    "patch3_extension": {
+      "source": "sakuga_golden_dataset_tps_patch3.zip",
+      "triplets_count": 1820,
+      "clip_range": "clip_006735 -> clip_008554"
+    }
+  },
+  "leakage_status": "ZERO_SCENE_LEAKAGE_VERIFIED",
+  "split_strategy": "GroupShuffleSplit_by_video_name_seed42",
+  "updated_at": "2026-11-09 05:38:49",
+  "filter_strategy": "delta_f <= 6 (removes non-linear anime multi-drawing steps) and wsds >= 0.65 (high optical flow linearity)",
+  "motion_statistics": {
+    "mean_displacement": 6.18,
+    "median_displacement": 5.25,
+    "mean_inliers": 249.6,
+    "mean_wsds": 0.7902
+  }
+}

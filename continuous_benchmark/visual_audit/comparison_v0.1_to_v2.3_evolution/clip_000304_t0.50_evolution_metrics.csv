@@ -1,0 +1,10 @@
+version,name,codename,psnr,ssim,ghost_pixels,density_ratio,stroke_recall,chamfer_distance,ie_mae,tortuosity,is_blank_collapse,infer_ms
+v0.1,Finetuned V0.1,Kaggle Baseline (Mode Collapse),14.45,0.8257,-1,0.0,0.0,1.0,10.41,0.0,True,461.0
+v0.2,Finetuned V0.2,ASF Head Prototype (Thickening),21.24,0.9477,15547,1.3425,0.9678,0.000687,5.4,1.625,False,118.2
+v0.3,Finetuned V0.3,ASF-GR Engine & Robust TPS,20.91,0.9428,19303,1.3534,0.9526,0.001379,5.68,1.531,False,125.2
+v1.0,Finetuned V1.0,Production ASF-GR Standard,21.59,0.9564,13144,1.1642,0.948,0.001416,4.26,1.576,False,121.7
+v1.1,Finetuned V1.1,Boundary Anchor TPS Warp,21.35,0.9504,12626,1.2485,0.9518,0.001403,4.98,1.581,False,122.3
+v2.0,Finetuned V2.0,Stroke Regularization V2,21.39,0.9512,11937,1.2302,0.952,0.00136,4.88,1.567,False,121.1
+v2.1,Finetuned V2.1,Patch2 Stratified Golden Dataset,21.61,0.9548,8675,1.1579,0.9515,0.001341,4.41,1.638,False,120.4
+v2.2,Finetuned V2.2,Fast GPU Chamfer & Temp Reversal,21.35,0.9508,12147,1.2548,0.9522,0.001361,4.96,1.579,False,122.0
+v2.3,Finetuned V2.3,Anti-Thickening & FP32 (Target Winner),18.27,0.9132,4429,0.6958,0.8639,0.003412,6.11,1.596,False,120.5

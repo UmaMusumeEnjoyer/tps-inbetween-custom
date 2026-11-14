@@ -1,0 +1,2026 @@
+{
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E01v2.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E01v2.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E01v2.mkv",
+    "total_duration_sec": 1416.08,
+    "clean_duration_sec": 1221.08,
+    "detection_method": "HEURISTIC_RULE",
+    "clean_ranges": [
+      [
+        0.0,
+        82.0
+      ],
+      [
+        172.0,
+        1236.084
+      ],
+      [
+        1326.084,
+        1401.084
+      ]
+    ],
+    "skipped_chapters": []
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E02.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E02.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E02.mkv",
+    "total_duration_sec": 1417.09,
+    "clean_duration_sec": 1222.09,
+    "detection_method": "HEURISTIC_RULE",
+    "clean_ranges": [
+      [
+        0.0,
+        66.0
+      ],
+      [
+        156.0,
+        1237.086
+      ],
+      [
+        1327.086,
+        1402.086
+      ]
+    ],
+    "skipped_chapters": []
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E03.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E03.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E03.mkv",
+    "total_duration_sec": 1417.04,
+    "clean_duration_sec": 1237.09,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        26.02
+      ],
+      [
+        116.01,
+        1320.98
+      ],
+      [
+        1410.95,
+        1417.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 26.02,
+        "end": 116.013,
+        "duration": 89.99300000000001
+      },
+      {
+        "title": "Ending",
+        "start": 1320.98,
+        "end": 1410.954,
+        "duration": 89.97399999999993
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E04.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E04.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E04.mkv",
+    "total_duration_sec": 1417.04,
+    "clean_duration_sec": 1327.06,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        95.01
+      ],
+      [
+        185.0,
+        1417.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 95.01,
+        "end": 185.004,
+        "duration": 89.99399999999999
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E05.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E05.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E05.mkv",
+    "total_duration_sec": 1417.04,
+    "clean_duration_sec": 1237.09,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        65.98
+      ],
+      [
+        155.97,
+        1222.01
+      ],
+      [
+        1311.98,
+        1417.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 65.98,
+        "end": 155.974,
+        "duration": 89.99399999999999
+      },
+      {
+        "title": "Ending",
+        "start": 1222.01,
+        "end": 1311.984,
+        "duration": 89.97399999999993
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E06.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E06.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E06.mkv",
+    "total_duration_sec": 1417.09,
+    "clean_duration_sec": 1237.13,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        39.03
+      ],
+      [
+        129.02,
+        1321.02
+      ],
+      [
+        1410.99,
+        1417.09
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 39.03,
+        "end": 129.024,
+        "duration": 89.994
+      },
+      {
+        "title": "Ending",
+        "start": 1321.02,
+        "end": 1410.994,
+        "duration": 89.97399999999993
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E07.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E07.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E07.mkv",
+    "total_duration_sec": 1416.08,
+    "clean_duration_sec": 1236.13,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        156.03
+      ],
+      [
+        246.02,
+        1320.02
+      ],
+      [
+        1409.99,
+        1416.09
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 156.03,
+        "end": 246.024,
+        "duration": 89.994
+      },
+      {
+        "title": "Ending",
+        "start": 1320.02,
+        "end": 1409.994,
+        "duration": 89.97399999999993
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E08.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E08.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E08.mkv",
+    "total_duration_sec": 1417.04,
+    "clean_duration_sec": 1236.09,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.99,
+        1320.98
+      ],
+      [
+        1410.95,
+        1417.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.993,
+        "duration": 90.993
+      },
+      {
+        "title": "Ending",
+        "start": 1320.98,
+        "end": 1410.954,
+        "duration": 89.97399999999993
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E09v2.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E09v2.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E09v2.mkv",
+    "total_duration_sec": 1417.13,
+    "clean_duration_sec": 1319.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        29.0
+      ],
+      [
+        29.0,
+        118.0
+      ],
+      [
+        118.0,
+        1319.0
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Credits",
+        "start": 1319.0,
+        "end": 1417.13,
+        "duration": 98.13000000000011
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E10.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E10.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E10.mkv",
+    "total_duration_sec": 1417.09,
+    "clean_duration_sec": 1319.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        50.0
+      ],
+      [
+        50.0,
+        135.0
+      ],
+      [
+        135.0,
+        1319.0
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Credits",
+        "start": 1319.0,
+        "end": 1417.088,
+        "duration": 98.08799999999997
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E11.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E11.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E11.mkv",
+    "total_duration_sec": 1417.0,
+    "clean_duration_sec": 1320.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        114.0
+      ],
+      [
+        114.0,
+        204.0
+      ],
+      [
+        204.0,
+        1320.0
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Credits",
+        "start": 1320.0,
+        "end": 1417.002,
+        "duration": 97.00199999999995
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E12.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E12.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E12.mkv",
+    "total_duration_sec": 1476.07,
+    "clean_duration_sec": 1319.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        58.0
+      ],
+      [
+        58.0,
+        146.0
+      ],
+      [
+        146.0,
+        1319.0
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Credits",
+        "start": 1319.0,
+        "end": 1476.07,
+        "duration": 157.06999999999994
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E13.mkv": {
+    "relative_path": "[Judas] Watashi wo Tabetai, Hitodenashi (This Monster Wants to Eat Me) (Season 01) [1080p][HEVC x265 10bit][Multi-Subs]\\[Judas] Watashi wo Tabetai - S01E13.mkv",
+    "filename": "[Judas] Watashi wo Tabetai - S01E13.mkv",
+    "total_duration_sec": 1416.04,
+    "clean_duration_sec": 1327.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        132.0
+      ],
+      [
+        132.0,
+        217.0
+      ],
+      [
+        217.0,
+        1312.0
+      ],
+      [
+        1401.0,
+        1416.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Credits",
+        "start": 1312.0,
+        "end": 1401.0,
+        "duration": 89.0
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E01 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E01 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E01 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1240.01,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1235.01
+      ],
+      [
+        1415.04,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1235.006,
+        "end": 1415.039,
+        "duration": 180.0329999999999
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E02 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E02 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E02 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1419.96,
+    "clean_duration_sec": 1330.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        152.01
+      ],
+      [
+        241.93,
+        1419.96
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 152.006,
+        "end": 241.929,
+        "duration": 89.923
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E03 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E03 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E03 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1419.96,
+    "clean_duration_sec": 1239.66,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        154.01
+      ],
+      [
+        243.93,
+        1324.93
+      ],
+      [
+        1415.31,
+        1419.96
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 154.008,
+        "end": 243.931,
+        "duration": 89.923
+      },
+      {
+        "title": "Ending",
+        "start": 1324.929,
+        "end": 1415.309,
+        "duration": 90.37999999999988
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E04 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E04 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E04 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1239.7,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        112.01
+      ],
+      [
+        201.97,
+        1325.01
+      ],
+      [
+        1415.39,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 112.008,
+        "end": 201.973,
+        "duration": 89.96500000000002
+      },
+      {
+        "title": "Ending",
+        "start": 1325.012,
+        "end": 1415.392,
+        "duration": 90.38000000000011
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E05 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E05 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E05 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.09,
+    "clean_duration_sec": 1329.71,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1325.05
+      ],
+      [
+        1415.43,
+        1420.09
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1325.054,
+        "end": 1415.434,
+        "duration": 90.37999999999988
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E06 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E06 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E06 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1239.67,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        89.99,
+        1324.93
+      ],
+      [
+        1415.31,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 89.986,
+        "duration": 89.986
+      },
+      {
+        "title": "Ending",
+        "start": 1324.929,
+        "end": 1415.309,
+        "duration": 90.37999999999988
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E07 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E07 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E07 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1325.01,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1325.01
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1325.012,
+        "end": 1420.044,
+        "duration": 95.03200000000015
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E08 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E08 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E08 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1325.01,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1325.01
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1325.012,
+        "end": 1420.044,
+        "duration": 95.03200000000015
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E09 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E09 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E09 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1239.61,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        264.95
+      ],
+      [
+        355.0,
+        1303.07
+      ],
+      [
+        1393.45,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 264.952,
+        "end": 355.001,
+        "duration": 90.04899999999998
+      },
+      {
+        "title": "Ending",
+        "start": 1303.074,
+        "end": 1393.454,
+        "duration": 90.37999999999988
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E10 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E10 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E10 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1234.94,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        89.99,
+        1324.93
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 89.986,
+        "duration": 89.986
+      },
+      {
+        "title": "Ending",
+        "start": 1324.929,
+        "end": 1420.044,
+        "duration": 95.11500000000001
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E11 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E11 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E11 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1330.07,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        33.01
+      ],
+      [
+        122.98,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 33.012,
+        "end": 122.977,
+        "duration": 89.965
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E12 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E12 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E12 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1240.1,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        168.02
+      ],
+      [
+        257.94,
+        1270.96
+      ],
+      [
+        1360.98,
+        1420.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 168.022,
+        "end": 257.945,
+        "duration": 89.923
+      },
+      {
+        "title": "Ending",
+        "start": 1270.958,
+        "end": 1360.985,
+        "duration": 90.02699999999982
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E13 [WEBRip 1080p AV1] (Multi Subs).mkv": {
+    "relative_path": "[Trix] The World Is Dancing S01 [WEBRip 1080p AV1] (Multi Subs)\\[Trix] The World Is Dancing S01E13 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "filename": "[Trix] The World Is Dancing S01E13 [WEBRip 1080p AV1] (Multi Subs).mkv",
+    "total_duration_sec": 1420.04,
+    "clean_duration_sec": 1324.89,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1324.89
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1324.887,
+        "end": 1420.044,
+        "duration": 95.15700000000015
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E01.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E01.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E01.mkv",
+    "total_duration_sec": 1421.1,
+    "clean_duration_sec": 1330.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        1330.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Ending",
+        "start": 1330.037,
+        "end": 1421.098,
+        "duration": 91.06099999999992
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E02.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E02.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E02.mkv",
+    "total_duration_sec": 1421.05,
+    "clean_duration_sec": 1239.94,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        20.02
+      ],
+      [
+        110.07,
+        1329.99
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 20.02,
+        "end": 110.068,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1329.995,
+        "end": 1421.053,
+        "duration": 91.05800000000022
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E03.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E03.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E03.mkv",
+    "total_duration_sec": 1421.1,
+    "clean_duration_sec": 1239.99,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1330.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1330.037,
+        "end": 1421.098,
+        "duration": 91.06099999999992
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E04.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E04.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E04.mkv",
+    "total_duration_sec": 1421.01,
+    "clean_duration_sec": 1247.49,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        51.05
+      ],
+      [
+        141.02,
+        1337.46
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 51.051,
+        "end": 141.016,
+        "duration": 89.96499999999999
+      },
+      {
+        "title": "Ending",
+        "start": 1337.461,
+        "end": 1421.013,
+        "duration": 83.55199999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E05.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E05.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E05.mkv",
+    "total_duration_sec": 1421.1,
+    "clean_duration_sec": 1240.07,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        105.06
+      ],
+      [
+        195.03,
+        1330.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 105.063,
+        "end": 195.028,
+        "duration": 89.96499999999999
+      },
+      {
+        "title": "Ending",
+        "start": 1330.037,
+        "end": 1421.098,
+        "duration": 91.06099999999992
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E06.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E06.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E06.mkv",
+    "total_duration_sec": 1421.1,
+    "clean_duration_sec": 1239.99,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1330.04
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1330.037,
+        "end": 1421.098,
+        "duration": 91.06099999999992
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E07.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E07.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E07.mkv",
+    "total_duration_sec": 1421.05,
+    "clean_duration_sec": 1239.94,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1329.99
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1329.995,
+        "end": 1421.053,
+        "duration": 91.05800000000022
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E08.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E08.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E08.mkv",
+    "total_duration_sec": 1421.05,
+    "clean_duration_sec": 1331.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1421.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E09.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E09.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E09.mkv",
+    "total_duration_sec": 1421.05,
+    "clean_duration_sec": 1247.45,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1337.5
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1337.503,
+        "end": 1421.053,
+        "duration": 83.55000000000018
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E10.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E10.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E10.mkv",
+    "total_duration_sec": 1421.1,
+    "clean_duration_sec": 1247.5,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1337.55
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      },
+      {
+        "title": "Ending",
+        "start": 1337.545,
+        "end": 1421.098,
+        "duration": 83.55299999999988
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E11.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E11.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E11.mkv",
+    "total_duration_sec": 1421.05,
+    "clean_duration_sec": 1331.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        90.05,
+        1421.05
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 0.0,
+        "end": 90.048,
+        "duration": 90.048
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E12.mkv": {
+    "relative_path": "[neoDESU] There's No Freaking Way I'll be Your Lover! Unless... [Season 1 + Specials] [BD 1080p AV1 OPUS]\\Season 1\\There's No Freaking Way I'll be Your Lover! Unless... - S01E12.mkv",
+    "filename": "There's No Freaking Way I'll be Your Lover! Unless... - S01E12.mkv",
+    "total_duration_sec": 1421.01,
+    "clean_duration_sec": 1331.0,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        75.03
+      ],
+      [
+        165.04,
+        1421.01
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Opening",
+        "start": 75.033,
+        "end": 165.04,
+        "duration": 90.00699999999999
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E01.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E01.mkv",
+    "filename": "Adachi and Shimamura - S01E01.mkv",
+    "total_duration_sec": 1446.02,
+    "clean_duration_sec": 1195.05,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        165.02
+      ],
+      [
+        254.98,
+        1285.01
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 165.02,
+        "end": 254.98,
+        "duration": 89.95999999999998
+      },
+      {
+        "title": "ED",
+        "start": 1285.01,
+        "end": 1375.02,
+        "duration": 90.00999999999999
+      },
+      {
+        "title": "Outro",
+        "start": 1375.02,
+        "end": 1429.9,
+        "duration": 54.88000000000011
+      },
+      {
+        "title": "Preview",
+        "start": 1429.9,
+        "end": 1446.016,
+        "duration": 16.115999999999985
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E02.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E02.mkv",
+    "filename": "Adachi and Shimamura - S01E02.mkv",
+    "total_duration_sec": 1446.08,
+    "clean_duration_sec": 1250.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        49.02
+      ],
+      [
+        139.0,
+        1340.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 49.02,
+        "end": 139.0,
+        "duration": 89.97999999999999
+      },
+      {
+        "title": "ED",
+        "start": 1340.02,
+        "end": 1429.99,
+        "duration": 89.97000000000003
+      },
+      {
+        "title": "Preview",
+        "start": 1429.99,
+        "end": 1446.079,
+        "duration": 16.088999999999942
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E03.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E03.mkv",
+    "filename": "Adachi and Shimamura - S01E03.mkv",
+    "total_duration_sec": 1446.17,
+    "clean_duration_sec": 1250.07,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        142.0
+      ],
+      [
+        232.04,
+        1340.11
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 142.0,
+        "end": 232.04,
+        "duration": 90.03999999999999
+      },
+      {
+        "title": "ED",
+        "start": 1340.11,
+        "end": 1430.08,
+        "duration": 89.97000000000003
+      },
+      {
+        "title": "Preview",
+        "start": 1430.08,
+        "end": 1446.166,
+        "duration": 16.086000000000013
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E04.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E04.mkv",
+    "filename": "Adachi and Shimamura - S01E04.mkv",
+    "total_duration_sec": 1446.08,
+    "clean_duration_sec": 1224.12,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        51.03
+      ],
+      [
+        140.99,
+        1314.08
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 51.03,
+        "end": 140.99,
+        "duration": 89.96000000000001
+      },
+      {
+        "title": "ED",
+        "start": 1314.08,
+        "end": 1429.99,
+        "duration": 115.91000000000008
+      },
+      {
+        "title": "Preview",
+        "start": 1429.99,
+        "end": 1446.08,
+        "duration": 16.089999999999918
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E05.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E05.mkv",
+    "filename": "Adachi and Shimamura - S01E05.mkv",
+    "total_duration_sec": 1446.12,
+    "clean_duration_sec": 1250.07,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        76.02
+      ],
+      [
+        166.02,
+        1340.07
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 76.02,
+        "end": 166.02,
+        "duration": 90.00000000000001
+      },
+      {
+        "title": "ED",
+        "start": 1340.07,
+        "end": 1430.03,
+        "duration": 89.96000000000004
+      },
+      {
+        "title": "Preview",
+        "start": 1430.03,
+        "end": 1446.122,
+        "duration": 16.0920000000001
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E06.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E06.mkv",
+    "filename": "Adachi and Shimamura - S01E06.mkv",
+    "total_duration_sec": 1446.08,
+    "clean_duration_sec": 1252.5,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        67.01
+      ],
+      [
+        157.03,
+        1220.54
+      ],
+      [
+        1308.0,
+        1429.98
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 67.01,
+        "end": 157.03,
+        "duration": 90.02
+      },
+      {
+        "title": "ED",
+        "start": 1220.54,
+        "end": 1308.0,
+        "duration": 87.46000000000004
+      },
+      {
+        "title": "Preview",
+        "start": 1429.98,
+        "end": 1446.079,
+        "duration": 16.098999999999933
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E07.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E07.mkv",
+    "filename": "Adachi and Shimamura - S01E07.mkv",
+    "total_duration_sec": 1446.17,
+    "clean_duration_sec": 1162.86,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        141.0
+      ],
+      [
+        231.04,
+        1252.9
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 141.0,
+        "end": 231.04,
+        "duration": 90.03999999999999
+      },
+      {
+        "title": "ED",
+        "start": 1252.9,
+        "end": 1342.85,
+        "duration": 89.94999999999982
+      },
+      {
+        "title": "Outro",
+        "start": 1342.85,
+        "end": 1430.07,
+        "duration": 87.22000000000003
+      },
+      {
+        "title": "Preview",
+        "start": 1430.07,
+        "end": 1446.166,
+        "duration": 16.096000000000004
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E08.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E08.mkv",
+    "filename": "Adachi and Shimamura - S01E08.mkv",
+    "total_duration_sec": 1446.08,
+    "clean_duration_sec": 1250.02,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        99.04
+      ],
+      [
+        189.04,
+        1340.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 99.04,
+        "end": 189.04,
+        "duration": 89.99999999999999
+      },
+      {
+        "title": "ED",
+        "start": 1340.02,
+        "end": 1429.98,
+        "duration": 89.96000000000004
+      },
+      {
+        "title": "Preview",
+        "start": 1429.98,
+        "end": 1446.079,
+        "duration": 16.098999999999933
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E09.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E09.mkv",
+    "filename": "Adachi and Shimamura - S01E09.mkv",
+    "total_duration_sec": 1446.04,
+    "clean_duration_sec": 1250.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        90.03
+      ],
+      [
+        179.98,
+        1339.99
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 90.03,
+        "end": 179.98,
+        "duration": 89.94999999999999
+      },
+      {
+        "title": "ED",
+        "start": 1339.99,
+        "end": 1429.95,
+        "duration": 89.96000000000004
+      },
+      {
+        "title": "Preview",
+        "start": 1429.95,
+        "end": 1446.037,
+        "duration": 16.08699999999999
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E10.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E10.mkv",
+    "filename": "Adachi and Shimamura - S01E10.mkv",
+    "total_duration_sec": 1446.04,
+    "clean_duration_sec": 1249.94,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        125.98
+      ],
+      [
+        216.02,
+        1339.98
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 125.98,
+        "end": 216.02,
+        "duration": 90.04
+      },
+      {
+        "title": "ED",
+        "start": 1339.98,
+        "end": 1429.95,
+        "duration": 89.97000000000003
+      },
+      {
+        "title": "Preview",
+        "start": 1429.95,
+        "end": 1446.037,
+        "duration": 16.08699999999999
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E11.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E11.mkv",
+    "filename": "Adachi and Shimamura - S01E11.mkv",
+    "total_duration_sec": 1446.08,
+    "clean_duration_sec": 1250.01,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        83.02
+      ],
+      [
+        173.03,
+        1340.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 83.02,
+        "end": 173.03,
+        "duration": 90.01
+      },
+      {
+        "title": "ED",
+        "start": 1340.02,
+        "end": 1429.98,
+        "duration": 89.96000000000004
+      },
+      {
+        "title": "Preview",
+        "start": 1429.98,
+        "end": 1446.079,
+        "duration": 16.098999999999933
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E12.mkv": {
+    "relative_path": "[neoHEVC] Adachi and Shimamura [BD 1080p x265 HEVC AAC] [Dual Audio]\\Adachi and Shimamura - S01E12.mkv",
+    "filename": "Adachi and Shimamura - S01E12.mkv",
+    "total_duration_sec": 1431.12,
+    "clean_duration_sec": 1231.34,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        13.99
+      ],
+      [
+        13.99,
+        1231.34
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 1231.34,
+        "end": 1352.95,
+        "duration": 121.61000000000013
+      },
+      {
+        "title": "Outro",
+        "start": 1352.95,
+        "end": 1431.125,
+        "duration": 78.17499999999995
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E01.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E01.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E01.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1325.01,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        141.01
+      ],
+      [
+        141.01,
+        715.0
+      ],
+      [
+        720.01,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "Eyecatch",
+        "start": 715.0,
+        "end": 720.01,
+        "duration": 5.009999999999991
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E02.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E02.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E02.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1234.93,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        103.0
+      ],
+      [
+        192.97,
+        722.99
+      ],
+      [
+        728.02,
+        1329.93
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 103.0,
+        "end": 192.97,
+        "duration": 89.97
+      },
+      {
+        "title": "Eyecatch",
+        "start": 722.99,
+        "end": 728.02,
+        "duration": 5.029999999999973
+      },
+      {
+        "title": "ED",
+        "start": 1329.93,
+        "end": 1421.12,
+        "duration": 91.18999999999983
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E03.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E03.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E03.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1235.05,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        80.98
+      ],
+      [
+        170.97,
+        822.03
+      ],
+      [
+        827.01,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 80.98,
+        "end": 170.97,
+        "duration": 89.99
+      },
+      {
+        "title": "Eyecatch",
+        "start": 822.03,
+        "end": 827.01,
+        "duration": 4.980000000000018
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E04.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E04.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E04.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1235.06,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        25.03
+      ],
+      [
+        114.99,
+        804.01
+      ],
+      [
+        809.01,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 25.03,
+        "end": 114.99,
+        "duration": 89.96
+      },
+      {
+        "title": "Eyecatch",
+        "start": 804.01,
+        "end": 809.01,
+        "duration": 5.0
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E05.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E05.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E05.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1235.04,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        92.99
+      ],
+      [
+        182.97,
+        897.98
+      ],
+      [
+        902.98,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 92.99,
+        "end": 182.97,
+        "duration": 89.98
+      },
+      {
+        "title": "Eyecatch",
+        "start": 897.98,
+        "end": 902.98,
+        "duration": 5.0
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E06.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E06.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E06.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1235.05,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        35.03
+      ],
+      [
+        125.0,
+        402.03
+      ],
+      [
+        407.03,
+        915.25
+      ],
+      [
+        915.25,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 35.03,
+        "end": 125.0,
+        "duration": 89.97
+      },
+      {
+        "title": "Eyecatch",
+        "start": 402.03,
+        "end": 407.03,
+        "duration": 5.0
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E07.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E07.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E07.mkv",
+    "total_duration_sec": 1421.29,
+    "clean_duration_sec": 1235.08,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        89.0
+      ],
+      [
+        179.03,
+        608.1
+      ],
+      [
+        613.11,
+        976.47
+      ],
+      [
+        976.47,
+        1330.12
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 89.0,
+        "end": 179.03,
+        "duration": 90.03
+      },
+      {
+        "title": "Eyecatch",
+        "start": 608.1,
+        "end": 613.11,
+        "duration": 5.009999999999991
+      },
+      {
+        "title": "ED",
+        "start": 1330.12,
+        "end": 1421.291,
+        "duration": 91.17100000000005
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E08.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E08.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E08.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1236.12,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        39.03
+      ],
+      [
+        129.0,
+        617.03
+      ],
+      [
+        622.04,
+        974.51
+      ],
+      [
+        974.51,
+        1200.0
+      ],
+      [
+        1290.02,
+        1421.12
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 39.03,
+        "end": 129.0,
+        "duration": 89.97
+      },
+      {
+        "title": "Eyecatch",
+        "start": 617.03,
+        "end": 622.04,
+        "duration": 5.009999999999991
+      },
+      {
+        "title": "ED",
+        "start": 1200.0,
+        "end": 1290.02,
+        "duration": 90.01999999999998
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E09.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E09.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E09.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1235.06,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        49.03
+      ],
+      [
+        139.0,
+        811.02
+      ],
+      [
+        816.01,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 49.03,
+        "end": 139.0,
+        "duration": 89.97
+      },
+      {
+        "title": "Eyecatch",
+        "start": 811.02,
+        "end": 816.01,
+        "duration": 4.990000000000009
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E10.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E10.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E10.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1239.98,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        78.98
+      ],
+      [
+        169.02,
+        598.91
+      ],
+      [
+        598.91,
+        672.57
+      ],
+      [
+        672.57,
+        1330.02
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 78.98,
+        "end": 169.02,
+        "duration": 90.04
+      },
+      {
+        "title": "ED",
+        "start": 1330.02,
+        "end": 1421.12,
+        "duration": 91.09999999999991
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E11.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E11.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E11.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1234.94,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        251.94
+      ],
+      [
+        341.99,
+        676.0
+      ],
+      [
+        680.99,
+        1329.98
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 251.94,
+        "end": 341.99,
+        "duration": 90.05000000000001
+      },
+      {
+        "title": "Eyecatch",
+        "start": 676.0,
+        "end": 680.99,
+        "duration": 4.990000000000009
+      },
+      {
+        "title": "ED",
+        "start": 1329.98,
+        "end": 1421.12,
+        "duration": 91.13999999999987
+      }
+    ]
+  },
+  "E:\\CODE\\PBL\\PBL6\\AnimeGoc\\[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E12.mkv": {
+    "relative_path": "[neoHEVC] Akebi's Sailor Uniform [Season 1] [BD 1080p x265 HEVC AAC] [Dual Audio]\\Akebi's Sailor Uniform - S01E12.mkv",
+    "filename": "Akebi's Sailor Uniform - S01E12.mkv",
+    "total_duration_sec": 1421.12,
+    "clean_duration_sec": 1233.55,
+    "detection_method": "MKV_CHAPTERS",
+    "clean_ranges": [
+      [
+        0.0,
+        57.04
+      ],
+      [
+        147.0,
+        781.19
+      ],
+      [
+        781.19,
+        1056.99
+      ],
+      [
+        1062.0,
+        1328.52
+      ]
+    ],
+    "skipped_chapters": [
+      {
+        "title": "OP",
+        "start": 57.04,
+        "end": 147.0,
+        "duration": 89.96000000000001
+      },
+      {
+        "title": "Eyecatch",
+        "start": 1056.99,
+        "end": 1062.0,
+        "duration": 5.009999999999991
+      },
+      {
+        "title": "ED",
+        "start": 1328.52,
+        "end": 1421.12,
+        "duration": 92.59999999999991
+      }
+    ]
+  }
+}

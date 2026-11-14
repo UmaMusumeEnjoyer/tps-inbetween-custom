@@ -1,0 +1,56 @@
+{
+    "version": "v1.0",
+    "status": "PASSED_PRODUCTION_CANDIDATE",
+    "checkpoint": "model_tps_v1.1_best.pt",
+    "validation_suite": {
+        "total_samples": 620,
+        "blank_collapse_count": 0,
+        "blank_collapse_rate": 0.0,
+        "metrics_finetuned_v1.0": {
+            "psnr_mean": 18.436602741935484,
+            "ssim_mean": 0.9088329032258065,
+            "stroke_recall_mean": 0.9320385483870967,
+            "stroke_density_mean": 1.3005895161290322,
+            "chamfer_distance_mean": 0.0009040387096774194,
+            "line_tortuosity_mean": 1.5960488709677418,
+            "ghost_pixels_mean": 13408.779032258064,
+            "infer_ms_mean": 51.073661290322576
+        },
+        "metrics_coarse_warp_baseline": {
+            "psnr_mean": 15.18707177419355,
+            "ssim_mean": 0.7977904838709677,
+            "stroke_recall_mean": 0.8887641935483872,
+            "chamfer_distance_mean": 0.0017814967741935483,
+            "line_tortuosity_mean": 1.5230325806451612,
+            "ghost_pixels_mean": 20186.895161290322
+        },
+        "metrics_finetuned_v0.3_reference": {
+            "psnr_mean": 20.190073622047244,
+            "ssim_mean": 0.8933649606299213,
+            "stroke_recall_mean": 0.8502122047244095,
+            "stroke_density_mean": 1.181232283464567,
+            "chamfer_distance_mean": 0.0020595,
+            "line_tortuosity_mean": 1.6245816929133856,
+            "ghost_pixels_mean": 19622.285433070865,
+            "infer_ms_mean": 52.298228346456696
+        },
+        "metrics_finetuned_v0.2_reference": {
+            "psnr_mean": 21.04547,
+            "ssim_mean": 0.90797,
+            "stroke_recall_mean": 0.8966500000000002,
+            "stroke_density_mean": 1.34401,
+            "chamfer_distance_mean": 0.0016608,
+            "line_tortuosity_mean": 1.63155,
+            "ghost_pixels_mean": 14446.25,
+            "infer_ms_mean": 1319.3305
+        }
+    },
+    "visual_samples_suite": {
+        "total_cases": 7,
+        "psnr_mean": 25.54677142857143,
+        "ssim_mean": 0.8989714285714286,
+        "stroke_recall_mean": 0.5381714285714285,
+        "ghost_pixels_mean": 14873.285714285714,
+        "blank_collapse_count": 0
+    }
+}

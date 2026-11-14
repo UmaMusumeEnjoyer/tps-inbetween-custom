@@ -1,0 +1,2 @@
+Model,Dataset,N Clips,chamfer_distance,weighted_cd,lpips,emd,rrld,psnr,ssim,ie_mae,fvd,warping_error,hausdorff_dist,line_iou,disconnection_rate,arbitrary_t_support,inference_ms,fps,vram_peak_mb,finetune_speed
+UPR-Net-large,ATD-12K test_2k_540p,2000,N/A,N/A,0.0613 ± 0.0545,N/A,N/A,29.36 ± 5.42 dB,0.9349 ± 0.0389,2.9200 ± 2.1458,82.5822 (lightweight estimate),0.019808 ± 0.012019,N/A,N/A,N/A,YES,248.61 ms/frame,4.02 FPS,3340.0 MB (peak),N/A

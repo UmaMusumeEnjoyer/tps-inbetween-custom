@@ -1,0 +1,7 @@
+clip_id,video_name,t,delta_f,inliers,mean_disp,local_dir
+clip_000008,sakugabooru_271047_4f5569bf97458d36e01e551a123f8ca0.mp4,0.5,8,79,9.05,data/test_sets/sakuga_continuous_triplets\clip_000008
+clip_000010,sakugabooru_271047_4f5569bf97458d36e01e551a123f8ca0.mp4,0.5,2,160,7.28,data/test_sets/sakuga_continuous_triplets\clip_000010
+clip_000018,sakugabooru_271084_1d0b3e915660911211eb53769085f8e4.mp4,0.75,4,133,8.49,data/test_sets/sakuga_continuous_triplets\clip_000018
+clip_000064,sakugabooru_271709_06e86320fcace8223c0fd30d22a96008.mp4,0.5,6,159,7.64,data/test_sets/sakuga_continuous_triplets\clip_000064
+clip_003046,sakugabooru_305636_58e1ce2114723d062c32cb305de6f271.mp4,0.5,6,89,10.21,data/test_sets/sakuga_continuous_triplets\clip_003046
+clip_003050,sakugabooru_305636_58e1ce2114723d062c32cb305de6f271.mp4,0.5,4,64,4.95,data/test_sets/sakuga_continuous_triplets\clip_003050

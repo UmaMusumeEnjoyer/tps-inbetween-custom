@@ -1,0 +1,8 @@
+suite,description,t,keypoint_matches,psnr,psnr_coarse_gain,ssim,ssim_coarse_gain,stroke_recall,stroke_density_ratio,ghost_pixels,chamfer_distance,line_tortuosity,ie_mae,is_blank_collapse,infer_ms
+TestRandom_Bamboo,Bamboo freehand sketch triplet (t=0.5),0.5,80,34.0737,-3.0612,0.9784,-0.0133,0.9999,1.0185,253,2.5e-05,1.308,3.2088,False,814.49
+TestImage1_FaceMotion_F2_F4_F6,TestImage1 Facial Acting (F2 -> F4 -> F6),0.5,80,21.9653,0.1989,0.8059,0.0221,0.3751,0.6265,60165,0.007043,1.6666,7.821,False,2556.57
+TestImage1_FastActing_F6_F8_F10,TestImage1 Rapid Acting (F6 -> F8 -> F10),0.5,80,23.4357,0.4119,0.8528,0.0118,0.2981,0.3141,44465,0.010366,1.5106,6.0646,False,2385.44
+TestImage2_Acting_F2_F4_F6,TestImage2 Character Acting (F2 -> F4 -> F6),0.5,80,23.5307,0.6577,0.8602,0.0414,0.0881,0.1107,32947,0.022791,1.6413,5.8672,False,2290.99
+TestImage2_Acting_F6_F8_F10,TestImage2 Character Acting (F6 -> F8 -> F10),0.5,80,26.1155,0.925,0.8559,0.0143,0.115,0.1455,130302,0.013713,1.8346,5.1929,False,2292.71
+ChayGo_Seg1_0.0s_0.2s_0.5s,ChayGo Running Sequence Seg 1 (0.0s -> 0.2s -> 0.5s),0.4,25,20.296,-0.3621,0.8201,-0.0078,0.9928,1.0399,74,0.00029,1.8335,12.1375,False,688.45
+ChayGo_Seg2_0.5s_0.7s_1.0s,ChayGo Running Sequence Seg 2 (0.5s -> 0.7s -> 1.0s),0.4,34,22.2585,-0.6462,0.8281,-0.0134,0.9926,1.043,16,0.000227,1.7835,10.1103,False,715.89

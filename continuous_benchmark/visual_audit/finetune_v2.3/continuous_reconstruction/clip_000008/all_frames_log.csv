@@ -1,0 +1,4 @@
+frame_idx,frame_type,t,psnr,ssim,ghost_pixels,density_ratio,chamfer_distance,infer_ms,scene
+0,KEYFRAME,0.0,50.0,1.0,0,1.0,0.0,0.0,
+1,INBETWEEN_V2.3,0.5,13.82,0.7879,15868,0.7836,0.001596,106.9,clip_000008
+2,KEYFRAME,0.0,50.0,1.0,0,1.0,0.0,0.0,

@@ -1,0 +1,21 @@
+{
+  "model_ckpt": "model_tps_v3.0_remastered_soup.pt",
+  "sequence": "lineart_experiments/test (540p)",
+  "resolution": "960x540",
+  "total_frames": 24,
+  "keyframes_count": 7,
+  "keyframes_pct": 29.17,
+  "inbetweens_count": 17,
+  "inbetweens_pct": 70.83,
+  "mean_psnr_inbetween": 14.74,
+  "mean_ssim_inbetween": 0.7349,
+  "mean_stroke_recall_inbetween": 0.6573,
+  "mean_stroke_density_inbetween": 0.8846,
+  "mean_skel_recall_inbetween": 0.5523,
+  "mean_tip_recall_inbetween": 0.5624,
+  "mean_wcd_inbetween": 0.071942,
+  "mean_semd_inbetween": 0.03451,
+  "mean_ghost_pixels_inbetween": 16475.2,
+  "mean_ie_mae_inbetween": 16.42,
+  "mean_latency_ms": 60.2
+}

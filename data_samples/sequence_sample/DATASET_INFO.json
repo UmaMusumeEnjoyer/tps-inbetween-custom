@@ -1,0 +1,16 @@
+{
+  "dataset_name": "sakuga_golden_dataset_sequences_tps_v2",
+  "description": "Multi-Frame Sequences (N=3,5,7) for TPS-Inbetween Finetuning with Atomic Scene Isolation",
+  "assembled_at": "2026-11-10 18:35:54",
+  "total_train_sequences": 1485,
+  "total_val_sequences": 190,
+  "total_benchmark_sequences": 198,
+  "leakage_status": "ZERO_SCENE_LEAKAGE_VERIFIED",
+  "split_strategy": "Atomic_Scene_Level_Partition_80_10_10",
+  "format": "540p lineart PNG + GlueStick MD .npy + TPS Cache .npz",
+  "sequence_lengths_distribution": {
+    "N_3": 1139,
+    "N_5": 404,
+    "N_7": 330
+  }
+}

@@ -1,0 +1,10 @@
+clip_id,t,version,name,codename,psnr,ssim,ghost_pixels,density_ratio,stroke_recall,chamfer_distance,ie_mae,tortuosity,is_blank_collapse,infer_ms
+clip_003719,0.5,v0.1,Finetuned V0.1,Kaggle Baseline (Mode Collapse),12.53,0.7035,-1,0.0,0.0,1.0,16.71,0.0,True,108.4
+clip_003719,0.5,v0.2,Finetuned V0.2,ASF Head Prototype (Thickening),14.42,0.7533,47641,1.6603,0.9828,0.000799,18.21,1.502,False,105.8
+clip_003719,0.5,v0.3,Finetuned V0.3,ASF-GR Engine & Robust TPS,14.1,0.7465,52955,1.3784,0.8693,0.001283,18.08,1.406,False,126.9
+clip_003719,0.5,v1.0,Finetuned V1.0,Production ASF-GR Standard,13.71,0.7615,27967,1.2888,0.9788,0.000716,17.3,1.477,False,129.8
+clip_003719,0.5,v1.1,Finetuned V1.1,Boundary Anchor TPS Warp,14.6,0.7784,26996,1.3479,0.9684,0.000844,15.79,1.456,False,127.0
+clip_003719,0.5,v2.0,Finetuned V2.0,Stroke Regularization V2,14.48,0.7788,25443,1.3715,0.9721,0.000817,15.92,1.51,False,129.4
+clip_003719,0.5,v2.1,Finetuned V2.1,Patch2 Stratified Golden Dataset,14.22,0.7785,19077,1.2726,0.9767,0.000672,15.57,1.528,False,127.7
+clip_003719,0.5,v2.2,Finetuned V2.2,Fast GPU Chamfer & Temp Reversal,14.41,0.7751,24036,1.4374,0.9745,0.000779,16.3,1.461,False,127.6
+clip_003719,0.5,v2.3,Finetuned V2.3,Anti-Thickening & FP32 (Target Winner),13.95,0.7616,19182,0.8135,0.9204,0.001201,15.36,1.428,False,129.5

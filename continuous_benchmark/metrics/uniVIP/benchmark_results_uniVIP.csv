@@ -1,0 +1,1 @@
+﻿clip_name,model,resolution,status,error_msg,CD,WCD,LPIPS,EMD,RRLD,PSNR,SSIM,IE_MAE,IE_RMSE,FVD,Warping_Error,Hausdorff_Distance,Line_IoU,Disconnection_Rate,Arbitrary_t_Support,Inference_ms,Inference_FPS,VRAM_Peak_MB,Finetuning_Speed

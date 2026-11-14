@@ -1,0 +1,2 @@
+scene,frame_idx,frame_type,t,psnr,ssim,ghost_pixels,density_ratio,chamfer_distance,infer_ms
+clip_003046,1,INBETWEEN_V2.3,0.5,16.96,0.8972,7450,0.665,0.002536,111.8

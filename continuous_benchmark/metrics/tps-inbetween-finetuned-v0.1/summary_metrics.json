@@ -1,0 +1,22 @@
+{
+    "total_samples": 15,
+    "blank_collapse_samples": 15,
+    "blank_collapse_ratio": 1.0,
+    "metrics_finetuned_v0.1": {
+        "psnr_mean": 16.766360000000002,
+        "ssim_mean": 0.8441333333333334,
+        "stroke_recall_mean": 0.0,
+        "stroke_density_mean": 0.0,
+        "chamfer_distance_mean": 1.0,
+        "line_tortuosity_mean": 0.0,
+        "infer_ms_mean": 1331.9619999999998
+    },
+    "metrics_tps_coarse_warp_baseline": {
+        "psnr_mean": 21.35326666666667,
+        "ssim_mean": 0.8818066666666666,
+        "stroke_recall_mean": 0.8768533333333333,
+        "chamfer_distance_mean": 0.0020868,
+        "line_tortuosity_mean": 1.5896466666666667,
+        "ghost_pixels_mean": 19855.066666666666
+    }
+}

@@ -1,0 +1,66 @@
+# ==============================================================================
+# .gitignore for PBL6: TPS-Inbetween Anime 2D Project
+# ==============================================================================
+
+# 1. Virtual Environments & Python Cache
+.venv/
+venv/
+env/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyd
+*.pyo
+
+# 2. Large Dataset Directories (Sample architecture available in data_samples/)
+data/
+Dataset/
+
+# 3. Model Weights, Checkpoints & Pre-trained Baselines
+checkpoints/
+_test_ckpt_v25/
+*.pt
+*.pth
+*.ckpt
+*.weights
+*.bin
+*.tar
+*.safetensors
+
+# 4. Large Archives & Packaged Datasets
+*.zip
+*.tar.gz
+*.tgz
+*.rar
+*.7z
+
+# 5. Product App & Node Modules
+product_app/
+node_modules/
+**/node_modules/
+
+# 6. Temporary, Scratch & Intermediate Workspace
+scratch/
+workspace/
+temp_*.txt
+*.tmp
+*.log
+.pytest_cache/
+.coverage
+htmlcov/
+
+# 7. OS & IDE Specific Files
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# ==============================================================================
+# Whitelist / Keep critical samples & documentation
+# ==============================================================================
+!data_samples/
+!data_samples/**

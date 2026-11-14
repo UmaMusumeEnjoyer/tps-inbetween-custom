@@ -1,0 +1,4 @@
+frame_idx,frame_type,psnr_v10,ssim_v10,ghost_v10,infer_ms_v10,psnr_v11,ssim_v11,ghost_v11,infer_ms_v11,psnr_gain_v11_vs_v10,ghost_diff_v11_vs_v10
+0,KEYFRAME,50.0,1.0,0,0.0,50.0,1.0,0,0.0,0.0,0
+1,INBETWEEN,17.3383,0.8953,20493,50.85,17.3287,0.8922,18081,110.62,-0.0096,-2412
+2,KEYFRAME,50.0,1.0,0,0.0,50.0,1.0,0,0.0,0.0,0

@@ -1,0 +1,2744 @@
+[
+  {
+    "drawing_id": 0,
+    "frame_idx": 1,
+    "frame_file": "000001.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 1,
+    "frame_idx": 3,
+    "frame_file": "000003.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 2,
+    "frame_idx": 6,
+    "frame_file": "000006.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 3,
+    "frame_idx": 9,
+    "frame_file": "000009.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 4,
+    "frame_idx": 12,
+    "frame_file": "000012.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 5,
+    "frame_idx": 15,
+    "frame_file": "000015.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 6,
+    "frame_idx": 18,
+    "frame_file": "000018.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 7,
+    "frame_idx": 21,
+    "frame_file": "000021.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 8,
+    "frame_idx": 24,
+    "frame_file": "000024.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 9,
+    "frame_idx": 27,
+    "frame_file": "000027.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 10,
+    "frame_idx": 30,
+    "frame_file": "000030.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 11,
+    "frame_idx": 33,
+    "frame_file": "000033.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 12,
+    "frame_idx": 36,
+    "frame_file": "000036.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 13,
+    "frame_idx": 39,
+    "frame_file": "000039.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 14,
+    "frame_idx": 42,
+    "frame_file": "000042.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 15,
+    "frame_idx": 45,
+    "frame_file": "000045.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 16,
+    "frame_idx": 48,
+    "frame_file": "000048.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 17,
+    "frame_idx": 51,
+    "frame_file": "000051.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 18,
+    "frame_idx": 54,
+    "frame_file": "000054.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 19,
+    "frame_idx": 57,
+    "frame_file": "000057.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 20,
+    "frame_idx": 60,
+    "frame_file": "000060.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 21,
+    "frame_idx": 63,
+    "frame_file": "000063.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 22,
+    "frame_idx": 66,
+    "frame_file": "000066.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 23,
+    "frame_idx": 69,
+    "frame_file": "000069.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 24,
+    "frame_idx": 71,
+    "frame_file": "000071.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 25,
+    "frame_idx": 73,
+    "frame_file": "000073.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 26,
+    "frame_idx": 75,
+    "frame_file": "000075.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 27,
+    "frame_idx": 76,
+    "frame_file": "000076.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 28,
+    "frame_idx": 78,
+    "frame_file": "000078.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 29,
+    "frame_idx": 79,
+    "frame_file": "000079.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 30,
+    "frame_idx": 81,
+    "frame_file": "000081.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 31,
+    "frame_idx": 82,
+    "frame_file": "000082.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 32,
+    "frame_idx": 84,
+    "frame_file": "000084.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 33,
+    "frame_idx": 85,
+    "frame_file": "000085.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 34,
+    "frame_idx": 87,
+    "frame_file": "000087.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 35,
+    "frame_idx": 88,
+    "frame_file": "000088.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 36,
+    "frame_idx": 90,
+    "frame_file": "000090.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 37,
+    "frame_idx": 91,
+    "frame_file": "000091.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 38,
+    "frame_idx": 93,
+    "frame_file": "000093.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 39,
+    "frame_idx": 94,
+    "frame_file": "000094.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 40,
+    "frame_idx": 96,
+    "frame_file": "000096.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 41,
+    "frame_idx": 97,
+    "frame_file": "000097.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 42,
+    "frame_idx": 99,
+    "frame_file": "000099.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 43,
+    "frame_idx": 100,
+    "frame_file": "000100.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 44,
+    "frame_idx": 102,
+    "frame_file": "000102.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 45,
+    "frame_idx": 103,
+    "frame_file": "000103.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 46,
+    "frame_idx": 105,
+    "frame_file": "000105.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 47,
+    "frame_idx": 106,
+    "frame_file": "000106.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 48,
+    "frame_idx": 108,
+    "frame_file": "000108.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 49,
+    "frame_idx": 109,
+    "frame_file": "000109.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 50,
+    "frame_idx": 111,
+    "frame_file": "000111.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 51,
+    "frame_idx": 112,
+    "frame_file": "000112.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 52,
+    "frame_idx": 114,
+    "frame_file": "000114.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 53,
+    "frame_idx": 115,
+    "frame_file": "000115.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 54,
+    "frame_idx": 117,
+    "frame_file": "000117.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 55,
+    "frame_idx": 118,
+    "frame_file": "000118.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 56,
+    "frame_idx": 120,
+    "frame_file": "000120.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 57,
+    "frame_idx": 121,
+    "frame_file": "000121.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 58,
+    "frame_idx": 123,
+    "frame_file": "000123.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 59,
+    "frame_idx": 124,
+    "frame_file": "000124.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 60,
+    "frame_idx": 126,
+    "frame_file": "000126.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 61,
+    "frame_idx": 127,
+    "frame_file": "000127.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 62,
+    "frame_idx": 129,
+    "frame_file": "000129.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 63,
+    "frame_idx": 130,
+    "frame_file": "000130.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 64,
+    "frame_idx": 132,
+    "frame_file": "000132.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 65,
+    "frame_idx": 133,
+    "frame_file": "000133.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 66,
+    "frame_idx": 135,
+    "frame_file": "000135.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 67,
+    "frame_idx": 136,
+    "frame_file": "000136.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 68,
+    "frame_idx": 138,
+    "frame_file": "000138.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 69,
+    "frame_idx": 139,
+    "frame_file": "000139.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 70,
+    "frame_idx": 141,
+    "frame_file": "000141.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 71,
+    "frame_idx": 142,
+    "frame_file": "000142.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 72,
+    "frame_idx": 144,
+    "frame_file": "000144.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 73,
+    "frame_idx": 145,
+    "frame_file": "000145.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 74,
+    "frame_idx": 147,
+    "frame_file": "000147.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 75,
+    "frame_idx": 148,
+    "frame_file": "000148.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 76,
+    "frame_idx": 150,
+    "frame_file": "000150.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 77,
+    "frame_idx": 151,
+    "frame_file": "000151.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 78,
+    "frame_idx": 153,
+    "frame_file": "000153.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 79,
+    "frame_idx": 154,
+    "frame_file": "000154.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 80,
+    "frame_idx": 156,
+    "frame_file": "000156.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 81,
+    "frame_idx": 157,
+    "frame_file": "000157.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 82,
+    "frame_idx": 159,
+    "frame_file": "000159.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 83,
+    "frame_idx": 160,
+    "frame_file": "000160.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 84,
+    "frame_idx": 162,
+    "frame_file": "000162.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 85,
+    "frame_idx": 163,
+    "frame_file": "000163.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 86,
+    "frame_idx": 165,
+    "frame_file": "000165.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 87,
+    "frame_idx": 166,
+    "frame_file": "000166.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 88,
+    "frame_idx": 168,
+    "frame_file": "000168.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 89,
+    "frame_idx": 169,
+    "frame_file": "000169.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 90,
+    "frame_idx": 171,
+    "frame_file": "000171.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 91,
+    "frame_idx": 172,
+    "frame_file": "000172.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 92,
+    "frame_idx": 174,
+    "frame_file": "000174.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 93,
+    "frame_idx": 175,
+    "frame_file": "000175.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 94,
+    "frame_idx": 177,
+    "frame_file": "000177.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 95,
+    "frame_idx": 178,
+    "frame_file": "000178.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 96,
+    "frame_idx": 180,
+    "frame_file": "000180.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 97,
+    "frame_idx": 181,
+    "frame_file": "000181.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 98,
+    "frame_idx": 183,
+    "frame_file": "000183.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 99,
+    "frame_idx": 184,
+    "frame_file": "000184.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 100,
+    "frame_idx": 186,
+    "frame_file": "000186.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 101,
+    "frame_idx": 187,
+    "frame_file": "000187.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 102,
+    "frame_idx": 189,
+    "frame_file": "000189.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 103,
+    "frame_idx": 190,
+    "frame_file": "000190.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 104,
+    "frame_idx": 192,
+    "frame_file": "000192.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 105,
+    "frame_idx": 193,
+    "frame_file": "000193.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 106,
+    "frame_idx": 195,
+    "frame_file": "000195.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 107,
+    "frame_idx": 196,
+    "frame_file": "000196.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 108,
+    "frame_idx": 198,
+    "frame_file": "000198.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 109,
+    "frame_idx": 199,
+    "frame_file": "000199.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 110,
+    "frame_idx": 201,
+    "frame_file": "000201.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 111,
+    "frame_idx": 202,
+    "frame_file": "000202.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 112,
+    "frame_idx": 204,
+    "frame_file": "000204.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 113,
+    "frame_idx": 205,
+    "frame_file": "000205.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 114,
+    "frame_idx": 207,
+    "frame_file": "000207.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 115,
+    "frame_idx": 208,
+    "frame_file": "000208.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 116,
+    "frame_idx": 210,
+    "frame_file": "000210.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 117,
+    "frame_idx": 211,
+    "frame_file": "000211.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 118,
+    "frame_idx": 213,
+    "frame_file": "000213.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 119,
+    "frame_idx": 214,
+    "frame_file": "000214.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 120,
+    "frame_idx": 216,
+    "frame_file": "000216.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 121,
+    "frame_idx": 217,
+    "frame_file": "000217.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 122,
+    "frame_idx": 219,
+    "frame_file": "000219.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 123,
+    "frame_idx": 220,
+    "frame_file": "000220.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 124,
+    "frame_idx": 222,
+    "frame_file": "000222.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 125,
+    "frame_idx": 223,
+    "frame_file": "000223.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 126,
+    "frame_idx": 225,
+    "frame_file": "000225.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 127,
+    "frame_idx": 226,
+    "frame_file": "000226.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 128,
+    "frame_idx": 228,
+    "frame_file": "000228.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 129,
+    "frame_idx": 229,
+    "frame_file": "000229.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 130,
+    "frame_idx": 231,
+    "frame_file": "000231.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 131,
+    "frame_idx": 232,
+    "frame_file": "000232.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 132,
+    "frame_idx": 234,
+    "frame_file": "000234.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 133,
+    "frame_idx": 235,
+    "frame_file": "000235.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 134,
+    "frame_idx": 237,
+    "frame_file": "000237.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 135,
+    "frame_idx": 238,
+    "frame_file": "000238.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 136,
+    "frame_idx": 240,
+    "frame_file": "000240.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 137,
+    "frame_idx": 241,
+    "frame_file": "000241.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 138,
+    "frame_idx": 243,
+    "frame_file": "000243.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 139,
+    "frame_idx": 244,
+    "frame_file": "000244.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 140,
+    "frame_idx": 246,
+    "frame_file": "000246.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 141,
+    "frame_idx": 247,
+    "frame_file": "000247.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 142,
+    "frame_idx": 249,
+    "frame_file": "000249.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 143,
+    "frame_idx": 250,
+    "frame_file": "000250.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 144,
+    "frame_idx": 252,
+    "frame_file": "000252.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 145,
+    "frame_idx": 253,
+    "frame_file": "000253.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 146,
+    "frame_idx": 255,
+    "frame_file": "000255.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 147,
+    "frame_idx": 256,
+    "frame_file": "000256.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 148,
+    "frame_idx": 258,
+    "frame_file": "000258.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 149,
+    "frame_idx": 259,
+    "frame_file": "000259.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 150,
+    "frame_idx": 261,
+    "frame_file": "000261.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 151,
+    "frame_idx": 262,
+    "frame_file": "000262.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 152,
+    "frame_idx": 263,
+    "frame_file": "000263.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 153,
+    "frame_idx": 265,
+    "frame_file": "000265.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 154,
+    "frame_idx": 267,
+    "frame_file": "000267.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 155,
+    "frame_idx": 269,
+    "frame_file": "000269.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 156,
+    "frame_idx": 271,
+    "frame_file": "000271.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 157,
+    "frame_idx": 273,
+    "frame_file": "000273.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 158,
+    "frame_idx": 275,
+    "frame_file": "000275.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 159,
+    "frame_idx": 277,
+    "frame_file": "000277.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 160,
+    "frame_idx": 279,
+    "frame_file": "000279.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 161,
+    "frame_idx": 281,
+    "frame_file": "000281.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 162,
+    "frame_idx": 283,
+    "frame_file": "000283.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 163,
+    "frame_idx": 285,
+    "frame_file": "000285.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 164,
+    "frame_idx": 287,
+    "frame_file": "000287.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 165,
+    "frame_idx": 289,
+    "frame_file": "000289.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 166,
+    "frame_idx": 291,
+    "frame_file": "000291.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 167,
+    "frame_idx": 293,
+    "frame_file": "000293.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 168,
+    "frame_idx": 295,
+    "frame_file": "000295.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 169,
+    "frame_idx": 297,
+    "frame_file": "000297.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 170,
+    "frame_idx": 299,
+    "frame_file": "000299.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 171,
+    "frame_idx": 301,
+    "frame_file": "000301.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 172,
+    "frame_idx": 303,
+    "frame_file": "000303.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 173,
+    "frame_idx": 305,
+    "frame_file": "000305.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 174,
+    "frame_idx": 307,
+    "frame_file": "000307.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 175,
+    "frame_idx": 309,
+    "frame_file": "000309.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 176,
+    "frame_idx": 311,
+    "frame_file": "000311.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 177,
+    "frame_idx": 313,
+    "frame_file": "000313.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 178,
+    "frame_idx": 315,
+    "frame_file": "000315.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 179,
+    "frame_idx": 317,
+    "frame_file": "000317.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 180,
+    "frame_idx": 319,
+    "frame_file": "000319.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 181,
+    "frame_idx": 321,
+    "frame_file": "000321.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 182,
+    "frame_idx": 323,
+    "frame_file": "000323.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 183,
+    "frame_idx": 325,
+    "frame_file": "000325.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 184,
+    "frame_idx": 327,
+    "frame_file": "000327.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 185,
+    "frame_idx": 329,
+    "frame_file": "000329.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 186,
+    "frame_idx": 331,
+    "frame_file": "000331.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 187,
+    "frame_idx": 333,
+    "frame_file": "000333.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 188,
+    "frame_idx": 335,
+    "frame_file": "000335.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 189,
+    "frame_idx": 337,
+    "frame_file": "000337.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 190,
+    "frame_idx": 339,
+    "frame_file": "000339.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 191,
+    "frame_idx": 341,
+    "frame_file": "000341.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 192,
+    "frame_idx": 343,
+    "frame_file": "000343.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 193,
+    "frame_idx": 345,
+    "frame_file": "000345.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 194,
+    "frame_idx": 347,
+    "frame_file": "000347.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 195,
+    "frame_idx": 349,
+    "frame_file": "000349.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 196,
+    "frame_idx": 351,
+    "frame_file": "000351.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 197,
+    "frame_idx": 353,
+    "frame_file": "000353.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 198,
+    "frame_idx": 355,
+    "frame_file": "000355.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 199,
+    "frame_idx": 357,
+    "frame_file": "000357.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 200,
+    "frame_idx": 359,
+    "frame_file": "000359.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 201,
+    "frame_idx": 361,
+    "frame_file": "000361.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 202,
+    "frame_idx": 363,
+    "frame_file": "000363.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 203,
+    "frame_idx": 365,
+    "frame_file": "000365.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 204,
+    "frame_idx": 367,
+    "frame_file": "000367.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 205,
+    "frame_idx": 369,
+    "frame_file": "000369.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 206,
+    "frame_idx": 371,
+    "frame_file": "000371.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 207,
+    "frame_idx": 373,
+    "frame_file": "000373.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 208,
+    "frame_idx": 375,
+    "frame_file": "000375.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 209,
+    "frame_idx": 377,
+    "frame_file": "000377.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 210,
+    "frame_idx": 379,
+    "frame_file": "000379.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 211,
+    "frame_idx": 381,
+    "frame_file": "000381.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 212,
+    "frame_idx": 383,
+    "frame_file": "000383.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 213,
+    "frame_idx": 385,
+    "frame_file": "000385.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 214,
+    "frame_idx": 387,
+    "frame_file": "000387.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 215,
+    "frame_idx": 389,
+    "frame_file": "000389.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 216,
+    "frame_idx": 391,
+    "frame_file": "000391.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 217,
+    "frame_idx": 393,
+    "frame_file": "000393.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 218,
+    "frame_idx": 395,
+    "frame_file": "000395.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 219,
+    "frame_idx": 397,
+    "frame_file": "000397.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 220,
+    "frame_idx": 399,
+    "frame_file": "000399.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 221,
+    "frame_idx": 401,
+    "frame_file": "000401.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 222,
+    "frame_idx": 403,
+    "frame_file": "000403.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 223,
+    "frame_idx": 405,
+    "frame_file": "000405.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 224,
+    "frame_idx": 407,
+    "frame_file": "000407.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 225,
+    "frame_idx": 409,
+    "frame_file": "000409.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 226,
+    "frame_idx": 411,
+    "frame_file": "000411.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 227,
+    "frame_idx": 413,
+    "frame_file": "000413.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 228,
+    "frame_idx": 415,
+    "frame_file": "000415.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 229,
+    "frame_idx": 417,
+    "frame_file": "000417.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 230,
+    "frame_idx": 419,
+    "frame_file": "000419.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 231,
+    "frame_idx": 421,
+    "frame_file": "000421.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 232,
+    "frame_idx": 423,
+    "frame_file": "000423.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 233,
+    "frame_idx": 425,
+    "frame_file": "000425.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 234,
+    "frame_idx": 427,
+    "frame_file": "000427.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 235,
+    "frame_idx": 429,
+    "frame_file": "000429.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 236,
+    "frame_idx": 431,
+    "frame_file": "000431.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 237,
+    "frame_idx": 433,
+    "frame_file": "000433.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 238,
+    "frame_idx": 435,
+    "frame_file": "000435.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 239,
+    "frame_idx": 437,
+    "frame_file": "000437.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 240,
+    "frame_idx": 439,
+    "frame_file": "000439.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 241,
+    "frame_idx": 441,
+    "frame_file": "000441.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 242,
+    "frame_idx": 443,
+    "frame_file": "000443.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 243,
+    "frame_idx": 445,
+    "frame_file": "000445.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 244,
+    "frame_idx": 447,
+    "frame_file": "000447.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 245,
+    "frame_idx": 448,
+    "frame_file": "000448.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 246,
+    "frame_idx": 449,
+    "frame_file": "000449.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 247,
+    "frame_idx": 450,
+    "frame_file": "000450.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 248,
+    "frame_idx": 451,
+    "frame_file": "000451.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 249,
+    "frame_idx": 452,
+    "frame_file": "000452.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 250,
+    "frame_idx": 454,
+    "frame_file": "000454.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 251,
+    "frame_idx": 456,
+    "frame_file": "000456.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 252,
+    "frame_idx": 458,
+    "frame_file": "000458.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 253,
+    "frame_idx": 461,
+    "frame_file": "000461.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 254,
+    "frame_idx": 464,
+    "frame_file": "000464.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 255,
+    "frame_idx": 467,
+    "frame_file": "000467.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 256,
+    "frame_idx": 470,
+    "frame_file": "000470.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 257,
+    "frame_idx": 473,
+    "frame_file": "000473.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 258,
+    "frame_idx": 476,
+    "frame_file": "000476.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 259,
+    "frame_idx": 479,
+    "frame_file": "000479.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 260,
+    "frame_idx": 482,
+    "frame_file": "000482.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 261,
+    "frame_idx": 485,
+    "frame_file": "000485.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 262,
+    "frame_idx": 488,
+    "frame_file": "000488.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 263,
+    "frame_idx": 491,
+    "frame_file": "000491.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 264,
+    "frame_idx": 494,
+    "frame_file": "000494.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 265,
+    "frame_idx": 497,
+    "frame_file": "000497.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 266,
+    "frame_idx": 500,
+    "frame_file": "000500.png",
+    "duration": 7
+  },
+  {
+    "drawing_id": 267,
+    "frame_idx": 507,
+    "frame_file": "000507.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 268,
+    "frame_idx": 513,
+    "frame_file": "000513.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 269,
+    "frame_idx": 519,
+    "frame_file": "000519.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 270,
+    "frame_idx": 521,
+    "frame_file": "000521.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 271,
+    "frame_idx": 524,
+    "frame_file": "000524.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 272,
+    "frame_idx": 527,
+    "frame_file": "000527.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 273,
+    "frame_idx": 530,
+    "frame_file": "000530.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 274,
+    "frame_idx": 536,
+    "frame_file": "000536.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 275,
+    "frame_idx": 539,
+    "frame_file": "000539.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 276,
+    "frame_idx": 542,
+    "frame_file": "000542.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 277,
+    "frame_idx": 545,
+    "frame_file": "000545.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 278,
+    "frame_idx": 548,
+    "frame_file": "000548.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 279,
+    "frame_idx": 551,
+    "frame_file": "000551.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 280,
+    "frame_idx": 554,
+    "frame_file": "000554.png",
+    "duration": 5
+  },
+  {
+    "drawing_id": 281,
+    "frame_idx": 559,
+    "frame_file": "000559.png",
+    "duration": 4
+  },
+  {
+    "drawing_id": 282,
+    "frame_idx": 563,
+    "frame_file": "000563.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 283,
+    "frame_idx": 569,
+    "frame_file": "000569.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 284,
+    "frame_idx": 575,
+    "frame_file": "000575.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 285,
+    "frame_idx": 581,
+    "frame_file": "000581.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 286,
+    "frame_idx": 584,
+    "frame_file": "000584.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 287,
+    "frame_idx": 587,
+    "frame_file": "000587.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 288,
+    "frame_idx": 590,
+    "frame_file": "000590.png",
+    "duration": 5
+  },
+  {
+    "drawing_id": 289,
+    "frame_idx": 595,
+    "frame_file": "000595.png",
+    "duration": 1
+  },
+  {
+    "drawing_id": 290,
+    "frame_idx": 596,
+    "frame_file": "000596.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 291,
+    "frame_idx": 599,
+    "frame_file": "000599.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 292,
+    "frame_idx": 602,
+    "frame_file": "000602.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 293,
+    "frame_idx": 605,
+    "frame_file": "000605.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 294,
+    "frame_idx": 608,
+    "frame_file": "000608.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 295,
+    "frame_idx": 611,
+    "frame_file": "000611.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 296,
+    "frame_idx": 614,
+    "frame_file": "000614.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 297,
+    "frame_idx": 620,
+    "frame_file": "000620.png",
+    "duration": 6
+  },
+  {
+    "drawing_id": 298,
+    "frame_idx": 626,
+    "frame_file": "000626.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 299,
+    "frame_idx": 629,
+    "frame_file": "000629.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 300,
+    "frame_idx": 631,
+    "frame_file": "000631.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 301,
+    "frame_idx": 634,
+    "frame_file": "000634.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 302,
+    "frame_idx": 637,
+    "frame_file": "000637.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 303,
+    "frame_idx": 640,
+    "frame_file": "000640.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 304,
+    "frame_idx": 643,
+    "frame_file": "000643.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 305,
+    "frame_idx": 646,
+    "frame_file": "000646.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 306,
+    "frame_idx": 649,
+    "frame_file": "000649.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 307,
+    "frame_idx": 652,
+    "frame_file": "000652.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 308,
+    "frame_idx": 655,
+    "frame_file": "000655.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 309,
+    "frame_idx": 658,
+    "frame_file": "000658.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 310,
+    "frame_idx": 661,
+    "frame_file": "000661.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 311,
+    "frame_idx": 664,
+    "frame_file": "000664.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 312,
+    "frame_idx": 667,
+    "frame_file": "000667.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 313,
+    "frame_idx": 670,
+    "frame_file": "000670.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 314,
+    "frame_idx": 673,
+    "frame_file": "000673.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 315,
+    "frame_idx": 676,
+    "frame_file": "000676.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 316,
+    "frame_idx": 679,
+    "frame_file": "000679.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 317,
+    "frame_idx": 682,
+    "frame_file": "000682.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 318,
+    "frame_idx": 685,
+    "frame_file": "000685.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 319,
+    "frame_idx": 688,
+    "frame_file": "000688.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 320,
+    "frame_idx": 691,
+    "frame_file": "000691.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 321,
+    "frame_idx": 694,
+    "frame_file": "000694.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 322,
+    "frame_idx": 697,
+    "frame_file": "000697.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 323,
+    "frame_idx": 700,
+    "frame_file": "000700.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 324,
+    "frame_idx": 703,
+    "frame_file": "000703.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 325,
+    "frame_idx": 706,
+    "frame_file": "000706.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 326,
+    "frame_idx": 709,
+    "frame_file": "000709.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 327,
+    "frame_idx": 712,
+    "frame_file": "000712.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 328,
+    "frame_idx": 715,
+    "frame_file": "000715.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 329,
+    "frame_idx": 718,
+    "frame_file": "000718.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 330,
+    "frame_idx": 721,
+    "frame_file": "000721.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 331,
+    "frame_idx": 724,
+    "frame_file": "000724.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 332,
+    "frame_idx": 727,
+    "frame_file": "000727.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 333,
+    "frame_idx": 730,
+    "frame_file": "000730.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 334,
+    "frame_idx": 733,
+    "frame_file": "000733.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 335,
+    "frame_idx": 736,
+    "frame_file": "000736.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 336,
+    "frame_idx": 739,
+    "frame_file": "000739.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 337,
+    "frame_idx": 742,
+    "frame_file": "000742.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 338,
+    "frame_idx": 745,
+    "frame_file": "000745.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 339,
+    "frame_idx": 748,
+    "frame_file": "000748.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 340,
+    "frame_idx": 751,
+    "frame_file": "000751.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 341,
+    "frame_idx": 754,
+    "frame_file": "000754.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 342,
+    "frame_idx": 757,
+    "frame_file": "000757.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 343,
+    "frame_idx": 760,
+    "frame_file": "000760.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 344,
+    "frame_idx": 763,
+    "frame_file": "000763.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 345,
+    "frame_idx": 766,
+    "frame_file": "000766.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 346,
+    "frame_idx": 768,
+    "frame_file": "000768.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 347,
+    "frame_idx": 771,
+    "frame_file": "000771.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 348,
+    "frame_idx": 774,
+    "frame_file": "000774.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 349,
+    "frame_idx": 777,
+    "frame_file": "000777.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 350,
+    "frame_idx": 780,
+    "frame_file": "000780.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 351,
+    "frame_idx": 783,
+    "frame_file": "000783.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 352,
+    "frame_idx": 786,
+    "frame_file": "000786.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 353,
+    "frame_idx": 789,
+    "frame_file": "000789.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 354,
+    "frame_idx": 792,
+    "frame_file": "000792.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 355,
+    "frame_idx": 795,
+    "frame_file": "000795.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 356,
+    "frame_idx": 798,
+    "frame_file": "000798.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 357,
+    "frame_idx": 801,
+    "frame_file": "000801.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 358,
+    "frame_idx": 804,
+    "frame_file": "000804.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 359,
+    "frame_idx": 807,
+    "frame_file": "000807.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 360,
+    "frame_idx": 810,
+    "frame_file": "000810.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 361,
+    "frame_idx": 813,
+    "frame_file": "000813.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 362,
+    "frame_idx": 816,
+    "frame_file": "000816.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 363,
+    "frame_idx": 819,
+    "frame_file": "000819.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 364,
+    "frame_idx": 822,
+    "frame_file": "000822.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 365,
+    "frame_idx": 825,
+    "frame_file": "000825.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 366,
+    "frame_idx": 828,
+    "frame_file": "000828.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 367,
+    "frame_idx": 831,
+    "frame_file": "000831.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 368,
+    "frame_idx": 834,
+    "frame_file": "000834.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 369,
+    "frame_idx": 837,
+    "frame_file": "000837.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 370,
+    "frame_idx": 840,
+    "frame_file": "000840.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 371,
+    "frame_idx": 843,
+    "frame_file": "000843.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 372,
+    "frame_idx": 846,
+    "frame_file": "000846.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 373,
+    "frame_idx": 849,
+    "frame_file": "000849.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 374,
+    "frame_idx": 852,
+    "frame_file": "000852.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 375,
+    "frame_idx": 855,
+    "frame_file": "000855.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 376,
+    "frame_idx": 858,
+    "frame_file": "000858.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 377,
+    "frame_idx": 861,
+    "frame_file": "000861.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 378,
+    "frame_idx": 864,
+    "frame_file": "000864.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 379,
+    "frame_idx": 867,
+    "frame_file": "000867.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 380,
+    "frame_idx": 870,
+    "frame_file": "000870.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 381,
+    "frame_idx": 873,
+    "frame_file": "000873.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 382,
+    "frame_idx": 876,
+    "frame_file": "000876.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 383,
+    "frame_idx": 879,
+    "frame_file": "000879.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 384,
+    "frame_idx": 882,
+    "frame_file": "000882.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 385,
+    "frame_idx": 885,
+    "frame_file": "000885.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 386,
+    "frame_idx": 888,
+    "frame_file": "000888.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 387,
+    "frame_idx": 891,
+    "frame_file": "000891.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 388,
+    "frame_idx": 894,
+    "frame_file": "000894.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 389,
+    "frame_idx": 897,
+    "frame_file": "000897.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 390,
+    "frame_idx": 900,
+    "frame_file": "000900.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 391,
+    "frame_idx": 903,
+    "frame_file": "000903.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 392,
+    "frame_idx": 906,
+    "frame_file": "000906.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 393,
+    "frame_idx": 909,
+    "frame_file": "000909.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 394,
+    "frame_idx": 912,
+    "frame_file": "000912.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 395,
+    "frame_idx": 915,
+    "frame_file": "000915.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 396,
+    "frame_idx": 923,
+    "frame_file": "000923.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 397,
+    "frame_idx": 931,
+    "frame_file": "000931.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 398,
+    "frame_idx": 939,
+    "frame_file": "000939.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 399,
+    "frame_idx": 947,
+    "frame_file": "000947.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 400,
+    "frame_idx": 955,
+    "frame_file": "000955.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 401,
+    "frame_idx": 963,
+    "frame_file": "000963.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 402,
+    "frame_idx": 971,
+    "frame_file": "000971.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 403,
+    "frame_idx": 979,
+    "frame_file": "000979.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 404,
+    "frame_idx": 987,
+    "frame_file": "000987.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 405,
+    "frame_idx": 995,
+    "frame_file": "000995.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 406,
+    "frame_idx": 1003,
+    "frame_file": "001003.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 407,
+    "frame_idx": 1011,
+    "frame_file": "001011.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 408,
+    "frame_idx": 1019,
+    "frame_file": "001019.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 409,
+    "frame_idx": 1027,
+    "frame_file": "001027.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 410,
+    "frame_idx": 1035,
+    "frame_file": "001035.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 411,
+    "frame_idx": 1043,
+    "frame_file": "001043.png",
+    "duration": 8
+  },
+  {
+    "drawing_id": 412,
+    "frame_idx": 1051,
+    "frame_file": "001051.png",
+    "duration": 7
+  },
+  {
+    "drawing_id": 413,
+    "frame_idx": 1058,
+    "frame_file": "001058.png",
+    "duration": 2
+  },
+  {
+    "drawing_id": 414,
+    "frame_idx": 1060,
+    "frame_file": "001060.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 415,
+    "frame_idx": 1063,
+    "frame_file": "001063.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 416,
+    "frame_idx": 1066,
+    "frame_file": "001066.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 417,
+    "frame_idx": 1069,
+    "frame_file": "001069.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 418,
+    "frame_idx": 1072,
+    "frame_file": "001072.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 419,
+    "frame_idx": 1075,
+    "frame_file": "001075.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 420,
+    "frame_idx": 1078,
+    "frame_file": "001078.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 421,
+    "frame_idx": 1081,
+    "frame_file": "001081.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 422,
+    "frame_idx": 1084,
+    "frame_file": "001084.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 423,
+    "frame_idx": 1087,
+    "frame_file": "001087.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 424,
+    "frame_idx": 1090,
+    "frame_file": "001090.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 425,
+    "frame_idx": 1093,
+    "frame_file": "001093.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 426,
+    "frame_idx": 1096,
+    "frame_file": "001096.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 427,
+    "frame_idx": 1099,
+    "frame_file": "001099.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 428,
+    "frame_idx": 1102,
+    "frame_file": "001102.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 429,
+    "frame_idx": 1105,
+    "frame_file": "001105.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 430,
+    "frame_idx": 1108,
+    "frame_file": "001108.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 431,
+    "frame_idx": 1111,
+    "frame_file": "001111.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 432,
+    "frame_idx": 1114,
+    "frame_file": "001114.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 433,
+    "frame_idx": 1117,
+    "frame_file": "001117.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 434,
+    "frame_idx": 1120,
+    "frame_file": "001120.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 435,
+    "frame_idx": 1123,
+    "frame_file": "001123.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 436,
+    "frame_idx": 1126,
+    "frame_file": "001126.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 437,
+    "frame_idx": 1129,
+    "frame_file": "001129.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 438,
+    "frame_idx": 1132,
+    "frame_file": "001132.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 439,
+    "frame_idx": 1135,
+    "frame_file": "001135.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 440,
+    "frame_idx": 1138,
+    "frame_file": "001138.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 441,
+    "frame_idx": 1141,
+    "frame_file": "001141.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 442,
+    "frame_idx": 1144,
+    "frame_file": "001144.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 443,
+    "frame_idx": 1147,
+    "frame_file": "001147.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 444,
+    "frame_idx": 1150,
+    "frame_file": "001150.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 445,
+    "frame_idx": 1153,
+    "frame_file": "001153.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 446,
+    "frame_idx": 1156,
+    "frame_file": "001156.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 447,
+    "frame_idx": 1159,
+    "frame_file": "001159.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 448,
+    "frame_idx": 1162,
+    "frame_file": "001162.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 449,
+    "frame_idx": 1165,
+    "frame_file": "001165.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 450,
+    "frame_idx": 1168,
+    "frame_file": "001168.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 451,
+    "frame_idx": 1171,
+    "frame_file": "001171.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 452,
+    "frame_idx": 1174,
+    "frame_file": "001174.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 453,
+    "frame_idx": 1177,
+    "frame_file": "001177.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 454,
+    "frame_idx": 1180,
+    "frame_file": "001180.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 455,
+    "frame_idx": 1183,
+    "frame_file": "001183.png",
+    "duration": 3
+  },
+  {
+    "drawing_id": 456,
+    "frame_idx": 1186,
+    "frame_file": "001186.png",
+    "duration": 3
+  }
+]

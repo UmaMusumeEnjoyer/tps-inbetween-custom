@@ -1,0 +1,36 @@
+{
+    "version": "v0.2",
+    "status": "PASSED_EXCELLENT",
+    "checkpoint": "model_tps_v0.2_best.pt",
+    "validation_suite": {
+        "total_samples": 20,
+        "blank_collapse_count": 0,
+        "blank_collapse_rate": 0.0,
+        "metrics_finetuned_v0.2": {
+            "psnr_mean": 21.04547,
+            "ssim_mean": 0.90797,
+            "stroke_recall_mean": 0.8966500000000002,
+            "stroke_density_mean": 1.34401,
+            "chamfer_distance_mean": 0.0016608,
+            "line_tortuosity_mean": 1.63155,
+            "ghost_pixels_mean": 14446.25,
+            "infer_ms_mean": 1319.3305
+        },
+        "metrics_coarse_warp_baseline": {
+            "psnr_mean": 21.027859999999997,
+            "ssim_mean": 0.888475,
+            "stroke_recall_mean": 0.888105,
+            "chamfer_distance_mean": 0.0018652500000000002,
+            "line_tortuosity_mean": 1.6010099999999998,
+            "ghost_pixels_mean": 18578.4
+        }
+    },
+    "visual_samples_suite": {
+        "total_cases": 7,
+        "psnr_mean": 24.525057142857143,
+        "ssim_mean": 0.8573428571428572,
+        "stroke_recall_mean": 0.5516571428571428,
+        "ghost_pixels_mean": 38317.42857142857,
+        "blank_collapse_count": 0
+    }
+}
