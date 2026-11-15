@@ -11,6 +11,7 @@ if sys.platform.startswith('win'):
     except Exception:
         pass
 
+import os
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 nb_path = os.path.join(SCRIPT_DIR, "triplet_04_v1.0_golden_v1_kaggle.ipynb")
 
