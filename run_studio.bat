@@ -12,7 +12,7 @@ echo.
 netstat -ano | findstr :8000 | findstr LISTENING > nul
 if %errorlevel% neq 0 (
     echo [*] AI Backend Server chua chay. Dang tu dong khoi dong tai http://127.0.0.1:8000...
-    start "AniTweenStudio TPS Server" cmd /c "run_tps_server.bat"
+    start "AniTweenStudio TPS Server" cmd /c "scripts\run_tps_server.bat"
     echo [*] Cho 4 giay de AI Server khoi dong...
     timeout /t 4 /nobreak > nul
 ) else (

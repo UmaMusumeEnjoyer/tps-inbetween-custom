@@ -22,7 +22,7 @@ if sys.platform.startswith('win'):
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 PROJECT_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, '..', '..'))
 
-METRICS_CSV = os.path.join(PROJECT_ROOT, 'continuous_benchmark', 'metrics', 'tps-inbetween-finetuned-v1.0', 'val_620_metrics.csv')
+METRICS_CSV = os.path.join(PROJECT_ROOT, 'evaluation', 'metrics', 'triplet', 'v1.0', 'val_620_metrics.csv')
 VAL_DIR = os.path.join(PROJECT_ROOT, 'data', 'processed', 'sakuga_golden_dataset_tps_ready', 'val')
 OUTPUT_IMAGES_DIR = os.path.join(SCRIPT_DIR, 'images')
 OUTPUT_CSV = os.path.join(SCRIPT_DIR, 'dataset_100_triplets.csv')
