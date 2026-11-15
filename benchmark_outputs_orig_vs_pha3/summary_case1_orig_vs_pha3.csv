@@ -1,0 +1,4 @@
+Phiên Bản,PSNR (dB) [↑],SSIM [↑],Skeleton Recall [↑],Tip Recall [↑],F1 Score [↑],WCD_DoG (px) [↓],Ghost Pixels [↓],IE_MAE [↓],Density Ratio [≈1.0]
+TPS-Inbetween Orig (Gốc),12.94,0.666,0.505,0.5119,0.6748,2.8946,3870.1176,19.2779,0.7095
+Pha 3 Remake (Raw),15.4737,0.662,0.5919,0.6006,0.7138,2.5801,26123.8824,15.4371,0.9826
+Pha 3 Remake (Newpipeline),14.8169,0.6685,0.5916,0.6002,0.7126,2.5605,9604.8235,16.3138,0.9885

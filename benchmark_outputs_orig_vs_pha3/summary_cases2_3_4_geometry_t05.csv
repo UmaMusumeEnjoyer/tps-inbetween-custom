@@ -1,0 +1,10 @@
+Case,Phiên Bản,PSNR (dB) [↑],SSIM [↑],Exact Skel Rec [↑],Exact Density [≈1.0],WCD_DoG (px) [↓],Ghost Px [↓],IE_MAE [↓]
+Case 2: Deforming Circle (t=0.50),TPS-Inbetween Orig (Gốc),26.3294,0.9895,100.0,1.0537,0.8595,76.0,0.707
+Case 2: Deforming Circle (t=0.50),Pha 3 Remake (Raw),26.4791,0.9885,100.0,1.0097,0.9329,179.0,0.8744
+Case 2: Deforming Circle (t=0.50),Pha 3 Remake (Newpipeline),26.6455,0.9893,100.0,1.0114,0.904,80.0,0.7868
+Case 3: Deforming Hollow Cross (t=0.50),TPS-Inbetween Orig (Gốc),19.0746,0.9662,34.1346,0.9326,6.6295,121.0,3.2511
+Case 3: Deforming Hollow Cross (t=0.50),Pha 3 Remake (Raw),20.1526,0.9661,33.4135,0.8665,7.8033,434.0,2.879
+Case 3: Deforming Hollow Cross (t=0.50),Pha 3 Remake (Newpipeline),19.8169,0.966,33.4135,0.8706,7.4909,190.0,2.9924
+Case 4: Deforming Solid Cross (t=0.50),TPS-Inbetween Orig (Gốc),19.0697,0.97,25.2336,0.9328,7.4183,61.0,3.2172
+Case 4: Deforming Solid Cross (t=0.50),Pha 3 Remake (Raw),20.2443,0.9703,24.7664,0.8696,7.7809,222.0,2.8212
+Case 4: Deforming Solid Cross (t=0.50),Pha 3 Remake (Newpipeline),19.8506,0.9702,24.7664,0.8706,7.5555,83.0,2.9527
