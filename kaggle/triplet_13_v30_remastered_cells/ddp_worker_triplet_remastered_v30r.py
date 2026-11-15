@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-ddp_worker_v30r.py
+ddp_worker_triplet_remastered_v30r.py
 Dedicated DistributedDataParallel (DDP) Training & Validation Engine for TPS-Inbetween V3.0-Remastered R2.
 Tích hợp toàn diện:
 1. 100% Khớp trọng số V2.6 Gold Baseline (168/168 tensors, detail_add * 0.25, asf_head).

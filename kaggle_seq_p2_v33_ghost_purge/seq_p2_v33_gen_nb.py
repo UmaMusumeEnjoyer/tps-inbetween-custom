@@ -32,7 +32,7 @@ if sys.platform.startswith('win'):
 
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(THIS_DIR, ".."))
-WORKER_PATH = os.path.join(THIS_DIR, "ddp_worker_tps_sequence_phase2.py")
+WORKER_PATH = os.path.join(THIS_DIR, "seq_p2_v33_ghost_purge_worker.py")
 BENCH_SUITE_PATH = os.path.join(
     REPO_ROOT, "Dataset", "sakuga_pipeline_sequence", "final_dataset",
     "sakuga_golden_benchmark_sequences_v2", "run_benchmark_suite.py"
@@ -134,7 +134,7 @@ except ImportError:
 torch.backends.cudnn.benchmark = True
 
 IS_KAGGLE = os.path.exists("/kaggle")
-WORKING_DIR = "/kaggle/working" if IS_KAGGLE else os.path.abspath("./kaggle_local_test_ws")
+WORKING_DIR = "/kaggle/working" if IS_KAGGLE else os.path.abspath("./kaggle_seq_01_local_test_workspace")
 OUTPUT_CKPT_DIR = os.path.join(WORKING_DIR, "checkpoints_tps_finetune")
 BENCH_OUT_DIR = os.path.join(WORKING_DIR, "benchmark_outputs")
 os.makedirs(WORKING_DIR, exist_ok=True)
@@ -156,12 +156,12 @@ print(f"📁 Working Dir: {{WORKING_DIR}}")
 print("=" * 84)
 
 # Ghi các file thực thi độc lập vào WORKING_DIR
-worker_script_path = os.path.join(WORKING_DIR, "ddp_worker_tps_sequence_phase2.py")
+worker_script_path = os.path.join(WORKING_DIR, "seq_p2_v33_ghost_purge_worker.py")
 with open(worker_script_path, "w", encoding="utf-8") as f:
     f.write({repr(worker_code)})
 
-# Tạo alias ddp_worker_tps_sequence_final.py để đảm bảo tương thích 100% với mọi module phụ
-worker_legacy_path = os.path.join(WORKING_DIR, "ddp_worker_tps_sequence_final.py")
+# Tạo alias seq_p1_v32_ghost_temp_scale_worker.py để đảm bảo tương thích 100% với mọi module phụ
+worker_legacy_path = os.path.join(WORKING_DIR, "seq_p1_v32_ghost_temp_scale_worker.py")
 with open(worker_legacy_path, "w", encoding="utf-8") as f:
     f.write({repr(worker_code)})
 
@@ -173,8 +173,8 @@ GLUESTICK_TEST_NPZ = os.path.join(WORKING_DIR, "lineart_test_gluestick_matches.n
 with open(GLUESTICK_TEST_NPZ, "wb") as f:
     f.write(base64.b64decode({repr(gluestick_b64)}))
 
-print(f"[✓] Đã ghi ddp_worker_tps_sequence_phase2.py ({{os.path.getsize(worker_script_path):,}} B)")
-print(f"[✓] Đã ghi ddp_worker_tps_sequence_final.py alias ({{os.path.getsize(worker_legacy_path):,}} B)")
+print(f"[✓] Đã ghi seq_p2_v33_ghost_purge_worker.py ({{os.path.getsize(worker_script_path):,}} B)")
+print(f"[✓] Đã ghi seq_p1_v32_ghost_temp_scale_worker.py alias ({{os.path.getsize(worker_legacy_path):,}} B)")
 print(f"[✓] Đã ghi run_benchmark_suite.py ({{os.path.getsize(bench_script_path):,}} B)")
 print(f"[✓] Đã giải mã GlueStick Cache cho lineart_experiments/test ({{os.path.getsize(GLUESTICK_TEST_NPZ):,}} B)")
 sys.stdout.flush()
@@ -420,7 +420,7 @@ import numpy as np
 import pandas as pd
 from PIL import Image
 from concurrent.futures import ThreadPoolExecutor
-from ddp_worker_tps_sequence_phase2 import solve_tps_backward_pair
+from seq_p2_v33_ghost_purge_worker import solve_tps_backward_pair
 
 TPS_CACHE_TRAINVAL = os.path.join(SSD_ROOT, "tps_cache_trainval_bw.npz")
 TRAIN_CSV_IDX_PATH = os.path.join(SSD_ROOT, "train_sequences_indexed.csv")
@@ -504,7 +504,7 @@ sys.stdout.flush()
 # ==============================================================================
 import gc
 import torch
-from ddp_worker_tps_sequence_phase2 import TPSInbetweenOriginal, load_tps_weights
+from seq_p2_v33_ghost_purge_worker import TPSInbetweenOriginal, load_tps_weights
 
 print("=" * 84)
 print("🔍 KIỂM TOÁN TOÁN HỌC: CAM KẾT 0% SAI KHÁC KIẾN TRÚC GIỮA ORIGINAL (M1) VÀ FINETUNED (M3)")
@@ -671,8 +671,8 @@ import json
 import torch
 import pandas as pd
 from IPython.display import display, Image as IPyImage
-from ddp_worker_tps_sequence_phase2 import TPSInbetweenOriginal, load_tps_weights
-from run_benchmark_suite import run_benchmark_isolated_sequences
+from seq_p2_v33_ghost_purge_worker import TPSInbetweenOriginal, load_tps_weights
+from seq_dual_benchmark_suite import run_benchmark_isolated_sequences
 
 BENCH1_OUT = os.path.join(BENCH_OUT_DIR, "bench1_isolated_sequences")
 best_ckpt_path = os.path.join(OUTPUT_CKPT_DIR, "model_tps_finetuned_best.pt")
@@ -730,8 +730,8 @@ import gc
 import torch
 import pandas as pd
 from IPython.display import display, Image as IPyImage
-from ddp_worker_tps_sequence_phase2 import TPSInbetweenOriginal, load_tps_weights
-from run_benchmark_suite import run_benchmark_continuous_lineart_test, run_benchmark_defense_geometry_suite
+from seq_p2_v33_ghost_purge_worker import TPSInbetweenOriginal, load_tps_weights
+from seq_dual_benchmark_suite import run_benchmark_continuous_lineart_test, run_benchmark_defense_geometry_suite
 
 BENCH2_OUT = os.path.join(BENCH_OUT_DIR, "bench2_continuous_lineart_test")
 BENCH3_OUT = os.path.join(BENCH_OUT_DIR, "bench3_defense_geometry")

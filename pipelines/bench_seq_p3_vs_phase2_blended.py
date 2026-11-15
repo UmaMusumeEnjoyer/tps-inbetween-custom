@@ -59,14 +59,14 @@ BENCH1_DIR = os.path.join(
     "sakuga_golden_benchmark_sequences_v2"
 )
 LINEART_TEST_DIR = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
-GLUESTICK_NPZ = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+GLUESTICK_NPZ = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
 
-for _p in (SCRIPT_DIR, BENCH1_DIR, os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2")):
+for _p in (SCRIPT_DIR, BENCH1_DIR, os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge")):
     if _p not in sys.path:
         sys.path.insert(0, _p)
 
-from multi_layer_tps import solve_multi_layer_tps
-from run_benchmark_suite import (
+from seq_p3_multi_layer_tps import solve_multi_layer_tps
+from seq_dual_benchmark_suite import (
     TPSInbetweenOriginal,
     load_tps_weights,
     evaluate_metrics_dual_regime,

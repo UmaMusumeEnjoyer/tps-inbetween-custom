@@ -320,7 +320,7 @@ PHA 2: DEEP LEARNING PIPELINE & FINE-TUNE TRÊN KAGGLE (GPU T4 x2)
 
  Bước 2.3: [Kiểm thử & Đánh giá Cục Bộ]
            - Tải `model_anime_latest.pt` về máy tính.
-           - Đưa vào thư mục `Demo_ATD12K_TPS_Inbetween` chạy thử trên chuỗi cắt cảnh 7.92s để đối chứng chất lượng.
+           - Đưa vào thư mục `demo_01_atd12k_orig_tps` chạy thử trên chuỗi cắt cảnh 7.92s để đối chứng chất lượng.
 ```
 
 ---

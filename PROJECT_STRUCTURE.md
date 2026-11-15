@@ -12,7 +12,7 @@
    - [3.2. continuous_benchmark/](#32-continuous_benchmark)
    - [3.3. data/](#33-data)
    - [3.4. Dataset/ [MỚI]](#34-dataset-mới)
-   - [3.5. Demo_ATD12K_TPS_Inbetween/](#35-demo_atd12k_tps_inbetween)
+   - [3.5. demo_01_atd12k_orig_tps/](#35-demo_atd12k_tps_inbetween)
    - [3.6. docs/](#36-docs)
    - [3.7. Finetune/ [MỚI]](#37-finetune-mới)
    - [3.8. kaggle/](#38-kaggle)
@@ -56,16 +56,16 @@ e:\CODE\PBL\PBL6\
 │   ├── inference_scripts/                    # Kịch bản chạy suy luận & kiểm thử đối chuẩn (v0.1 -> v3.0)
 │   │   ├── calibrate_and_build_v26.py        # Hiệu chuẩn Model Soup V2.6
 │   │   ├── extract_sakuga_continuous_triplets.py # Trích xuất triplet chuỗi cảnh liên tục từ Sakuga
-│   │   ├── run_comparison_v10_vs_original.py # So sánh đối đầu trực quan v1.0 vs TPS gốc
+│   │   ├── bench_triplet_utils_and_v1_0_vs_orig.py # So sánh đối đầu trực quan v1.0 vs TPS gốc
 │   │   ├── run_continuous_comparison_v10_vs_v11.py # So sánh phục dựng cảnh liên tục v1.0 vs v1.1
 │   │   ├── run_continuous_scene_reconstruction.py # Tái tạo cảnh liên tục tổng quát
 │   │   ├── run_continuous_scene_reconstruction_v10.py # Tái tạo cảnh liên tục chuyên biệt v1.0
 │   │   ├── run_continuous_scene_reconstruction_v23.py # [MỚI] Tái tạo cảnh liên tục chuyên biệt v2.3
 │   │   ├── run_evolution_benchmark_v01_to_v23.py # [MỚI] Đối chuẩn bước nhảy tiến hóa xuyên suốt từ v0.1 đến v2.3
-│   │   ├── run_fast_benchmark_v30.py         # [MỚI] Script benchmark nhanh thế hệ V3.0.1
+│   │   ├── bench_triplet_10_v3_0_asym_fast.py         # [MỚI] Script benchmark nhanh thế hệ V3.0.1
 │   │   ├── run_fast_benchmark_v302.py        # [MỚI] Script benchmark nhanh nhánh V3.0.2
 │   │   ├── run_final_test.py                 # Bài test kiểm định nghiệm thu tổng hợp
-│   │   ├── run_tps_benchmark.py              # Bộ runner benchmark đối chuẩn TPS tổng quát
+│   │   ├── bench_triplet_01_v0_1_eval.py              # Bộ runner benchmark đối chuẩn TPS tổng quát
 │   │   ├── run_tps_benchmark_v02 / v03 / v10 / v20 / v21 / v22 / v23 / v24 / v25 / v26.py # Bộ script đo đạc từng phiên bản
 │   │   └── run_tps_fix.py                    # Kiểm thử thuật toán TPS cải tiến (lambda=0.2, anchors)
 │   ├── metrics/                              # Dữ liệu định lượng (PSNR, SSIM, Chamfer, Ghost Pixels, Latency)
@@ -125,7 +125,7 @@ e:\CODE\PBL\PBL6\
 │       ├── patch2/ & patch3/                 # [MỚI] Thư mục lưu trữ artifact tải về từ Kaggle kèm metadata
 │       └── generate_*.py, run_*.bat          # Trình sinh mã notebook và script chạy tự động trên Windows
 │
-├── Demo_ATD12K_TPS_Inbetween/                # Trực quan hóa năng lực nội suy phục vụ báo cáo và thuyết trình
+├── demo_01_atd12k_orig_tps/                # Trực quan hóa năng lực nội suy phục vụ báo cáo và thuyết trình
 │   ├── Continuous_Scene_Demo_8s/             # Video demo phân cảnh hoạt họa liên tục 8 giây
 │   ├── Example_1_Triplet_10/                 # Mẫu kiểm thử nội suy cụ thể Triplet #10
 │   ├── Example_2_Triplet_132/                # Mẫu kiểm thử nội suy cụ thể Triplet #132
@@ -220,7 +220,7 @@ e:\CODE\PBL\PBL6\
 | [`continuous_benchmark/`](file:///e:/CODE/PBL/PBL6/continuous_benchmark) | Tự xây dựng | Hệ thống đánh giá đối chuẩn tự động liên tục: đo đạc định lượng (PSNR, SSIM, Chamfer, Ghosting) và kiểm toán trực quan. |
 | [`data/`](file:///e:/CODE/PBL/PBL6/data) | Tự xây dựng | Lưu trữ video Sakuga tải về, dữ liệu trung gian và các bộ Golden Dataset thành phẩm (`v1`, `v1_patch2`, `v1_patch3`). |
 | [`Dataset/`](file:///e:/CODE/PBL/PBL6/Dataset) | Tự xây dựng | **[MỚI]** Trung tâm kỹ thuật dữ liệu chuyên biệt: chứa crawler đa đợt (Batch 1-3), phòng thí nghiệm chất lượng triplet và pipeline lắp ráp mở rộng. |
-| [`Demo_ATD12K_TPS_Inbetween/`](file:///e:/CODE/PBL/PBL6/Demo_ATD12K_TPS_Inbetween) | Tự xây dựng | Lưu trữ kết quả trình diễn trực quan (video chuỗi cảnh liên tục 8 giây, GIF, mẫu so sánh đối chứng) phục vụ báo cáo. |
+| [`demo_01_atd12k_orig_tps/`](file:///e:/CODE/PBL/PBL6/demo_01_atd12k_orig_tps) | Tự xây dựng | Lưu trữ kết quả trình diễn trực quan (video chuỗi cảnh liên tục 8 giây, GIF, mẫu so sánh đối chứng) phục vụ báo cáo. |
 | [`docs/`](file:///e:/CODE/PBL/PBL6/docs) | Tự xây dựng | Toàn bộ tài liệu kỹ thuật, lộ trình nghiên cứu, kế hoạch huấn luyện và đối chuẩn theo từng phiên bản (v0.1 đến v2.6). |
 | [`Finetune/`](file:///e:/CODE/PBL/PBL6/Finetune) | Tự xây dựng | **[MỚI]** Thư mục dự phòng cấp cao dành cho việc tổ chức các module fine-tune độc lập trong tương lai. |
 | [`kaggle/`](file:///e:/CODE/PBL/PBL6/kaggle) | Tự xây dựng | Quản lý notebook huấn luyện trên Cloud GPU (Dual T4/P100), kịch bản sinh mã tự động và kiểm thử notebook. |
@@ -274,15 +274,15 @@ e:\CODE\PBL\PBL6\
 * **Cấu trúc & Chức năng:**
   * `inference_scripts/`: Các script tự động nạp mô hình và thực hiện nội suy trên tập benchmark:
     * `extract_sakuga_continuous_triplets.py`: Tự động trích xuất các bộ ba khung hình liên tiếp từ các phân cảnh Sakugabooru phục vụ đánh giá tính nhất quán thời gian (Temporal Consistency).
-    * `run_comparison_v10_vs_original.py`: Chạy so sánh trực tiếp khung hình giữa TPS v1.0 và mô hình TPS gốc.
+    * `bench_triplet_utils_and_v1_0_vs_orig.py`: Chạy so sánh trực tiếp khung hình giữa TPS v1.0 và mô hình TPS gốc.
     * `run_continuous_comparison_v10_vs_v11.py`: Đối đầu chuyên sâu phục dựng chuỗi cảnh liên tục giữa V1.0 và V1.1.
     * `run_continuous_scene_reconstruction.py` & `run_continuous_scene_reconstruction_v10.py`: Tái tạo cảnh hoạt họa liên tục tổng quát và chuyên biệt cho v1.0.
     * `run_continuous_scene_reconstruction_v23.py` **[MỚI]**: Tái tạo cảnh liên tục đánh giá độ mượt và khử bóng ma cho checkpoint V2.3.
     * `run_evolution_benchmark_v01_to_v23.py` **[MỚI]**: Script chạy benchmark tiến hóa đa thế hệ, đối chiếu bước nhảy vọt chất lượng nét từ v0.1 lên v2.3 trên cùng tập test mẫu.
-    * `run_fast_benchmark_v30.py` & `run_fast_benchmark_v302.py` **[MỚI]**: Kịch bản chạy benchmark nhanh phục vụ thẩm định sớm kết quả các checkpoint thế hệ V3.0 (v3.0.1 và v3.0.2).
+    * `bench_triplet_10_v3_0_asym_fast.py` & `run_fast_benchmark_v302.py` **[MỚI]**: Kịch bản chạy benchmark nhanh phục vụ thẩm định sớm kết quả các checkpoint thế hệ V3.0 (v3.0.1 và v3.0.2).
     * `run_final_test.py`: Thực hiện bài test kiểm định nghiệm thu tổng hợp.
-    * `run_tps_benchmark.py`: Bộ runner đối chuẩn đa năng cho các biến thể TPS-Inbetween.
-    * `run_tps_benchmark_v02.py` đến `run_tps_benchmark_v26.py`: Hệ thống script chuyên biệt đo đạc định lượng từng checkpoint (v0.2, v0.3, v1.0, v2.0, v2.1, v2.2, v2.3, v2.4, v2.5, v2.6).
+    * `bench_triplet_01_v0_1_eval.py`: Bộ runner đối chuẩn đa năng cho các biến thể TPS-Inbetween.
+    * `bench_triplet_02_v0_2_eval.py` đến `run_tps_benchmark_v26.py`: Hệ thống script chuyên biệt đo đạc định lượng từng checkpoint (v0.2, v0.3, v1.0, v2.0, v2.1, v2.2, v2.3, v2.4, v2.5, v2.6).
     * `calibrate_and_build_v26.py`: Script quét tham số và hiệu chuẩn Model Soup V2.6 đạt chuẩn vàng Density ~1.10x.
     * `run_tps_fix.py`: Kiểm thử các cải tiến giải thuật toán học ($\lambda=0.2$, border anchors, interior anchors).
   * `metrics/`: Chứa số liệu định lượng (PSNR, SSIM, Chamfer Distance, Tortuosity, Ghost Pixels, Blank Rate, Latency):
@@ -349,7 +349,7 @@ e:\CODE\PBL\PBL6\
 
 ---
 
-### 3.5. Demo_ATD12K_TPS_Inbetween/
+### 3.5. demo_01_atd12k_orig_tps/
 * **Mục đích:** Trực quan hóa và trình diễn năng lực nội suy thực tế của mô hình TPS-Inbetween phục vụ báo cáo đồ án, thuyết trình và đánh giá chất lượng thị giác.
 * **Cấu trúc & Chức năng:**
   * `Continuous_Scene_Demo_8s/`: Chứa sản phẩm demo hoàn chỉnh của phân cảnh anime 8 giây:
@@ -527,7 +527,7 @@ flowchart TD
 
     subgraph S5["5. NGHIỆM THU & ĐÓNG GÓI SẢN PHẨM"]
         REP & EV2 --> ACC["Nghiệm thu Checkpoint Chuẩn Sản phẩm:<br/>model_tps_v1.0_production.pt & model_tps_v1.1_production.pt (hoặc V2.6 / V3.0)"]
-        ACC --> DEMO["Tạo Video Demo phân cảnh hoạt họa liên tục (Demo_ATD12K_TPS_Inbetween/)"]
+        ACC --> DEMO["Tạo Video Demo phân cảnh hoạt họa liên tục (demo_01_atd12k_orig_tps/)"]
         ACC --> PROD["Tích hợp Mô hình vào Ứng dụng Hoạt họa Thực tế (product_app/)"]
     end
 ```

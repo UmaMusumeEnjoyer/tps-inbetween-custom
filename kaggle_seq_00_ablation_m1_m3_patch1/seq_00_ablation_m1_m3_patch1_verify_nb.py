@@ -69,7 +69,7 @@ def test_notebook_ast():
 
 def test_model_architecture_and_m1_weights():
     print("\n[TEST 2/5] Kiểm định kiến trúc M_gốc & Nạp trọng số M1 (model_latest.pt)...")
-    from ddp_worker_m1_to_m3_patch1 import TPSInbetweenOriginal_M1_M3, load_m1_weights
+    from seq_00_ablation_m1_m3_patch1_worker import TPSInbetweenOriginal_M1_M3, load_m1_weights
 
     model_m1 = TPSInbetweenOriginal_M1_M3()
     model_m3 = TPSInbetweenOriginal_M1_M3()
@@ -115,7 +115,7 @@ def test_model_architecture_and_m1_weights():
 
 def test_lineart_loss():
     print("\n[TEST 3/5] Kiểm định Bộ Hàm Mục Tiêu Chuẩn Lineart (LineartLoss_M3)...")
-    from ddp_worker_m1_to_m3_patch1 import LineartLoss_M3
+    from seq_00_ablation_m1_m3_patch1_worker import LineartLoss_M3
 
     criterion = LineartLoss_M3()
     pred = torch.rand(2, 1, 128, 128, requires_grad=True)
@@ -132,7 +132,7 @@ def test_lineart_loss():
 
 def test_minimal_checkpoint_manager():
     print("\n[TEST 4/5] Kiểm định Chính sách Checkpoint Tinh Gọn (MinimalCheckpointManager_M3)...")
-    from ddp_worker_m1_to_m3_patch1 import MinimalCheckpointManager_M3, TPSInbetweenOriginal_M1_M3
+    from seq_00_ablation_m1_m3_patch1_worker import MinimalCheckpointManager_M3, TPSInbetweenOriginal_M1_M3
 
     temp_dir = tempfile.mkdtemp()
     try:
@@ -169,7 +169,7 @@ def test_minimal_checkpoint_manager():
 
 def test_metrics_evaluation():
     print("\n[TEST 5/5] Kiểm định Hàm Đo Lường Chỉ Số Thẩm Định (WCD, S-EMD, Recalls)...")
-    from ddp_worker_m1_to_m3_patch1 import evaluate_metrics_batch_gpu
+    from seq_00_ablation_m1_m3_patch1_worker import evaluate_metrics_batch_gpu
 
     pred = torch.rand(2, 1, 128, 128)
     gt = torch.rand(2, 1, 128, 128)

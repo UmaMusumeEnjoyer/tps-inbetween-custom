@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ddp_worker_tps_sequence_phase3.py
+seq_p3_v2_multilayer_tps_worker.py
 --------------------------------------------------------------------------------
 ĐỘNG CƠ HUẤN LUYỆN DDP 2x GPU PHA 3 — COARSE TPS ĐA LỚP (MULTI-LAYER CLUSTERED TPS)
 Kế thừa 100% kiến trúc `TPSInbetweenOriginal` (10,068,668 active params — 0% sửa kiến trúc)
@@ -70,19 +70,19 @@ for _p in (SCRIPT_DIR, os.path.join(REPO_ROOT, "pipelines")):
     if os.path.isdir(_p) and _p not in sys.path:
         sys.path.insert(0, _p)
 
-from multi_layer_tps import (
+from seq_p3_multi_layer_tps import (
     FIXED_TPS_ANCHORS,
     solve_multilayer_cache_entry,
     reconstruct_multilayer_flow_batch_from_cache,
 )
 
 # Import các thành phần lõi không thay đổi (TPSInbetweenOriginal, Loss, Metrics, Sampler, EMA, Manager)
-_P2_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2")
+_P2_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge")
 if os.path.isdir(_P2_DIR) and _P2_DIR not in sys.path:
     sys.path.insert(0, _P2_DIR)
 
 try:
-    from ddp_worker_tps_sequence_phase2 import (
+    from seq_p2_v33_ghost_purge_worker import (
         trim_memory,
         TPSInbetweenOriginal,
         load_tps_weights,
@@ -106,8 +106,8 @@ except ImportError:
     _IMPORTED_P2 = False
 
 if not _IMPORTED_P2:
-    # Khi chạy độc lập trên Kaggle, ddp_worker_tps_sequence_phase2.py được Cell 1 ghi chung cùng thư mục
-    raise ImportError("Không tìm thấy module nền tảng `ddp_worker_tps_sequence_phase2.py`!")
+    # Khi chạy độc lập trên Kaggle, seq_p2_v33_ghost_purge_worker.py được Cell 1 ghi chung cùng thư mục
+    raise ImportError("Không tìm thấy module nền tảng `seq_p2_v33_ghost_purge_worker.py`!")
 
 
 # ==============================================================================
@@ -455,7 +455,7 @@ def _generate_multilayer_synthetic_sequence(seq_len, orig_h=540, orig_w=960, max
     nstat_m = np.zeros((m_steps,), dtype=np.int32)
     nclus_m = np.zeros((m_steps,), dtype=np.int32)
 
-    from multi_layer_tps import segment_motion_keypoints, solve_tps_dynamic_layer, _stratified_spatial_subsample
+    from seq_p3_multi_layer_tps import segment_motion_keypoints, solve_tps_dynamic_layer, _stratified_spatial_subsample
     seg = segment_motion_keypoints(kps0, kps1, img_hw=(orig_h, orig_w), eps_static_px=1.5, filter_outliers=False)
     clusters = seg['dynamic_clusters'][:max_clusters]
     if seg['num_static'] > 0:

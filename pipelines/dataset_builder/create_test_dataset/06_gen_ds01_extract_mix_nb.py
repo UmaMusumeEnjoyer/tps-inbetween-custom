@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-create_extract_mix_notebook.py
+06_gen_ds01_extract_mix_nb.py
 Sinh file notebook Jupyter: `00_extract_and_mix_sakugabooru_atd12k_kaggle.ipynb`
 Hỗ trợ chế độ DUAL-MODE thông minh:
 - Chạy trên MÁY TÍNH CỤC BỘ (Local Windows PC: E:\\Dataset\\datasets và sakugabooru_character_acting).

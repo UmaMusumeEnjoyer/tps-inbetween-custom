@@ -38,7 +38,7 @@ def test_notebook_json(nb_path):
 
 def test_model_and_losses():
     print("\n[*] Kiểm tra kiến trúc TPSInbetweenFinetune_v30R R2 & Time-Symmetric FBFC...")
-    cells_dir = os.path.abspath("kaggle/v30r_cells")
+    cells_dir = os.path.abspath("kaggle/triplet_13_v30_remastered_cells")
     sys.path.insert(0, cells_dir)
 
     with open(os.path.join(cells_dir, "cell_03.py"), "r", encoding="utf-8") as f:
@@ -147,8 +147,8 @@ def test_model_and_losses():
 
 def main():
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    nb1 = os.path.join(base_dir, "finetune-v3-0-remastered.ipynb")
-    nb2 = os.path.join(base_dir, "10_train_tps_inbetween_finetune_v3.0_remastered.ipynb")
+    nb1 = os.path.join(base_dir, "triplet_13_v3.0_remastered_r2_kaggle.ipynb")
+    nb2 = os.path.join(base_dir, "triplet_13_v3.0_remastered_r2_kaggle.ipynb")
 
     print("=" * 80)
     print("🧪 BẮT ĐẦU KIỂM ĐỊNH NOTEBOOK V3.0-REMASTERED R2...")
@@ -156,7 +156,7 @@ def main():
 
     test_model_and_losses()
     if os.path.exists(nb1) and os.path.exists(nb2):
-        test_notebook_json(nb1)
+        # nb1 alias check removed
         test_notebook_json(nb2)
 
     print("\n" + "=" * 80)

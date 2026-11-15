@@ -29,25 +29,37 @@ from PIL import Image
 import torch
 import torch.nn.functional as F
 
-# Thêm đường dẫn module benchmark suite
-BENCH_SUITE_DIR = r"E:\CODE\PBL\PBL6\Dataset\sakuga_pipeline_sequence\final_dataset\sakuga_golden_benchmark_sequences_v2"
-if BENCH_SUITE_DIR not in sys.path:
-    sys.path.insert(0, BENCH_SUITE_DIR)
+REPO_ROOT = os.path.dirname(os.path.abspath(__file__))
+BENCH_SUITE_DIR = os.path.join(REPO_ROOT, "Dataset", "sakuga_pipeline_sequence", "final_dataset", "sakuga_golden_benchmark_sequences_v2")
+PIPELINES_DIR = os.path.join(REPO_ROOT, "pipelines")
+for _p in (BENCH_SUITE_DIR, PIPELINES_DIR):
+    if os.path.isdir(_p) and _p not in sys.path:
+        sys.path.insert(0, _p)
 
-from run_benchmark_suite import (
-    TPSInbetweenOriginal,
-    load_tps_weights,
-    ink_to_u8_gray,
-    evaluate_metrics_dual_regime,
-    solve_tps_backward_pair,
-    tps_flow_from_theta_batch
-)
+try:
+    from seq_dual_benchmark_suite import (
+        TPSInbetweenOriginal,
+        load_tps_weights,
+        ink_to_u8_gray,
+        evaluate_metrics_dual_regime,
+        solve_tps_backward_pair,
+        tps_flow_from_theta_batch
+    )
+except ImportError:
+    from run_benchmark_suite import (
+        TPSInbetweenOriginal,
+        load_tps_weights,
+        ink_to_u8_gray,
+        evaluate_metrics_dual_regime,
+        solve_tps_backward_pair,
+        tps_flow_from_theta_batch
+    )
 
-ORIG_CKPT = r"E:\CODE\PBL\PBL6\checkpoints\pretrained_baselines\tps-original\model_latest.pt"
-LAST_CKPT = r"E:\CODE\PBL\PBL6\checkpoints\Re-train\Sequence 2\checkpoints\model_tps_finetuned_last.pt"
-TEST_DIR = r"E:\CODE\PBL\PBL6\data\lineart_experiments\test"
-GLUESTICK_NPZ = r"E:\CODE\PBL\PBL6\kaggle_finetune_sequence_final\lineart_test_gluestick_matches.npz"
-OUT_DIR = r"E:\CODE\PBL\PBL6\checkpoints\Re-train\Sequence 2\test_last_epoch_lineart"
+ORIG_CKPT = os.path.join(REPO_ROOT, "checkpoints", "pretrained_baselines", "tps-original", "model_latest.pt")
+LAST_CKPT = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2", "checkpoints", "model_tps_finetuned_last.pt")
+TEST_DIR = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
+GLUESTICK_NPZ = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
+OUT_DIR = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2", "test_last_epoch_lineart")
 
 
 def main():

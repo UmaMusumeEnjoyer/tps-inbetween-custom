@@ -3,7 +3,7 @@
 """
 generate_v10_notebook.py
 Script tự động khởi tạo notebook huấn luyện Kaggle V1.0:
-kaggle/notebooks/04_train_tps_inbetween_finetune_v1.0.ipynb
+kaggle/notebooks/triplet_04_v1.0_golden_v1_kaggle.ipynb
 Đã tối ưu hóa toàn diện cho Dual Tesla T4, Zero GIL Bottleneck, Vectorized TPS Batch, Grid Cache và Distributed Loss Engine.
 """
 
@@ -1809,7 +1809,7 @@ print(f"   - File Lịch Sử Huấn Luyện  : {history_csv_path}")
 print(f"   - File Zip Tổng Hợp Tải Về : {archive_path}")
 print("=" * 80)""")
 
-    dest_nb_path = r"e:\CODE\PBL\PBL6\kaggle\notebooks\04_train_tps_inbetween_finetune_v1.0.ipynb"
+    dest_nb_path = r"e:\CODE\PBL\PBL6\kaggle\notebooks\triplet_04_v1.0_golden_v1_kaggle.ipynb"
     alt_nb_path = r"e:\CODE\PBL\PBL6\kaggle\notebooks\finetune-v1-0.ipynb"
     os.makedirs(os.path.dirname(dest_nb_path), exist_ok=True)
     with open(dest_nb_path, "w", encoding="utf-8") as f:

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-adaptive_sharpener.py
+seq_p3_adaptive_sharpener.py
 --------------------------------------------------------------------------------
 BỘ LỌC TƯƠNG PHẢN THÍCH ỨNG CỤC BỘ (ADAPTIVE LOCAL EDGE SHARPENER / GUIDED CLAMPING)
 Tích hợp chính thức vào tầng xuất frame suy luận (Inference / Export) của Pha 3.

@@ -19,10 +19,10 @@ Thư mục này chứa bộ mã nguồn và Notebook Kaggle tự thân để ki�
    Script tự động nén đúng cấu trúc 2 file ZIP chuẩn bị tải lên Kaggle:
    - `sakuga_final_dataset_v2.zip` (~500 MB): Gộp chung cả 2 thư mục Train/Val và Benchmark #1.
    - `anime_lineart_continuous_test.zip` (~2.4 MB): Thư mục Benchmark #2.
-3. [`ddp_worker_tps_sequence_final.py`](ddp_worker_tps_sequence_final.py)  
+3. [`seq_p1_v32_ghost_temp_scale_worker.py`](seq_p1_v32_ghost_temp_scale_worker.py)  
    Worker DDP độc lập thực hiện `TPSInbetweenOriginal`, chuẩn Backward-Warp TPS (`lambd=0.01`, pad mult-32, giữ tỷ lệ gốc `orig_hw`), chế độ `LONG` mặc định với 5-term loss: Charbonnier + 12-step Symmetric DT + Sobel + Soft-clDice + VGG16/Laplacian Perceptual Loss, Cosine Warmup & Adaptive EMA.
 4. [`generate_kaggle_finetune_nb.py`](generate_kaggle_finetune_nb.py)  
-   Script tái sinh tự động Notebook từ `ddp_worker_tps_sequence_final.py`, `run_benchmark_suite.py` và `lineart_test_gluestick_matches.npz`.
+   Script tái sinh tự động Notebook từ `seq_p1_v32_ghost_temp_scale_worker.py`, `run_benchmark_suite.py` và `lineart_test_gluestick_matches.npz`.
 5. [`lineart_test_gluestick_matches.npz`](lineart_test_gluestick_matches.npz)  
    6 cặp điểm neo **GlueStick MD** trích xuất chuẩn xác cho 6 phân đoạn keyframe của `data/lineart_experiments/test` (được nhúng sẵn bên trong Notebook để Benchmark #2 trên Kaggle chạy đồng nhất 100% mà không cần cài thêm GlueStick).
 6. [`../Dataset/sakuga_pipeline_sequence/final_dataset/sakuga_golden_benchmark_sequences_v2/run_benchmark_suite.py`](../Dataset/sakuga_pipeline_sequence/final_dataset/sakuga_golden_benchmark_sequences_v2/run_benchmark_suite.py)  

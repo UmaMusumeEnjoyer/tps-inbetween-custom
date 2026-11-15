@@ -1,14 +1,14 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-phase4_occlusion_pipeline.py
+seq_p4_occlusion_pipeline.py
 --------------------------------------------------------------------------------
 PIPELINE SUY LUẬN & XUẤT FRAME PHA 4 (OCCLUSION-AWARE TPS INBETWEEN)
 Đề tài: Nội suy khung hình hoạt họa Anime Lineart (PBL6)
 Không gian làm việc cách ly: Phase 4 Occlusion Head (M4_Occ)
 
 Các tính năng nổi bật:
-  - Tầng 1: Coarse TPS Đa lớp (Multi-Layer Clustered TPS - `multi_layer_tps.py`)
+  - Tầng 1: Coarse TPS Đa lớp (Multi-Layer Clustered TPS - `seq_p3_multi_layer_tps.py`)
   - Tầng 2: Mạng TPSInbetweenOcclusion với Occlusion Head tại Block 2
             Xuất trực tiếp luồng quang học và 2 mặt nạ che khuất [M0->t, M1->t].
   - Tầng 3: Bộ Trộn Trọng số Chuẩn hóa (Normalized Visibility Blending):
@@ -42,14 +42,14 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PHASE4_DIR = os.path.join(REPO_ROOT, "kaggle_experiment_occlusion")
+PHASE4_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p4_occlusion_head")
 
 for _d in (SCRIPT_DIR, PHASE4_DIR, os.path.join(REPO_ROOT, "pipelines")):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
-from multi_layer_tps import solve_multi_layer_tps
-from model_occlusion import (
+from seq_p3_multi_layer_tps import solve_multi_layer_tps
+from seq_p4_occlusion_model import (
     TPSInbetweenOcclusion,
     load_tps_occlusion_weights,
     warp_normalized_flow,

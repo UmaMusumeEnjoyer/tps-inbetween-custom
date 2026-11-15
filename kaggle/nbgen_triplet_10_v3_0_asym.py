@@ -3,8 +3,7 @@
 """
 generate_v30_notebook.py
 Script tự động khởi tạo notebook huấn luyện Kaggle V3.0 hoàn toàn mới từ đầu:
-- kaggle/finetune-v3-0.ipynb
-- kaggle/07_train_tps_inbetween_finetune_v3.0.ipynb
+- kaggle/triplet_10_v3.0_asym_occlusion_540p_kaggle.ipynb
 
 Cấu trúc chuẩn 14 Interactive Cells (1 Markdown + 13 Direct Python Code Cells):
 - Cell 00 (Markdown): Tiêu đề, tài liệu kỹ thuật, mục tiêu & thông số V3.0 Golden 540p.
@@ -50,7 +49,7 @@ def to_notebook_lines(text: str):
 
 
 def build_notebook():
-    cells_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "v30_cells")
+    cells_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "triplet_10_v30_asym_cells")
     if not os.path.isdir(cells_dir):
         raise FileNotFoundError(f"Thư mục chứa cells không tồn tại: {cells_dir}")
 
@@ -133,15 +132,12 @@ def build_notebook():
 
 
 def main():
-    print("[*] Đang đọc 14 cells từ kaggle/v30_cells/...")
+    print("[*] Đang đọc 14 cells từ kaggle/triplet_10_v30_asym_cells/...")
     nb = build_notebook()
     print(f"[OK] Đã xây dựng thành công notebook với {len(nb['cells'])} cells (1 Markdown, 13 Code).")
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    out_files = [
-        os.path.join(base_dir, "finetune-v3-0.ipynb"),
-        os.path.join(base_dir, "07_train_tps_inbetween_finetune_v3.0.ipynb")
-    ]
+    out_files = [os.path.join(base_dir, "triplet_10_v3.0_asym_occlusion_540p_kaggle.ipynb")]
 
     for p in out_files:
         with open(p, "w", encoding="utf-8") as f:

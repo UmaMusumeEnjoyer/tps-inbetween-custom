@@ -53,7 +53,7 @@ Mục tiêu cốt lõi của kế hoạch benchmark v0.3 là:
 
 Script benchmark sẽ được triển khai tự động qua lệnh:
 ```bash
-python continuous_benchmark/inference_scripts/run_tps_benchmark_v03.py \
+python continuous_benchmark/inference_scripts/bench_triplet_03_v0_3_eval.py \
     --model_path checkpoints/experiments/v0.3/model_tps_v0.3_best.pt \
     --data_root data/processed/anime_tps_finetune_dataset_ready \
     --visual_samples_dir data/test_sets/visual_samples \

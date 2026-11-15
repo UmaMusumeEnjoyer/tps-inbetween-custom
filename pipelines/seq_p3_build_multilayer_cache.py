@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-build_tps_cache_multilayer.py
+seq_p3_build_multilayer_cache.py
 --------------------------------------------------------------------------------
 PHA 3 - BƯỚC 4: TẠO BỘ CACHE `tps_cache_multilayer.npz` TRÊN SAKUGA GOLDEN DATASET
 VÀ KIỂM ĐỊNH ĐỐI CHỨNG TRÊN TẬP VAL (190 CLIPS / 420 FRAMES).
@@ -40,7 +40,7 @@ DEFAULT_DATASET_DIR = os.path.join(
 if SCRIPT_DIR not in sys.path:
     sys.path.insert(0, SCRIPT_DIR)
 
-from multi_layer_tps import solve_multilayer_cache_entry
+from seq_p3_multi_layer_tps import solve_multilayer_cache_entry
 
 
 def build_multilayer_cache(

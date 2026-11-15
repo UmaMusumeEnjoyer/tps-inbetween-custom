@@ -33,16 +33,16 @@ if INFERENCE_SCRIPTS_DIR not in sys.path:
 if PROJECT_ROOT not in sys.path:
     sys.path.insert(0, PROJECT_ROOT)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     OriginalTPSInbetween, TPSInbetweenFinetune_v10,
     extract_sift_keypoints, robust_tps_theta_from_points, tps_flow_from_theta,
     compute_psnr, compute_ssim, compute_stroke_metrics,
     compute_ghost_pixels, compute_ie_mae
 )
-from run_tps_benchmark import TPSInbetweenFinetune
-from run_tps_benchmark_v02 import TPSInbetweenFinetune_v2
-from run_tps_benchmark_v03 import TPSInbetweenFinetune_v3 as TPSInbetweenFinetune_v03
-from run_fast_benchmark_v30 import TPSInbetweenFinetune_v3 as TPSInbetweenFinetune_v305
+from bench_triplet_01_v0_1_eval import TPSInbetweenFinetune
+from bench_triplet_02_v0_2_eval import TPSInbetweenFinetune_v2
+from bench_triplet_03_v0_3_eval import TPSInbetweenFinetune_v3 as TPSInbetweenFinetune_v03
+from bench_triplet_10_v3_0_asym_fast import TPSInbetweenFinetune_v3 as TPSInbetweenFinetune_v305
 
 DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 

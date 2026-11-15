@@ -4,7 +4,7 @@
 generate_m1_to_m3_patch1_notebook.py
 --------------------------------------------------------------------------------
 Trình tạo Notebook Kaggle Tự Thân (Self-Contained):
-train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb
+seq_00_ablation_m1_m3_patch1_kaggle.ipynb
 
 Thiết kế thực nghiệm:
 M0 (TPS Coarse Warp) vs M1 (TPS-Inbetween Original) vs M3 (Ours Sequence V1 Patch 1)
@@ -33,7 +33,7 @@ if sys.platform.startswith('win'):
         pass
 
 def read_worker_code():
-    worker_path = os.path.join(os.path.dirname(__file__), "ddp_worker_m1_to_m3_patch1.py")
+    worker_path = os.path.join(os.path.dirname(__file__), "seq_00_ablation_m1_m3_patch1_worker.py")
     with open(worker_path, "r", encoding="utf-8") as f:
         return f.read()
 
@@ -119,8 +119,8 @@ print(f"🧠 Host RAM: Tổng = {{mem.total / (1024**3):.1f}} GB | Đang dùng =
 print(f"📁 Thư mục đầu ra Checkpoints: {{OUTPUT_CKPT_DIR}}")
 print("=" * 80)
 
-# 4. Ghi mã nguồn ddp_worker_m1_to_m3_patch1.py tự thân vào Working Directory
-worker_script_path = os.path.join(WORKING_DIR, "ddp_worker_m1_to_m3_patch1.py")
+# 4. Ghi mã nguồn seq_00_ablation_m1_m3_patch1_worker.py tự thân vào Working Directory
+worker_script_path = os.path.join(WORKING_DIR, "seq_00_ablation_m1_m3_patch1_worker.py")
 worker_code_str = {repr(worker_code)}
 
 with open(worker_script_path, "w", encoding="utf-8") as f:
@@ -201,7 +201,7 @@ if M1_CHECKPOINT_PATH and os.path.exists(M1_CHECKPOINT_PATH):
 else:
     M1_CHECKPOINT_PATH = os.path.join(WORKING_DIR, "model_latest.pt")
     print(f"[*] Chưa tìm thấy model_latest.pt trong /kaggle/input, đang khởi tạo checkpoint khởi đầu tại: {M1_CHECKPOINT_PATH}")
-    from ddp_worker_m1_to_m3_patch1 import TPSInbetweenOriginal_M1_M3
+    from seq_00_ablation_m1_m3_patch1_worker import TPSInbetweenOriginal_M1_M3
     import torch
     dummy_m = TPSInbetweenOriginal_M1_M3()
     torch.save(dummy_m.state_dict(), M1_CHECKPOINT_PATH)
@@ -537,7 +537,7 @@ sys.stdout.flush()
 # 🔬 [CELL 4]: KIỂM TOÁN TỰ ĐỘNG ĐỒNG NHẤT KIẾN TRÚC M1 == M3 (100% ZERO BIAS)
 # ==============================================================================
 import torch
-from ddp_worker_m1_to_m3_patch1 import TPSInbetweenOriginal_M1_M3, load_m1_weights
+from seq_00_ablation_m1_m3_patch1_worker import TPSInbetweenOriginal_M1_M3, load_m1_weights
 
 print("=" * 80)
 print("🔍 TIẾN HÀNH KIỂM TOÁN TOÁN HỌC: CAM KẾT 0% SAI KHÁC KIẾN TRÚC GIỮA M1 VÀ M3")
@@ -843,7 +843,7 @@ if os.path.exists(history_csv_path):
 best_ckpt_path = os.path.join(OUTPUT_CKPT_DIR, "model_m3_seq_patch1_best.pt")
 if os.path.exists(best_ckpt_path) and os.path.exists(VAL_CSV_PATH):
     print("\n🖼️ Đang tạo lưới ảnh so sánh đối chứng trực quan 5 cột [Overlay | M0 | M1 | M3 | GT]...")
-    from ddp_worker_m1_to_m3_patch1 import TPSInbetweenOriginal_M1_M3, SakugaSequenceM1ToM3Dataset, tps_flow_from_theta_batch
+    from seq_00_ablation_m1_m3_patch1_worker import TPSInbetweenOriginal_M1_M3, SakugaSequenceM1ToM3Dataset, tps_flow_from_theta_batch
 
     device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
     m1_model = TPSInbetweenOriginal_M1_M3().to(device)
@@ -993,7 +993,7 @@ sys.stdout.flush()
         "nbformat_minor": 5
     }
 
-    out_nb_path = os.path.join(os.path.dirname(__file__), "train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb")
+    out_nb_path = os.path.join(os.path.dirname(__file__), "seq_00_ablation_m1_m3_patch1_kaggle.ipynb")
     with open(out_nb_path, "w", encoding="utf-8") as f:
         json.dump(nb, f, indent=1, ensure_ascii=False)
 

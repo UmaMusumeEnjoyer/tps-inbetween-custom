@@ -37,17 +37,17 @@ def test_notebook_json(nb_path):
 
 def test_model_and_losses():
     print("\n[*] Kiểm tra kiến trúc TPSInbetweenFinetune_v32 & Hàm Loss Progressive...")
-    sys.path.insert(0, os.path.abspath("kaggle/v32_cells"))
+    sys.path.insert(0, os.path.abspath("kaggle/triplet_12_v32_asym_cells"))
     
-    with open("kaggle/v32_cells/cell_03.py", "r", encoding="utf-8") as f:
+    with open("kaggle/triplet_12_v32_asym_cells/cell_03.py", "r", encoding="utf-8") as f:
         code_c03 = f.read()
-    with open("kaggle/v32_cells/cell_05.py", "r", encoding="utf-8") as f:
+    with open("kaggle/triplet_12_v32_asym_cells/cell_05.py", "r", encoding="utf-8") as f:
         code_c05 = f.read()
-    with open("kaggle/v32_cells/cell_06.py", "r", encoding="utf-8") as f:
+    with open("kaggle/triplet_12_v32_asym_cells/cell_06.py", "r", encoding="utf-8") as f:
         code_c06 = f.read()
-    with open("kaggle/v32_cells/cell_07.py", "r", encoding="utf-8") as f:
+    with open("kaggle/triplet_12_v32_asym_cells/cell_07.py", "r", encoding="utf-8") as f:
         code_c07 = f.read()
-    with open("kaggle/v32_cells/cell_09.py", "r", encoding="utf-8") as f:
+    with open("kaggle/triplet_12_v32_asym_cells/cell_09.py", "r", encoding="utf-8") as f:
         code_c09 = f.read()
 
     scope = {
@@ -165,8 +165,8 @@ def main():
     print("=" * 80)
     print("🧪 BẮT ĐẦU KIỂM ĐỊNH TOÀN DIỆN NOTEBOOK & ENGINE V3.2")
     print("=" * 80)
-    test_notebook_json("kaggle/finetune-v3-2.ipynb")
-    test_notebook_json("kaggle/09_train_tps_inbetween_finetune_v3.2.ipynb")
+    test_notebook_json("kaggle/triplet_12_v3.2_asym_saddle_breaker_kaggle.ipynb")
+    test_notebook_json("kaggle/triplet_12_v3.2_asym_saddle_breaker_kaggle.ipynb")
     test_model_and_losses()
     print("\n" + "=" * 80)
     print("🎉 TẤT CẢ CÁC BÀI KIỂM THỬ V3.2 ĐÃ ĐẠT TIÊU CHUẨN XUẤT SẮC 100%!")

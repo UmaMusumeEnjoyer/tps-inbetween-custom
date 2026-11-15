@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-validate_phase3_multilayer_tps.py
+bench_seq_p3_validate_multilayer.py
 --------------------------------------------------------------------------------
 Kịch bản Kiểm định Thực nghiệm Pha 3 (Bước 1, Bước 2 & Bước 3 Offline Validation):
 So sánh trực tiếp:
@@ -41,16 +41,16 @@ REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 BENCH_DIR = os.path.join(
     REPO_ROOT, "Dataset", "sakuga_pipeline_sequence", "final_dataset", "sakuga_golden_benchmark_sequences_v2"
 )
-for p in [SCRIPT_DIR, BENCH_DIR, os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2")]:
+for p in [SCRIPT_DIR, BENCH_DIR, os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge")]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from multi_layer_tps import (
+from seq_p3_multi_layer_tps import (
     segment_motion_keypoints,
     solve_multi_layer_tps,
     verify_static_zero_hessian,
 )
-from run_benchmark_suite import (
+from seq_dual_benchmark_suite import (
     TPSInbetweenOriginal,
     load_tps_weights,
     solve_tps_direct,
@@ -254,7 +254,7 @@ def run_step3_continuous_24frames_validation(model, device, out_dir):
 
     test_dir = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
     spec_path = os.path.join(test_dir, "continuous_keyframes_spec.json")
-    gs_npz_path = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+    gs_npz_path = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
 
     with open(spec_path, "r", encoding="utf-8") as f:
         spec = json.load(f)

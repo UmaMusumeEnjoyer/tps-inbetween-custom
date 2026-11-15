@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-model_occlusion.py
+seq_p4_occlusion_model.py
 --------------------------------------------------------------------------------
 KIẾN TRÚC MÔ HÌNH PHA 4: COARSE TPS + OCCLUSION-AWARE HEAD (TPSInbetweenOcclusion)
 Thử nghiệm Cách ly: Phase 4 Occlusion Head (M4_Occ)

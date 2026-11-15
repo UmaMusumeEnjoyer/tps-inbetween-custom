@@ -3,7 +3,7 @@
 """
 generate_v22_notebook.py
 Script tự động khởi tạo và chuẩn hóa notebook huấn luyện Kaggle V2.2:
-- kaggle/05_train_tps_inbetween_finetune_v2.2.ipynb
+- kaggle/triplet_06_v2.2_anti_thickening_kaggle.ipynb
 - kaggle/finetune-v2-2.ipynb
 
 Tích hợp toàn diện các hạng mục kỹ thuật V2.2:
@@ -29,8 +29,8 @@ if sys.platform.startswith('win'):
 
 def generate_v22():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    v11_path = os.path.join(script_dir, "04_train_tps_inbetween_finetune_v1.1.ipynb")
-    v22_path = os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.2.ipynb")
+    v11_path = os.path.join(script_dir, "triplet_05_v1.1_ghost_purge_fixed_kaggle.ipynb")
+    v22_path = os.path.join(script_dir, "triplet_06_v2.2_anti_thickening_kaggle.ipynb")
     alias_path = os.path.join(script_dir, "finetune-v2-2.ipynb")
 
     if not os.path.exists(v11_path):

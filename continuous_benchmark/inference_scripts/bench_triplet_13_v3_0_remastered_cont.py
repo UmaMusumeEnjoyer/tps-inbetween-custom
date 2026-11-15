@@ -40,7 +40,7 @@ INFERENCE_SCRIPTS_DIR = os.path.join(PROJECT_ROOT, 'continuous_benchmark', 'infe
 if INFERENCE_SCRIPTS_DIR not in sys.path:
     sys.path.insert(0, INFERENCE_SCRIPTS_DIR)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     TPSInbetweenFinetune_v10, extract_sift_keypoints,
     robust_tps_theta_from_points, tps_flow_from_theta,
     compute_psnr, compute_ssim, compute_stroke_metrics,

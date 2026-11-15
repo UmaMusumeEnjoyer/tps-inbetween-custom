@@ -1,7 +1,7 @@
 # 📖 HƯỚNG DẪN THỰC THI THỰC NGHIỆM ABLATION STUDY: M0 vs M1 vs M3 (PATCH 1)
 ## 🔑 BẰNG CHỨNG THÉP #1: CHỨNG MINH ĐÓNG GÓP 100% CỦA DATASET SEQUENCE V1 TRÊN KIẾN TRÚC GỐC
 
-> **Thư mục cách ly độc lập:** `E:\CODE\PBL\PBL6\kaggle_ablation_m1_to_m3_patch1\`  
+> **Thư mục cách ly độc lập:** `E:\CODE\PBL\PBL6\kaggle_seq_00_ablation_m1_m3_patch1\`  
 > Được tách biệt hoàn toàn khỏi các phiên bản cũ trong `kaggle/` (`v0.1` $\to$ `v3.2`) và `Finetune/` để phục vụ riêng cho mục tiêu báo cáo khoa học.
 
 ---
@@ -23,7 +23,7 @@ Căn cứ theo ma trận thực nghiệm:
 | Tệp Tin | Vai Trò & Mục Đích |
 | :--- | :--- |
 | **`train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb`** | **Notebook chính hoàn chỉnh (10 Cells)** sẵn sàng upload lên Kaggle để chạy thử nghiệm. |
-| **`ddp_worker_m1_to_m3_patch1.py`** | Script động cơ phân tán DDP 2x GPU (Zero Host RAM leak, 100% GPU utilization, tự động nhúng vào Notebook). |
+| **`seq_00_ablation_m1_m3_patch1_worker.py`** | Script động cơ phân tán DDP 2x GPU (Zero Host RAM leak, 100% GPU utilization, tự động nhúng vào Notebook). |
 | **`generate_m1_to_m3_patch1_notebook.py`** | Script đóng gói tự động tạo file `.ipynb` tự thân (Self-contained). |
 | **`verify_m1_to_m3_patch1_notebook.py`** | Script kiểm định toàn diện 5/5 bài test (AST, Identity M1 == M3, Loss, Checkpoint, Metrics). |
 | **`README_M1_TO_M3_PATCH1.md`** | Tài liệu hướng dẫn sử dụng và giải thích khoa học. |
@@ -44,7 +44,7 @@ Bạn vào Kaggle và gắn 2 nguồn Input sau vào Notebook:
 
 #### Bước 3: Upload Notebook và bấm `Run All`
 1. Chọn menu **File** $\longrightarrow$ **Upload Notebook**, chọn file:  
-   [`train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb`](file:///e:/CODE/PBL/PBL6/kaggle_ablation_m1_to_m3_patch1/train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb).
+   [`train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb`](file:///e:/CODE/PBL/PBL6/kaggle_seq_00_ablation_m1_m3_patch1/train_ablation_m1_to_m3_sequence_patch1_kaggle.ipynb).
 2. Nhấn nút **Run All**:
    - **Cell 1:** Khởi tạo môi trường, khóa phân mảnh RAM glibc, ghi worker ra đĩa.
    - **Cell 2:** Tự động phát hiện dataset Patch 1 và checkpoint `model_latest.pt`, giải nén siêu tốc sang ổ NVMe SSD `/tmp` (~10-20 giây).

@@ -41,7 +41,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from run_tps_benchmark_v10 import (
+from bench_triplet_04_v1_0_eval import (
     TPSInbetweenFinetune_v10,
     compute_psnr,
     compute_ssim,

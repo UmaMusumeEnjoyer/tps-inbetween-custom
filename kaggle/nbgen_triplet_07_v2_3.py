@@ -3,7 +3,7 @@
 """
 generate_v23_notebook.py
 Script tự động khởi tạo và chuẩn hóa notebook huấn luyện Kaggle V2.3:
-- kaggle/05_train_tps_inbetween_finetune_v2.3.ipynb
+- kaggle/triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb
 - kaggle/finetune-v2-3.ipynb
 
 Các nâng cấp và giải pháp khắc phục triệt để trong V2.3:
@@ -36,9 +36,9 @@ if sys.platform.startswith('win'):
 
 def generate_v23():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    v22_path = os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.2.ipynb")
-    v23_path = os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.3.ipynb")
-    alias_path = os.path.join(script_dir, "finetune-v2-3.ipynb")
+    v22_path = os.path.join(script_dir, "triplet_06_v2.2_anti_thickening_kaggle.ipynb")
+    v23_path = os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb")
+    alias_path = os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb")
 
     if not os.path.exists(v22_path):
         raise FileNotFoundError(f"Không tìm thấy notebook V2.2 mẫu tại: {v22_path}")

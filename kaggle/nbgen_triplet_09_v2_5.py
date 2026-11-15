@@ -3,7 +3,7 @@
 """
 generate_v25_notebook.py
 Script tự động khởi tạo và chuẩn hóa notebook huấn luyện Kaggle V2.5:
-- kaggle/06_train_tps_inbetween_finetune_v2.5.ipynb
+- kaggle/triplet_09_v2.5_exact_ste_width_kaggle.ipynb
 - kaggle/finetune-v2-5.ipynb
 
 Tích hợp toàn diện các nâng cấp đột phá V2.5:
@@ -48,10 +48,10 @@ if sys.platform.startswith('win'):
 def generate_v25():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     source_nb_candidates = [
-        os.path.join(script_dir, "06_train_tps_inbetween_finetune_v2.4.ipynb"),
-        os.path.join(script_dir, "finetune-v2-4.ipynb"),
-        os.path.join(script_dir, "finetune-v2-3.ipynb"),
-        os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.3.ipynb"),
+        os.path.join(script_dir, "triplet_08_v2.4_balanced_density_kaggle.ipynb"),
+        os.path.join(script_dir, "triplet_08_v2.4_balanced_density_kaggle.ipynb"),
+        os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb"),
+        os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb"),
         os.path.join(script_dir, "finetune-v2-2.ipynb"),
     ]
 
@@ -1801,8 +1801,8 @@ print(f"[*] Host RAM sau dọn dẹp -> {format_host_ram()}")"""
     set_code(13, c13)
 
     # Lưu cả 2 file notebook đích
-    v25_path = os.path.join(script_dir, "06_train_tps_inbetween_finetune_v2.5.ipynb")
-    alias_path = os.path.join(script_dir, "finetune-v2-5.ipynb")
+    v25_path = os.path.join(script_dir, "triplet_09_v2.5_exact_ste_width_kaggle.ipynb")
+    alias_path = os.path.join(script_dir, "triplet_09_v2.5_exact_ste_width_kaggle.ipynb")
 
     with open(v25_path, "w", encoding="utf-8") as f:
         json.dump(nb, f, indent=1, ensure_ascii=False)

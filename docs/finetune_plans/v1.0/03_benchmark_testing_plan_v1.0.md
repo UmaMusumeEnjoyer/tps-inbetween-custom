@@ -94,7 +94,7 @@ Sau khi huấn luyện thành công trên Kaggle và tải checkpoint `model_tps
 e:\CODE\PBL\PBL6\.venv\Scripts\activate
 
 # Chạy kiểm toán toàn diện trên 620 Golden Validation Triplets và visual_samples
-python continuous_benchmark/inference_scripts/run_tps_benchmark_v10.py \
+python continuous_benchmark/inference_scripts/bench_triplet_04_v1_0_eval.py \
     --model_path checkpoints/experiments/v1.0/model_tps_v1.0_best.pt \
     --data_root data/processed/sakuga_golden_dataset_tps_ready/anime_tps_finetune_dataset_ready \
     --visual_samples_dir data/test_sets/visual_samples \

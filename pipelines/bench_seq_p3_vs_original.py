@@ -21,7 +21,7 @@ BỘ BENCHMARK ĐỐI ĐẦU:
     - Case 4: Rotating Deforming Solid Cross (360px - 30°)
 
 XUẤT ĐẦY ĐỦ FRAME / MASKS / STRIPS / GIFS / CSV VÀ ẢNH BẢNG BIỂU ĐỒ HỌA TẠI:
-    benchmark_outputs_orig_vs_pha3/
+    bench_outputs_seq_p3_vs_orig/
 --------------------------------------------------------------------------------
 """
 
@@ -53,31 +53,31 @@ import matplotlib.patches as patches
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PHASE3_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3")
-PHASE2_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2")
+PHASE3_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps")
+PHASE2_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge")
 
 for _d in (SCRIPT_DIR, PHASE3_DIR, PHASE2_DIR):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
-from multi_layer_tps import solve_multi_layer_tps
-from adaptive_sharpener import apply_adaptive_sharpener
-from ddp_worker_tps_sequence_phase2 import (
+from seq_p3_multi_layer_tps import solve_multi_layer_tps
+from seq_p3_adaptive_sharpener import apply_adaptive_sharpener
+from seq_p2_v33_ghost_purge_worker import (
     TPSInbetweenOriginal,
     load_tps_weights,
     solve_tps_backward_pair,
     tps_flow_from_theta_batch,
     evaluate_metrics_dual_regime,
 )
-from phase3_inference_pipeline import (
+from seq_p3_inference_pipeline import (
     load_ink_from_input,
     ink_tensor_to_u8,
 )
 
-BASE_OUT_DIR = os.path.join(REPO_ROOT, "benchmark_outputs_orig_vs_pha3")
+BASE_OUT_DIR = os.path.join(REPO_ROOT, "bench_outputs_seq_p3_vs_orig")
 TABLE_IMG_DIR = os.path.join(BASE_OUT_DIR, "table_images")
 LINEART_TEST_DIR = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
-GLUESTICK_NPZ = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+GLUESTICK_NPZ = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
 
 ORIG_CKPT = os.path.join(REPO_ROOT, "checkpoints", "pretrained_baselines", "tps-original", "model_latest.pt")
 PHA3_CKPT = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2 pha 3 remake", "checkpoints", "model_tps_finetuned_best.pt")
@@ -353,7 +353,7 @@ def draw_styled_table(
                 va='center'
             )
 
-    fig.text(0.04, 0.04, "Antigravity Sequence Inbetweening Benchmark Suite  |  Verified outputs at: benchmark_outputs_orig_vs_pha3/", fontsize=8, color="#94a3b8", ha='left', va='bottom')
+    fig.text(0.04, 0.04, "Antigravity Sequence Inbetweening Benchmark Suite  |  Verified outputs at: bench_outputs_seq_p3_vs_orig/", fontsize=8, color="#94a3b8", ha='left', va='bottom')
 
     plt.tight_layout()
     plt.savefig(out_path, dpi=dpi, bbox_inches='tight')

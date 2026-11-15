@@ -3,7 +3,7 @@
 """
 generate_v24_notebook.py
 Script tự động khởi tạo và chuẩn hóa notebook huấn luyện Kaggle V2.4:
-- kaggle/06_train_tps_inbetween_finetune_v2.4.ipynb
+- kaggle/triplet_08_v2.4_balanced_density_kaggle.ipynb
 - kaggle/finetune-v2-4.ipynb
 
 Tích hợp toàn diện các hạng mục kỹ thuật V2.4:
@@ -36,7 +36,7 @@ def generate_v24():
     source_nb_candidates = [
         os.path.join(r"C:\Users\Admin\Downloads", "finetune-v2-3 (1).ipynb"),
         os.path.join(script_dir, "finetune-v2-2.ipynb"),
-        os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.2.ipynb"),
+        os.path.join(script_dir, "triplet_06_v2.2_anti_thickening_kaggle.ipynb"),
     ]
 
     source_path = None
@@ -1664,8 +1664,8 @@ print(f"[*] Host RAM sau dọn dẹp -> {format_host_ram()}")"""
     set_code(13, c13)
 
     # Lưu cả 2 file notebook đích
-    v24_path = os.path.join(script_dir, "06_train_tps_inbetween_finetune_v2.4.ipynb")
-    alias_path = os.path.join(script_dir, "finetune-v2-4.ipynb")
+    v24_path = os.path.join(script_dir, "triplet_08_v2.4_balanced_density_kaggle.ipynb")
+    alias_path = os.path.join(script_dir, "triplet_08_v2.4_balanced_density_kaggle.ipynb")
 
     with open(v24_path, "w", encoding="utf-8") as f:
         json.dump(nb, f, indent=1, ensure_ascii=False)

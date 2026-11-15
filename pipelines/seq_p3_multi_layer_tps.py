@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-multi_layer_tps.py
+seq_p3_multi_layer_tps.py
 --------------------------------------------------------------------------------
 PHA 3 (BƯỚC 1 & BƯỚC 2): MODULE COARSE TPS ĐA LỚP (MULTI-LAYER CLUSTERED TPS)
 Đề tài: Nội suy khung hình hoạt họa Anime Lineart (PBL6)

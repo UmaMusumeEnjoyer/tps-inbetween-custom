@@ -3,8 +3,7 @@
 """
 verify_v30_notebook.py
 Kiểm toán cú pháp, cấu trúc và tính toàn vẹn của notebook V3.0:
-- kaggle/finetune-v3-0.ipynb
-- kaggle/07_train_tps_inbetween_finetune_v3.0.ipynb
+- kaggle/triplet_10_v3.0_asym_occlusion_540p_kaggle.ipynb
 """
 
 import os
@@ -113,8 +112,8 @@ def verify_notebook(nb_path):
 def main():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     nb_files = [
-        os.path.join(script_dir, "finetune-v3-0.ipynb"),
-        os.path.join(script_dir, "07_train_tps_inbetween_finetune_v3.0.ipynb")
+        os.path.join(script_dir, "triplet_10_v3.0_asym_occlusion_540p_kaggle.ipynb"),
+        os.path.join(script_dir, "triplet_10_v3.0_asym_occlusion_540p_kaggle.ipynb")
     ]
     for nb in nb_files:
         verify_notebook(nb)

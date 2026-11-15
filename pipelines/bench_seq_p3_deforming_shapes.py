@@ -30,24 +30,24 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3")
+PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps")
 
 for _d in (SCRIPT_DIR, PHASE3_WORKER_DIR):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
-from multi_layer_tps import solve_multi_layer_tps
-from ddp_worker_tps_sequence_phase3 import (
+from seq_p3_multi_layer_tps import solve_multi_layer_tps
+from seq_p3_v2_multilayer_tps_worker import (
     TPSInbetweenOriginal,
     load_tps_weights,
     evaluate_metrics_dual_regime,
 )
-from validate_phase3_multilayer_tps import extract_hybrid_contour_matches
-from adaptive_sharpener import apply_adaptive_sharpener
+from bench_seq_p3_validate_multilayer import extract_hybrid_contour_matches
+from seq_p3_adaptive_sharpener import apply_adaptive_sharpener
 
 DEFAULT_PHA2_CKPT = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2 Blended", "checkpoints", "model_tps_blended.pt")
 DEFAULT_PHA3_CKPT = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2 pha 3 remake", "checkpoints", "model_tps_finetuned_best.pt")
-DEFAULT_OUT_DIR = os.path.join(REPO_ROOT, "demo_outputs", "benchmark_deforming_shapes")
+DEFAULT_OUT_DIR = os.path.join(REPO_ROOT, "demo_02_seq_p3_sharp_outputs", "benchmark_deforming_shapes")
 
 
 def draw_deforming_circle(t, H=384, W=640):

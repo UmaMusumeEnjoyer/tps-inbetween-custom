@@ -3,7 +3,7 @@
 """
 generate_v11_notebook.py
 Script tự động khởi tạo notebook huấn luyện Kaggle V1.1:
-kaggle/04_train_tps_inbetween_finetune_v1.1.ipynb
+kaggle/triplet_05_v1.1_ghost_purge_fixed_kaggle.ipynb
 và alias kaggle/finetune-v1-1.ipynb.
 Nâng cấp toàn diện:
 - Triệt tiêu 100% Copy-on-Write (CoW) trong Dataset & DataLoader
@@ -29,8 +29,8 @@ if sys.platform.startswith('win'):
 
 def generate():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    v10_path = os.path.join(script_dir, "04_train_tps_inbetween_finetune_v1.0.ipynb")
-    v11_path = os.path.join(script_dir, "04_train_tps_inbetween_finetune_v1.1.ipynb")
+    v10_path = os.path.join(script_dir, "triplet_04_v1.0_golden_v1_kaggle.ipynb")
+    v11_path = os.path.join(script_dir, "triplet_05_v1.1_ghost_purge_fixed_kaggle.ipynb")
     alias_path = os.path.join(script_dir, "finetune-v1-1.ipynb")
 
     if not os.path.exists(v10_path):

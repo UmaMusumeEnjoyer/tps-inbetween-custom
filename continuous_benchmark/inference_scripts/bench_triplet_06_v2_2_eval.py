@@ -52,7 +52,7 @@ from pipelines.tps_v22.metrics import (
     calculate_standardized_metrics,
     compute_chamfer_distance_np
 )
-from run_tps_benchmark_v10 import compute_line_tortuosity
+from bench_triplet_04_v1_0_eval import compute_line_tortuosity
 
 
 def select_stratified_samples(df_val, total_target=100, audit_clip_ids=None):

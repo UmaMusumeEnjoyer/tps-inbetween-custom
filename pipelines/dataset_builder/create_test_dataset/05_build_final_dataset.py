@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-run_build_final_dataset.py (05_build_final_dataset.py)
+05_build_final_dataset.py (05_build_final_dataset.py)
 ------------------------------------------------------
 Giai đoạn Deep Learning & Đóng gói Dataset hoàn chỉnh cho TPS-Inbetween trên máy tính cá nhân (Local PC).
 

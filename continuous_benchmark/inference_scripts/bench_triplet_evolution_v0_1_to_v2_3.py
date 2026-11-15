@@ -45,10 +45,10 @@ if PROJECT_ROOT not in sys.path:
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from run_tps_benchmark import TPSInbetweenFinetune
-from run_tps_benchmark_v02 import TPSInbetweenFinetune_v2
-from run_tps_benchmark_v03 import TPSInbetweenFinetune_v3
-from run_tps_benchmark_v10 import (
+from bench_triplet_01_v0_1_eval import TPSInbetweenFinetune
+from bench_triplet_02_v0_2_eval import TPSInbetweenFinetune_v2
+from bench_triplet_03_v0_3_eval import TPSInbetweenFinetune_v3
+from bench_triplet_04_v1_0_eval import (
     TPSInbetweenFinetune_v10,
     compute_psnr,
     compute_ssim,

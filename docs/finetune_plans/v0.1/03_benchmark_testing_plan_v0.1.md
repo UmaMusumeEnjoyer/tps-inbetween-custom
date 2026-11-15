@@ -100,7 +100,7 @@ Khi tải mô hình `model_tps_v0.1_best.pt` về đặt tại `checkpoints/expe
 
 ```bash
 # BƯỚC 1: Chạy nội suy trên 508 Triplets của tập Val
-python continuous_benchmark/inference_scripts/run_tps_benchmark.py \
+python continuous_benchmark/inference_scripts/bench_triplet_01_v0_1_eval.py \
     --model_path checkpoints/experiments/v0.1/model_tps_v0.1_best.pt \
     --dataset_csv data/processed/anime_tps_finetune_dataset_ready/triplets.csv \
     --output_dir continuous_benchmark/metrics/tps-inbetween-finetuned-v0.1/val_run/
@@ -115,7 +115,7 @@ python continuous_benchmark/inference_scripts/run_tps_fix.py \
 python continuous_benchmark/metrics/generate_overall_benchmark.py
 
 # BƯỚC 4: Tạo video so sánh song song đối chiếu
-python Demo_ATD12K_TPS_Inbetween/generate_continuous_scene_demo.py
+python demo_01_atd12k_orig_tps/generate_continuous_scene_demo.py
 ```
 
 ---

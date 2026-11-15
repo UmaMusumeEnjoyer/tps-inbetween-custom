@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-render_tables_as_images.py
+render_seq_p4_benchmark_tables.py
 --------------------------------------------------------------------------------
 Vẽ các bảng chỉ số benchmark đối đầu dưới dạng hình ảnh chất lượng cao (High DPI):
     1. Table 1: Case 1 - Chuỗi 24 frames thực tế (17 in-betweens)
@@ -27,7 +27,7 @@ from matplotlib import font_manager
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-BENCH_DIR = os.path.join(REPO_ROOT, "benchmark_outputs_phase4_occlusion")
+BENCH_DIR = os.path.join(REPO_ROOT, "bench_outputs_seq_p4_occlusion")
 OUT_IMG_DIR = os.path.join(BENCH_DIR, "table_images")
 os.makedirs(OUT_IMG_DIR, exist_ok=True)
 
@@ -197,7 +197,7 @@ def draw_styled_table(
             )
 
     # Footer note
-    fig.text(0.04, 0.04, "Antigravity Sequence Inbetweening Benchmark Suite  |  Verified outputs at: benchmark_outputs_phase4_occlusion/", fontsize=8, color="#94a3b8", ha='left', va='bottom')
+    fig.text(0.04, 0.04, "Antigravity Sequence Inbetweening Benchmark Suite  |  Verified outputs at: bench_outputs_seq_p4_occlusion/", fontsize=8, color="#94a3b8", ha='left', va='bottom')
 
     plt.tight_layout()
     plt.savefig(out_path, dpi=dpi, bbox_inches='tight')

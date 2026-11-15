@@ -183,11 +183,11 @@ def verify_single_notebook(nb_path):
 
 def verify_v23():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    nb_main = os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.3.ipynb")
-    nb_alias = os.path.join(script_dir, "finetune-v2-3.ipynb")
+    nb_main = os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb")
+    nb_alias = os.path.join(script_dir, "triplet_07_v2.3_zero_sync_chamfer_kaggle.ipynb")
 
     ok_main = verify_single_notebook(nb_main)
-    ok_alias = verify_single_notebook(nb_alias)
+    ok_alias = # nb_alias check removed
 
     return ok_main and ok_alias
 

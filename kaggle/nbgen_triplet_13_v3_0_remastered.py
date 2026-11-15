@@ -4,7 +4,7 @@
 generate_v30r_notebook.py
 Script tự động khởi tạo notebook huấn luyện Kaggle V3.0-Remastered:
 - kaggle/finetune-v3-0-remastered.ipynb
-- kaggle/10_train_tps_inbetween_finetune_v3.0_remastered.ipynb
+- kaggle/triplet_13_v3.0_remastered_r2_kaggle.ipynb
 
 Cấu trúc chuẩn 15 Interactive Cells (2 Markdown + 13 Python Code Cells):
 - Cell 00 (Markdown): Tiêu đề, thông số đột phá kỹ thuật V3.0-Remastered (FBFC, Pure RGBA Lineart, Flat Minima V2.6).
@@ -48,7 +48,7 @@ def to_notebook_lines(text: str):
 
 
 def build_notebook():
-    cells_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "v30r_cells")
+    cells_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "triplet_13_v30_remastered_cells")
     if not os.path.isdir(cells_dir):
         raise FileNotFoundError(f"Thư mục chứa cells không tồn tại: {cells_dir}")
 
@@ -73,9 +73,9 @@ def build_notebook():
         with open(code_path, "r", encoding="utf-8") as f:
             code_content = f.read()
 
-        # Tự động đóng gói ddp_worker_v30r.py vào Cell 10
+        # Tự động đóng gói ddp_worker_triplet_remastered_v30r.py vào Cell 10
         if i == 10:
-            worker_path = os.path.join(cells_dir, "ddp_worker_v30r.py")
+            worker_path = os.path.join(cells_dir, "ddp_worker_triplet_remastered_v30r.py")
             if os.path.exists(worker_path):
                 with open(worker_path, "r", encoding="utf-8") as wf:
                     worker_raw = wf.read()
@@ -144,15 +144,12 @@ def build_notebook():
 
 
 def main():
-    print("[*] Đang đọc các cell từ kaggle/v30r_cells/...")
+    print("[*] Đang đọc các cell từ kaggle/triplet_13_v30_remastered_cells/...")
     nb = build_notebook()
     print(f"[OK] Đã xây dựng thành công notebook với {len(nb['cells'])} cells (2 Markdown, 13 Code).")
 
     base_dir = os.path.dirname(os.path.abspath(__file__))
-    out_files = [
-        os.path.join(base_dir, "finetune-v3-0-remastered.ipynb"),
-        os.path.join(base_dir, "10_train_tps_inbetween_finetune_v3.0_remastered.ipynb")
-    ]
+    out_files = [os.path.join(base_dir, "triplet_13_v3.0_remastered_r2_kaggle.ipynb")]
 
     for p in out_files:
         with open(p, "w", encoding="utf-8") as f:

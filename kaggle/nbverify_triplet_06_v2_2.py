@@ -25,7 +25,7 @@ if sys.platform.startswith('win'):
 
 def verify_v22():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    nb_path = os.path.join(script_dir, "05_train_tps_inbetween_finetune_v2.2.ipynb")
+    nb_path = os.path.join(script_dir, "triplet_06_v2.2_anti_thickening_kaggle.ipynb")
 
     if not os.path.exists(nb_path):
         raise FileNotFoundError(f"Không tìm thấy file: {nb_path}")

@@ -41,7 +41,7 @@ if PROJECT_ROOT not in sys.path:
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     conv,
     deconv,
     Conv2,
@@ -59,7 +59,7 @@ from run_comparison_v10_vs_original import (
     compute_ie_mae,
     compute_chamfer_distance
 )
-from run_tps_benchmark_v10 import compute_line_tortuosity
+from bench_triplet_04_v1_0_eval import compute_line_tortuosity
 
 # ==============================================================================
 # 1. KIẾN TRÚC MÔ HÌNH V3.0 (V3.0.5)

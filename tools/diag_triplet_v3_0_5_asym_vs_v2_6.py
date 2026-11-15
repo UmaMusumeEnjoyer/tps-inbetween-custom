@@ -48,7 +48,7 @@ SCRATCH_DIR = os.path.join(PROJECT_ROOT, 'scratch')
 if SCRATCH_DIR not in sys.path:
     sys.path.insert(0, SCRATCH_DIR)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     conv, deconv, Conv2, Contextnet, IFNet,
     TPSInbetweenFinetune_v10,
     robust_tps_theta_from_points,

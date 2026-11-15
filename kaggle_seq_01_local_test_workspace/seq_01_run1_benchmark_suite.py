@@ -87,16 +87,16 @@ def _find_repo_root(start_dir):
 REPO_ROOT = _find_repo_root(SCRIPT_DIR)
 DEFAULT_ORIG_CKPT = os.path.join(REPO_ROOT, "checkpoints", "pretrained_baselines", "tps-original", "model_latest.pt")
 DEFAULT_LINEART_TEST = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
-DEFAULT_GLUESTICK_CACHE = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+DEFAULT_GLUESTICK_CACHE = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
 
 # Tái sử dụng trực tiếp toán tử từ ddp_worker nếu nằm trong cùng repo để tránh trùng lặp,
 # kèm fallback độc lập khi script chạy tách rời trên Kaggle/server khác.
-_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final")
+_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale")
 if os.path.isdir(_WORKER_DIR) and _WORKER_DIR not in sys.path:
     sys.path.insert(0, _WORKER_DIR)
 
 try:
-    from ddp_worker_tps_sequence_final import (
+    from seq_p1_v32_ghost_temp_scale_worker import (
         TPSInbetweenOriginal,
         load_tps_weights,
         solve_tps_backward_pair,

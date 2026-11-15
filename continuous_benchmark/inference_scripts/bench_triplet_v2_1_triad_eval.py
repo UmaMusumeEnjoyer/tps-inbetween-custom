@@ -37,7 +37,7 @@ CURRENT_DIR = os.path.dirname(os.path.abspath(__file__))
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     OriginalTPSInbetween,
     TPSInbetweenFinetune_v10,
     robust_tps_theta_from_points,
@@ -49,7 +49,7 @@ from run_comparison_v10_vs_original import (
     compute_ie_mae,
     compute_chamfer_distance
 )
-from run_tps_benchmark_v10 import compute_line_tortuosity
+from bench_triplet_04_v1_0_eval import compute_line_tortuosity
 
 
 def select_stratified_samples(df_val, total_target=100, audit_clip_ids=None):

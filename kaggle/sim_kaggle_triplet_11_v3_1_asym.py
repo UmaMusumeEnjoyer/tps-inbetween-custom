@@ -62,8 +62,8 @@ print("🧪 [TEST 1/3]: ĐO ĐẠC HIỆU NĂNG CELL 4 (LOAD DATASET & TPS PRECO
 print("=" * 80)
 
 # Import module cell 03 & cell 04
-sys.path.insert(0, 'kaggle/v31_cells')
-from ddp_worker_v31 import (
+sys.path.insert(0, 'kaggle/triplet_11_v31_asym_cells')
+from ddp_worker_triplet_asym_v31 import (
     SakugaGoldenDataset_v31,
     TemporalReversalAugmentation_v31,
     custom_collate_fn_v31,
@@ -106,7 +106,7 @@ print(f"[*] Tốc độ đọc Binary NPY (4 vCPUs): {rate_per_file:.3f} ms/file
 print(f"[*] Dự báo thời gian nạp toàn bộ 8,554 match files: {extrapolated_8554_s:.2f} giây")
 
 # Kiểm tra tốc độ giải TPS song song
-import ddp_worker_v31
+import ddp_worker_triplet_asym_v31
 
 # Giả lập thời gian nạp toàn bộ Dataset và TPS Cache
 simulated_cell4_time_s = extrapolated_8554_s + 8.5  # 8.5s cho TPS vectorized batch solve

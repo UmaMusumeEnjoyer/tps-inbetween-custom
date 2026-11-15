@@ -124,11 +124,11 @@ Tập dữ liệu kiểm thử thực tế đa dạng nguồn vẽ anime, kiểm
 
 ## 6. KỊCH BẢN THỰC THI KIỂM THỬ BẰNG MÃ NGUỒN
 
-Quy trình benchmark v0.2 được thực thi tự động qua script `run_tps_benchmark_v02.py`:
+Quy trình benchmark v0.2 được thực thi tự động qua script `bench_triplet_02_v0_2_eval.py`:
 
 ```bash
 # BƯỚC 1: Chạy Benchmark Toàn diện (Validation Split + Visual Samples)
-python continuous_benchmark/inference_scripts/run_tps_benchmark_v02.py \
+python continuous_benchmark/inference_scripts/bench_triplet_02_v0_2_eval.py \
     --model_path checkpoints/experiments/v0.2/model_tps_v0.2_best.pt \
     --dataset_csv data/processed/anime_tps_finetune_dataset_ready/triplets.csv \
     --split val \

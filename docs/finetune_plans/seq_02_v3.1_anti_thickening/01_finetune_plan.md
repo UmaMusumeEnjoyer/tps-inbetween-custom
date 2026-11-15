@@ -4,47 +4,47 @@
 > **Mô hình gốc (Warm-Start):** [`model_latest.pt`](file:///E:/CODE/PBL/PBL6/checkpoints/pretrained_baselines/tps-original/model_latest.pt) (`TPSInbetweenOriginal` — `10,068,668` active params, **100% Zero Architectural Modification**)
 > **Dataset huấn luyện:** [`final_dataset`](file:///E:/CODE/PBL/PBL6/Dataset/sakuga_pipeline_sequence/final_dataset) (`1,485` Train / `190` Val / `198` Bench1 sequences, $N \in \{3,5,7\}$)
 > **Mã nguồn đích sẽ chỉnh sửa:**
-> - [`ddp_worker_tps_sequence_final.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py)
+> - [`seq_p1_v32_ghost_temp_scale_worker.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py)
 > - [`run_benchmark_suite.py`](file:///E:/CODE/PBL/PBL6/Dataset/sakuga_pipeline_sequence/final_dataset/sakuga_golden_benchmark_sequences_v2/run_benchmark_suite.py)
-> - [`generate_kaggle_finetune_nb.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/generate_kaggle_finetune_nb.py) $\rightarrow$ tái sinh [`train_and_benchmark_tps_sequence_final_kaggle.ipynb`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/train_and_benchmark_tps_sequence_final_kaggle.ipynb)
+> - [`generate_kaggle_finetune_nb.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/generate_kaggle_finetune_nb.py) $\rightarrow$ tái sinh [`train_and_benchmark_tps_sequence_final_kaggle.ipynb`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/train_and_benchmark_tps_sequence_final_kaggle.ipynb)
 >
 > **Cơ sở chuyên gia từ `E:\CODE\PBL\PBL6\docs`:**
 > - [`tps-inbetween.pdf`](file:///E:/CODE/PBL/PBL6/docs/DEEPLEARNING/tps-inbetween.pdf) *(Eq. 10–15: Symmetric DT Loss, Pixel Count Constraint $\mathcal{L}_{cnt}$, WCD Area Penalty $\mathcal{H}(\mathbf{b}_0, \mathbf{b}_1)$)*
 > - [`ai_model_training_knowledge_notes.md`](file:///E:/CODE/PBL/PBL6/docs/ai_model_training_knowledge_notes.md) *(Mục 3.2 Validation FP32, Mục 3.6 Cô lập Test, Mục 6.1 Stroke Thickness Loss)*
 > - [`tps_v3_training_optimization_guide.md`](file:///E:/CODE/PBL/PBL6/docs/tps_v3_training_optimization_guide.md) *(Mục 2.5 Tránh xung đột hàm loss hỗn hợp, Mục 3.2 Pure FP32 Val)*
 > - [`01_finetune_plan_v2.4.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v2.4/01_finetune_plan_v2.4.md), [`01_finetune_plan_v2.6.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v2.6/01_finetune_plan_v2.6.md) & [`generate_v25_notebook.py`](file:///E:/CODE/PBL/PBL6/kaggle/generate_v25_notebook.py) *(Bài học V2.3 teo nét `0.58x` $\to$ V2.4 phình nét `1.458x` $\to$ V2.5 Exact-STE Density Calibration `1.0101x` + Bidirectional Stroke Width)*
-> - [`02_retrain_plan_v3.0_remastered_r2.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_remastered/02_retrain_plan_v3.0_remastered_r2.md) & [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0/01_finetune_plan_v3.0_540p.md) *(Continuous Loss không nhảy bậc, Background Floor Cleanliness, `SakugaWCDTopologyManager` chuẩn hóa theo Baseline Epoch 0 + Hard Gates)*
+> - [`02_retrain_plan_v3.0_remastered_r2.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_asym_540p_remastered/02_retrain_plan_v3.0_remastered_r2.md) & [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_asym_540p/01_finetune_plan_v3.0_540p.md) *(Continuous Loss không nhảy bậc, Background Floor Cleanliness, `SakugaWCDTopologyManager` chuẩn hóa theo Baseline Epoch 0 + Hard Gates)*
 
 ---
 
 ## 1. Chẩn đoán Nguyên nhân Gây Tô Đậm Nét Quá Mức trong Lần Chạy #1
 
-Đối chiếu mã nguồn [`ddp_worker_tps_sequence_final.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py) với dữ liệu thực nghiệm tại [`training_history_finetune.csv`](file:///E:/CODE/PBL/PBL6/checkpoints/Re-train/Sequence/training_history_finetune.csv) và các tài liệu chuyên gia trong `docs/`, hiện tượng phình nét (`density_ratio = 1.1943` trên Val, `1.1671` trên Bench #1) và tăng `ghost` gấp $4\times$ bắt nguồn từ **5 lỗ hổng kỹ thuật cụ thể**:
+Đối chiếu mã nguồn [`seq_p1_v32_ghost_temp_scale_worker.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py) với dữ liệu thực nghiệm tại [`training_history_finetune.csv`](file:///E:/CODE/PBL/PBL6/checkpoints/Re-train/Sequence/training_history_finetune.csv) và các tài liệu chuyên gia trong `docs/`, hiện tượng phình nét (`density_ratio = 1.1943` trên Val, `1.1671` trên Bench #1) và tăng `ghost` gấp $4\times$ bắt nguồn từ **5 lỗ hổng kỹ thuật cụ thể**:
 
 1. **Hàm Loss thiếu hoàn toàn lực kìm hãm độ dày & diện tích mực:**
    - `AdaptiveLineartLoss` hiện tại chỉ gồm: `Charbonnier + 0.60*SymDT(12) + 0.25*Sobel + 0.25*Soft-clDice + 0.15*VGG16`.
    - Không có `StrokeDensityRegularizationLoss` ($\mathcal{L}_{cnt}$ trong [`tps-inbetween.pdf`](file:///E:/CODE/PBL/PBL6/docs/DEEPLEARNING/tps-inbetween.pdf) Eq. 11; Exact-STE trong V2.5), không có thành phần phạt tràn mực trên vành đai viền 1–2px (`BidirectionalStrokeWidthLoss`), và không có `GhostLoss` ngoài hành lang $5\times 5$.
    - Trên Val, đúng tại **Epoch 2** (khi `density_ratio = 1.0402`), `WCD_DoG` đạt tốt nhất trên cả 3 nhóm ($N=3, 5, 7$). Từ Epoch 3 trở đi, vì không có lực cản phình nét, `SymDT` + `Soft-clDice` kéo `density_ratio` phình lên `1.1943` tương tự hiện tượng V2.4 từng bị (`1.4580x` trong [`01_finetune_plan_v2.4.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v2.4/01_finetune_plan_v2.4.md)).
 2. **Lực kéo một chiều ra biên trong `loss_dt` và `SoftClDiceLoss`:**
-   - Trong [`ddp_worker_tps_sequence_final.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py#L736-L738), `loss_dt = mean(pred * dt_g) + 0.15 * soft_inverse_dt_coverage(...)` dùng bản đồ khoảng cách tuyến tính 12 bước (`dt_g` chỉ bằng `1/13 ≈ 0.077` ở cách 1px ngoài nét GT) nên phạt rất nhẹ việc phình rộng thêm 1–2px, trong khi `SoftClDiceLoss` (`tsens = sum(t_skel * pred) / sum(t_skel)`) thưởng trực tiếp cho các pixel mực đậm phủ lên khung xương GT.
+   - Trong [`seq_p1_v32_ghost_temp_scale_worker.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py#L736-L738), `loss_dt = mean(pred * dt_g) + 0.15 * soft_inverse_dt_coverage(...)` dùng bản đồ khoảng cách tuyến tính 12 bước (`dt_g` chỉ bằng `1/13 ≈ 0.077` ở cách 1px ngoài nét GT) nên phạt rất nhẹ việc phình rộng thêm 1–2px, trong khi `SoftClDiceLoss` (`tsens = sum(t_skel * pred) / sum(t_skel)`) thưởng trực tiếp cho các pixel mực đậm phủ lên khung xương GT.
    - Trái với công thức gốc Eq. (10) của [`tps-inbetween.pdf`](file:///E:/CODE/PBL/PBL6/docs/DEEPLEARNING/tps-inbetween.pdf) ($\mathcal{L}_{dt} = \|\mathcal{D}(y_t) - \mathcal{D}(y_t^{gt})\|_1$) vốn so sánh bản đồ khoảng cách của *cả* dự đoán và GT nên phạt ngay nếu nét dự đoán nở to làm phình vùng khoảng cách 0.
 3. **Lỗi đảo ngược hệ số phạt diện tích `h_weight` trong `compute_wcd_batch_gpu`:**
-   - Tại [`ddp_worker_tps_sequence_final.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py#L781):
+   - Tại [`seq_p1_v32_ghost_temp_scale_worker.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py#L781):
      `h_weight = 0.5 * (1.0 + minimum(area_p, area_g) / maximum(area_p, area_g))`
-   - Khi `area_p` phình lên `1.20 * area_g`, tỷ số `min/max` giảm còn `0.833` $\implies$ `h_weight` giảm xuống `0.917` (nhỏ hơn `1.0` khi khớp diện tích!). Điều này **ngược hoàn toàn** với Eq. (15) của [`tps-inbetween.pdf`](file:///E:/CODE/PBL/PBL6/docs/DEEPLEARNING/tps-inbetween.pdf) và [`cell_08.py`](file:///E:/CODE/PBL/PBL6/kaggle/v30r_cells/cell_08.py#L56):
+   - Khi `area_p` phình lên `1.20 * area_g`, tỷ số `min/max` giảm còn `0.833` $\implies$ `h_weight` giảm xuống `0.917` (nhỏ hơn `1.0` khi khớp diện tích!). Điều này **ngược hoàn toàn** với Eq. (15) của [`tps-inbetween.pdf`](file:///E:/CODE/PBL/PBL6/docs/DEEPLEARNING/tps-inbetween.pdf) và [`cell_08.py`](file:///E:/CODE/PBL/PBL6/kaggle/triplet_13_v30_remastered_cells/cell_08.py#L56):
      $$\mathcal{H}(\mathbf{b}_0, \mathbf{b}_1) = \text{Sigmoid}\!\left(\frac{|\text{area}_p - \text{area}_g|}{\min(\text{area}_p, \text{area}_g)}\right) \in [0.5, 1.0)$$
      vốn phải **tăng** từ $0.5$ lên $1.0$ để **phạt** khi diện tích nét bị phình hoặc teo.
 4. **Công thức `comp_score` lệch thang đo, dùng `wcd` raw và thiếu kiểm soát `Density` + `Ghost`:**
    - Công thức cũ (`0.45*wcd + 0.25*(semd*3.0) + 0.20*(1 - skel_recall) + 0.10*val_l1`) không chuẩn hóa theo Epoch-0 Baseline: `0.45 * wcd` ($\approx 1.03$) chiếm **~95%** tổng điểm trong khi `semd*3` ($\approx 0.04$) và `val_l1` ($\approx 0.035$) bị triệt tiêu.
    - Dùng `wcd` raw (`p > 0.15`) thay vì `wcd_dog` và đặt trọng số `0%` cho `density_ratio` và `ghost` khiến thuật toán loại Epoch 2 (`WCD_DoG = 2.6822`, `density = 1.0402`) và chọn Epoch 13 (`density = 1.1943`, `ghost = 6,054 px`, `WCD_DoG = 2.7186`).
 5. **Validation chạy ở FP16 (`autocast`):**
-   - [`run_validation_suite`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py#L1382) bật `autocast('cuda')` FP16, trái quy tắc vàng trong [`ai_model_training_knowledge_notes.md`](file:///E:/CODE/PBL/PBL6/docs/ai_model_training_knowledge_notes.md#L348) và [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0/01_finetune_plan_v3.0_540p.md#L102) yêu cầu chạy Validation thuần **FP32** để không méo ngưỡng `0.08`/`0.15` trên nền trắng và nét mảnh.
+   - [`run_validation_suite`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py#L1382) bật `autocast('cuda')` FP16, trái quy tắc vàng trong [`ai_model_training_knowledge_notes.md`](file:///E:/CODE/PBL/PBL6/docs/ai_model_training_knowledge_notes.md#L348) và [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_asym_540p/01_finetune_plan_v3.0_540p.md#L102) yêu cầu chạy Validation thuần **FP32** để không méo ngưỡng `0.08`/`0.15` trên nền trắng và nét mảnh.
 
 ---
 
 ## 2. Thiết kế Chi tiết Sửa đổi Hàm Loss (`AdaptiveLineartLoss_v2`)
 
-Giữ nguyên triết lý từ [`02_retrain_plan_v3.0_remastered_r2.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_remastered/02_retrain_plan_v3.0_remastered_r2.md#L134): **100% liên tục và khả vi từ Epoch 1** (không chia nhánh `if epoch <= k` gây sốc Momentum của AdamW), đồng thời cân bằng lực co/nở theo chuẩn **V2.5 Exact-STE + Bidirectional Stroke Width** để tránh lặp lại cả hai thái cực: teo nét như V2.3 (`0.58x`) lẫn phình nét như V2.4 (`1.458x`) và Run #1 (`1.19x`).
+Giữ nguyên triết lý từ [`02_retrain_plan_v3.0_remastered_r2.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_asym_540p_remastered/02_retrain_plan_v3.0_remastered_r2.md#L134): **100% liên tục và khả vi từ Epoch 1** (không chia nhánh `if epoch <= k` gây sốc Momentum của AdamW), đồng thời cân bằng lực co/nở theo chuẩn **V2.5 Exact-STE + Bidirectional Stroke Width** để tránh lặp lại cả hai thái cực: teo nét như V2.3 (`0.58x`) lẫn phình nét như V2.4 (`1.458x`) và Run #1 (`1.19x`).
 
 ### 2.1. Tổng hợp Công thức Mới cho Chế độ `LONG`
 
@@ -80,14 +80,14 @@ Chi tiết 4 thay đổi trọng tâm trong hàm Loss:
 3. **Bổ sung `GhostAndBackgroundCleanlinessLoss` ($\lambda_{\text{ghost}} = 0.20$):**
    - Khắc phục trực tiếp hiện tượng `ghost` vọt từ `1,537 px` lên `6,196 px` và `dark_ghost` lên `2,501 px` trong Run #1:
      - Ngoài hành lang $5\times 5$ của GT (`outside_5x5 = 1.0 - dilate_5x5((gt > 0.08).float())`):
-       - Phạt sương xám & rò nền (`Background Floor Cleanliness` từ [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0/01_finetune_plan_v3.0_540p.md#L82)): `bg_haze = ReLU(P - 0.015) * outside_5x5`.
+       - Phạt sương xám & rò nền (`Background Floor Cleanliness` từ [`01_finetune_plan_v3.0_540p.md`](file:///E:/CODE/PBL/PBL6/docs/finetune_plans/v3.0_asym_540p/01_finetune_plan_v3.0_540p.md#L82)): `bg_haze = ReLU(P - 0.015) * outside_5x5`.
        - Phạt nặng bóng mờ trung tính & đậm: `far_ghost = ReLU(P - 0.08) * outside_5x5` và `dark_ghost = ReLU(P - 0.35) * outside_5x5`.
      - Cận biên ngoài lõi thực (`outside_core = (gt < 0.08).float()`): `near_halo = ReLU(P - 0.08) * outside_core`.
      - Công thức: $\mathcal{L}_{\text{GhostClean}} = 1.0\,\overline{\text{bg\_haze}} + 1.5\,\overline{\text{far\_ghost}} + 3.0\,\overline{\text{dark\_ghost}} + 0.4\,\overline{\text{near\_halo}}$.
 
 4. **Hiệu chỉnh `Symmetric DT` ($\lambda_{\text{dt}} = 0.35$) & `SoftClDiceLoss` cân bằng ($\lambda_{\text{cldice}} = 0.20$):**
    - Trong `loss_dt`: Hạ trọng số tổng từ `0.60` xuống `0.35` và chuyển từ kéo nở 1 chiều sang **hỗn hợp cân bằng đối xứng kiểu Eq. (10) bài báo gốc**:
-     - `loss_dt_sym = F.l1_loss(approx_soft_dt_map(pred, steps=8), approx_soft_dt_map(gt, steps=8))` (trong đó `approx_soft_dt_map` truyền gradient trực tiếp qua `pred` dùng chuỗi `max_pool2d` trên tensor liên tục `pred`, tương tự `TruncatedDifferentiableDTLoss` trong [`cell_06.py`](file:///E:/CODE/PBL/PBL6/kaggle/v30r_cells/cell_06.py#L54-L78), kết hợp `0.5 * mean(pred * dt_g)` để vừa kéo nét lệch về GT vừa phạt khi `pred` nở rộng làm biến dạng bản đồ khoảng cách).
+     - `loss_dt_sym = F.l1_loss(approx_soft_dt_map(pred, steps=8), approx_soft_dt_map(gt, steps=8))` (trong đó `approx_soft_dt_map` truyền gradient trực tiếp qua `pred` dùng chuỗi `max_pool2d` trên tensor liên tục `pred`, tương tự `TruncatedDifferentiableDTLoss` trong [`cell_06.py`](file:///E:/CODE/PBL/PBL6/kaggle/triplet_13_v30_remastered_cells/cell_06.py#L54-L78), kết hợp `0.5 * mean(pred * dt_g)` để vừa kéo nét lệch về GT vừa phạt khi `pred` nở rộng làm biến dạng bản đồ khoảng cách).
    - Trong `SoftClDiceLoss`: Hạ từ `0.25` xuống `0.20` và dùng **Tversky-clDice cân bằng (`alpha=0.50, beta=0.50`)** như V2.5 để `tprec` (chống khung xương phình/rác) ngang trọng lượng với `tsens` (chống đứt nét).
 
 ### Bảng đối chiếu Hàm Loss: Run #1 vs Kế hoạch Run #2
@@ -119,7 +119,7 @@ Chi tiết 4 thay đổi trọng tâm trong hàm Loss:
    ```
    - Khi `area_p == area_g`: `h_weight = 0.50` (tối thiểu). Khi `area_p` phình lên `1.20 * area_g` hoặc teo xuống `0.80 * area_g`: `h_weight` tăng về `0.55–0.65`, **phạt trực tiếp** sai lệch độ dày nét.
    - *Lưu ý đối chiếu:* Trong `run_benchmark_suite.py` và `val_baseline_m0_m1.json`, sẽ log song song cả `wcd_dog` (chuẩn mới dùng `h_weight` Eq. 15 để làm thước đo chính xác) và `wcd_dog_legacy` (nếu cần so sánh lại với bảng số Run #1).
-2. **Tắt AMP trong pha Validation ([`run_validation_suite`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py#L1382)):**
+2. **Tắt AMP trong pha Validation ([`run_validation_suite`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py#L1382)):**
    - Chạy suy luận Val bằng `with torch.inference_mode():` thuần **FP32** (không bọc `torch.amp.autocast('cuda')`), đảm bảo ngưỡng đo `0.08`, `0.15`, `ghost` và `density_ratio` chính xác tuyệt đối, thời gian Val tăng không đáng kể (~0.2m $\to$ ~0.35m/epoch trên 420 frames).
 
 ### 3.2. Công thức `Composite Score` Mới (Chuẩn hóa Baseline Epoch 0 + Phạt Phình Nét)
@@ -166,8 +166,8 @@ $$S_{\text{val}} = 0.30 \left(\frac{\text{WCD\_DoG}}{\text{WCD\_DoG}_{\text{M1}}
 
 ## 5. Kế hoạch Triển khai & Kiểm thử Xác minh (Verification Plan)
 
-### Bước 1: Chỉnh sửa Mã nguồn trong `kaggle_finetune_sequence_final/` và `run_benchmark_suite.py`
-1. Cập nhật [`ddp_worker_tps_sequence_final.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/ddp_worker_tps_sequence_final.py):
+### Bước 1: Chỉnh sửa Mã nguồn trong `kaggle_seq_p1_v32_ghost_temp_scale/` và `run_benchmark_suite.py`
+1. Cập nhật [`seq_p1_v32_ghost_temp_scale_worker.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/seq_p1_v32_ghost_temp_scale_worker.py):
    - Thay `AdaptiveLineartLoss` bằng phiên bản v2 có `ExactSTEDensityLoss`, `BidirectionalStrokeWidthLoss`, `GhostAndBackgroundCleanlinessLoss`, `SymmetricDT` và `Tversky-clDice` cân bằng.
    - Sửa `compute_wcd_batch_gpu` theo Eq. (15) bài báo gốc (`sigmoid(|area_p - area_g| / min)`), giữ tương thích log `wcd_dog_legacy` nếu cần đối chiếu.
    - Tắt AMP trong `run_validation_suite` (chạy pure FP32), bổ sung breakdown `density_ratio` và `ghost` theo $N \in \{3,5,7\}$.
@@ -175,8 +175,8 @@ $$S_{\text{val}} = 0.30 \left(\frac{\text{WCD\_DoG}}{\text{WCD\_DoG}_{\text{M1}}
 2. Cập nhật [`run_benchmark_suite.py`](file:///E:/CODE/PBL/PBL6/Dataset/sakuga_pipeline_sequence/final_dataset/sakuga_golden_benchmark_sequences_v2/run_benchmark_suite.py):
    - Đồng bộ hàm `compute_wcd_batch_gpu` fallback khi chạy độc lập.
    - Bổ sung kiểm tra `density_ratio` và `ghost` trong phần tổng kết kiểm định (giữ nguyên Wilcoxon 149 scenes trên `wcd_dog`, `skel_recall`, `f1`, `psnr`, `ssim`).
-3. Cập nhật [`generate_kaggle_finetune_nb.py`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/generate_kaggle_finetune_nb.py):
-   - Cập nhật mô tả Cell 0, tham số Cell 5 (`lr_unet=1.8e-5`), biểu đồ Cell 9, rồi chạy tái sinh [`train_and_benchmark_tps_sequence_final_kaggle.ipynb`](file:///E:/CODE/PBL/PBL6/kaggle_finetune_sequence_final/train_and_benchmark_tps_sequence_final_kaggle.ipynb).
+3. Cập nhật [`generate_kaggle_finetune_nb.py`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/generate_kaggle_finetune_nb.py):
+   - Cập nhật mô tả Cell 0, tham số Cell 5 (`lr_unet=1.8e-5`), biểu đồ Cell 9, rồi chạy tái sinh [`train_and_benchmark_tps_sequence_final_kaggle.ipynb`](file:///E:/CODE/PBL/PBL6/kaggle_seq_p1_v32_ghost_temp_scale/train_and_benchmark_tps_sequence_final_kaggle.ipynb).
 
 ### Bước 2: Kiểm thử Cục bộ Trước khi Chạy Kaggle (Local Sanity & Gradient Tests)
 1. **Unit test hành vi chống phình nét (qua `.venv\Scripts\python.exe`):**

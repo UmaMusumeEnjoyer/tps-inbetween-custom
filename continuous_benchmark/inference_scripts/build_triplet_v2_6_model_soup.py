@@ -42,7 +42,7 @@ if PROJECT_ROOT not in sys.path:
 if CURRENT_DIR not in sys.path:
     sys.path.insert(0, CURRENT_DIR)
 
-from run_comparison_v10_vs_original import (
+from bench_triplet_utils_and_v1_0_vs_orig import (
     TPSInbetweenFinetune_v10,
     robust_tps_theta_from_points,
     tps_flow_from_theta,
@@ -53,7 +53,7 @@ from run_comparison_v10_vs_original import (
     compute_ie_mae,
     compute_chamfer_distance
 )
-from run_tps_benchmark_v25 import select_stratified_samples
+from bench_triplet_09_v2_5_eval import select_stratified_samples
 
 
 def extract_state_dict(ckpt_path):

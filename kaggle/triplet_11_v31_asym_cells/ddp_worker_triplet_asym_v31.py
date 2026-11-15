@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-ddp_worker_v31.py
+ddp_worker_triplet_asym_v31.py
 Dedicated DistributedDataParallel (DDP) Training & Validation Engine for V3.1.
 Supports 2x Tesla T4 GPUs on Kaggle with NCCL backend, torchrun multi-processing,
 unbuffered streaming logs (<3s initial log), DistributedWeightedSampler,

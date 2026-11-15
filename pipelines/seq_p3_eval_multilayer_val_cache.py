@@ -17,12 +17,12 @@ DATASET_DIR = os.path.join(
     REPO_ROOT, "Dataset", "sakuga_pipeline_sequence", "final_dataset",
     "sakuga_golden_dataset_sequences_tps_v2"
 )
-for p in [SCRIPT_DIR, os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2")]:
+for p in [SCRIPT_DIR, os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge")]:
     if p not in sys.path:
         sys.path.insert(0, p)
 
-from multi_layer_tps import reconstruct_multilayer_flow_batch_from_cache
-from ddp_worker_tps_sequence_phase2 import (
+from seq_p3_multi_layer_tps import reconstruct_multilayer_flow_batch_from_cache
+from seq_p2_v33_ghost_purge_worker import (
     TPSInbetweenOriginal,
     load_tps_weights,
     solve_tps_backward_pair,

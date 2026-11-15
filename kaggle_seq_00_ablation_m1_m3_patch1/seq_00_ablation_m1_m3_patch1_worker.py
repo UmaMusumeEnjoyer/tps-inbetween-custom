@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ddp_worker_m1_to_m3_patch1.py
+seq_00_ablation_m1_m3_patch1_worker.py
 --------------------------------------------------------------------------------
 Standalone DDP Worker for Kaggle 2x Tesla T4 GPUs:
 Ablation Study: M1 (TPS-Inbetween Original Baseline) -> M3 (Ours Sequence V1 Patch 1)

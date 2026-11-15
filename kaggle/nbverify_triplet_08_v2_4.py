@@ -29,10 +29,7 @@ if sys.platform.startswith('win'):
 
 def verify_notebooks():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    nb_files = [
-        os.path.join(script_dir, "06_train_tps_inbetween_finetune_v2.4.ipynb"),
-        os.path.join(script_dir, "finetune-v2-4.ipynb")
-    ]
+    nb_files = [os.path.join(script_dir, "triplet_08_v2.4_balanced_density_kaggle.ipynb")]
 
     print("=" * 80)
     print("🔍 BẮT ĐẦU THẨM ĐỊNH CẤU TRÚC VÀ CÚ PHÁP NOTEBOOK KAGGLE V2.4")

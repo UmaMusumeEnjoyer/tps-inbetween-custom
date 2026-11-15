@@ -4,9 +4,8 @@
 verify_v25_notebook.py
 Script thẩm định toàn diện tính hợp lệ và độ chính xác toán học của Notebook Huấn luyện Kaggle V2.5:
 1. Kiểm tra cấu trúc JSON và AST syntax của toàn bộ 14 Cells trong cả 2 file:
-   - kaggle/06_train_tps_inbetween_finetune_v2.5.ipynb
-   - kaggle/finetune-v2-5.ipynb
-2. Unit-test toán học của StrokeDensityRegularizationLoss V2.5 (Exact-STE):
+   - kaggle/triplet_09_v2.5_exact_ste_width_kaggle.ipynb
+   2. Unit-test toán học của StrokeDensityRegularizationLoss V2.5 (Exact-STE):
    - Chứng minh 0 byte nhiễu nền trắng.
    - Chứng minh dead-zone [0.96, 1.03] không phạt.
    - Chứng minh gradient dL/dp > 0 liên tục khi phình nét (khắc phục triệt để lỗi mất đạo hàm của V2.4).
@@ -38,10 +37,7 @@ if sys.platform.startswith('win'):
 
 def verify_notebooks():
     script_dir = os.path.dirname(os.path.abspath(__file__))
-    nb_files = [
-        os.path.join(script_dir, "06_train_tps_inbetween_finetune_v2.5.ipynb"),
-        os.path.join(script_dir, "finetune-v2-5.ipynb")
-    ]
+    nb_files = [os.path.join(script_dir, "triplet_09_v2.5_exact_ste_width_kaggle.ipynb")]
 
     print("=" * 80)
     print("🔍 BẮT ĐẦU THẨM ĐỊNH CẤU TRÚC VÀ CÚ PHÁP NOTEBOOK KAGGLE V2.5")

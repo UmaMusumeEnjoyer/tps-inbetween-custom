@@ -37,28 +37,28 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3")
+PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps")
 
 for _d in (SCRIPT_DIR, PHASE3_WORKER_DIR):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
-from phase3_inference_pipeline import (
+from seq_p3_inference_pipeline import (
     Phase3InferencePipeline,
     load_ink_from_input,
     ink_tensor_to_u8,
     DEFAULT_PHASE3_CKPT,
 )
-from ddp_worker_tps_sequence_phase3 import (
+from seq_p3_v2_multilayer_tps_worker import (
     TPSInbetweenOriginal,
     load_tps_weights,
     evaluate_metrics_dual_regime,
 )
 
 DEFAULT_TEST_DIR = os.path.join(REPO_ROOT, "data", "lineart_experiments", "test")
-DEFAULT_GS_NPZ = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+DEFAULT_GS_NPZ = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
 DEFAULT_PHA2_CKPT = os.path.join(REPO_ROOT, "checkpoints", "Re-train", "Sequence 2 Blended", "checkpoints", "model_tps_blended.pt")
-DEFAULT_OUT_DIR = os.path.join(REPO_ROOT, "demo_outputs", "phase3_sharp_demo")
+DEFAULT_OUT_DIR = os.path.join(REPO_ROOT, "demo_02_seq_p3_sharp_outputs", "phase3_sharp_demo")
 
 
 def _make_panel(u8_img, title, color_bgr, is_keyframe=False):

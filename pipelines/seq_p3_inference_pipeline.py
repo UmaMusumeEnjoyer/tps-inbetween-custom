@@ -1,17 +1,17 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-phase3_inference_pipeline.py
+seq_p3_inference_pipeline.py
 --------------------------------------------------------------------------------
 PIPELINE SUY LUẬN & XUẤT FRAME CHÍNH THỨC CỦA PHA 3 (ZERO-COST INFERENCE POLISH)
 Đề tài: Nội suy khung hình hoạt họa Anime Lineart (PBL6)
 
 Kết hợp 3 tầng xử lý đồng bộ:
-  - Tầng 1: Coarse TPS Đa lớp (Multi-Layer Clustered TPS - `multi_layer_tps.py`)
+  - Tầng 1: Coarse TPS Đa lớp (Multi-Layer Clustered TPS - `seq_p3_multi_layer_tps.py`)
             Tách cụm nền tĩnh và tiền cảnh động, giải TPS độc lập + mặt nạ C^2.
   - Tầng 2: Mạng Tinh Chỉnh UNet (`TPSInbetweenOriginal` - `M3_Best` Pha 3 Remake)
             Bảo toàn Skeleton Recall, Tip Recall, mật độ nét 1.002 và giảm WCD_DoG.
-  - Tầng 3: Bộ lọc Tương phản Thích ứng Cục bộ (`adaptive_sharpener.py`, mode='balanced')
+  - Tầng 3: Bộ lọc Tương phản Thích ứng Cục bộ (`seq_p3_adaptive_sharpener.py`, mode='balanced')
             Tích hợp tại tầng xuất frame: kéo dốc sườn chuyển tiếp nét, xóa quầng
             mờ halo & vệt ghost trên nền mà vẫn giữ nguyên 100% Skeleton Recall.
 --------------------------------------------------------------------------------
@@ -40,15 +40,15 @@ except ImportError:
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3")
+PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps")
 
 for _d in (SCRIPT_DIR, PHASE3_WORKER_DIR):
     if _d not in sys.path:
         sys.path.insert(0, _d)
 
-from multi_layer_tps import solve_multi_layer_tps
-from ddp_worker_tps_sequence_phase3 import TPSInbetweenOriginal, load_tps_weights
-from adaptive_sharpener import apply_adaptive_sharpener
+from seq_p3_multi_layer_tps import solve_multi_layer_tps
+from seq_p3_v2_multilayer_tps_worker import TPSInbetweenOriginal, load_tps_weights
+from seq_p3_adaptive_sharpener import apply_adaptive_sharpener
 
 DEFAULT_PHASE3_CKPT = os.path.join(
     REPO_ROOT, "checkpoints", "Re-train", "Sequence 2 pha 3 remake",
@@ -349,7 +349,7 @@ def main():
         kf_idx = [0, 3, 7, 11, 14, 19, 23] if len(paths) == 24 else list(range(0, len(paths), 4))
         if kf_idx[-1] != len(paths) - 1:
             kf_idx.append(len(paths) - 1)
-        gs_npz = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_final", "lineart_test_gluestick_matches.npz")
+        gs_npz = os.path.join(REPO_ROOT, "kaggle_seq_p1_v32_ghost_temp_scale", "lineart_test_gluestick_matches.npz")
         pipe.export_sequence(paths, kf_idx, args.out_dir, gluestick_npz=gs_npz)
     else:
         parser.print_help()

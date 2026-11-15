@@ -98,7 +98,7 @@ for _d in (_PIPELINES_DIR, _WORKER_DIR):
         sys.path.insert(0, _d)
 
 try:
-    from multi_layer_tps import solve_multi_layer_tps, segment_motion_keypoints
+    from seq_p3_multi_layer_tps import solve_multi_layer_tps, segment_motion_keypoints
 except ImportError:
     solve_multi_layer_tps = None
     segment_motion_keypoints = None

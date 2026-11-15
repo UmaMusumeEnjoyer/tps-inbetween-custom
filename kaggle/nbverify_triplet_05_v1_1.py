@@ -22,8 +22,9 @@ if sys.platform.startswith('win'):
     except Exception:
         pass
 
-nb_path = r"e:\CODE\PBL\PBL6\kaggle\04_train_tps_inbetween_finetune_v1.1.ipynb"
-v10_path = r"e:\CODE\PBL\PBL6\kaggle\04_train_tps_inbetween_finetune_v1.0.ipynb"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+nb_path = os.path.join(SCRIPT_DIR, "triplet_05_v1.1_ghost_purge_fixed_kaggle.ipynb")
+v10_path = os.path.join(SCRIPT_DIR, "triplet_04_v1.0_golden_v1_kaggle.ipynb")
 
 print("=" * 80)
 print(f"[*] ĐANG THẨM ĐỊNH TOÀN DIỆN NOTEBOOK V1.1: {nb_path}")

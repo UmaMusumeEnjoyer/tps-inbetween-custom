@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-render_defense_gain_table.py
+render_seq_p3_defense_gain_table.py
 --------------------------------------------------------------------------------
-Đọc trực tiếp dữ liệu từ benchmark_outputs_orig_vs_pha3/case1_lineart_test_24f/benchmark_case1_per_frame.csv
+Đọc trực tiếp dữ liệu từ bench_outputs_seq_p3_vs_orig/case1_lineart_test_24f/benchmark_case1_per_frame.csv
 và xuất bảng đồ họa High-DPI phục vụ bảo vệ PBL6:
   1. Bảng quy đổi "% Giảm lỗi tương đối / Cải thiện thực tế" (Pha 3 vs Original)
   2. Bảng tổng hợp hiệu năng khoảng cách chuẩn (delta_f = 3) & Peak Frames
@@ -19,7 +19,7 @@ import matplotlib.patches as patches
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
-BENCH_DIR = os.path.join(REPO_ROOT, "benchmark_outputs_orig_vs_pha3")
+BENCH_DIR = os.path.join(REPO_ROOT, "bench_outputs_seq_p3_vs_orig")
 CSV_PATH = os.path.join(BENCH_DIR, "case1_lineart_test_24f", "benchmark_case1_per_frame.csv")
 OUT_PRIMARY = os.path.join(BENCH_DIR, "table_case1_relative_gain_defense.png")
 OUT_TABLE_DIR = os.path.join(BENCH_DIR, "table_images", "table_case1_relative_gain_defense.png")

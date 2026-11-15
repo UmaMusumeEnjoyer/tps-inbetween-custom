@@ -21,14 +21,14 @@ print(f"[*] Working Dir: {WORKING_DIR} | Stage Dir: {STAGE_DIR}")
 print("=" * 80)
 sys.stdout.flush()
 
-DDP_WORKER_PATH = os.path.join(WORKING_DIR, 'ddp_worker_v31.py')
+DDP_WORKER_PATH = os.path.join(WORKING_DIR, 'ddp_worker_triplet_asym_v31.py')
 
 # __DDP_WORKER_INJECTION_POINT__
 if not os.path.exists(DDP_WORKER_PATH):
     cand_paths = [
-        'ddp_worker_v31.py',
-        'kaggle/v31_cells/ddp_worker_v31.py',
-        os.path.join(os.path.dirname(__file__) if '__file__' in globals() else '.', 'ddp_worker_v31.py')
+        'ddp_worker_triplet_asym_v31.py',
+        'kaggle/triplet_11_v31_asym_cells/ddp_worker_triplet_asym_v31.py',
+        os.path.join(os.path.dirname(__file__) if '__file__' in globals() else '.', 'ddp_worker_triplet_asym_v31.py')
     ]
     for cp in cand_paths:
         if os.path.exists(cp):

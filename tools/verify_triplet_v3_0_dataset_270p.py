@@ -28,7 +28,7 @@ if sys.platform.startswith('win'):
 def main():
     src_root = os.path.abspath("data/processed/sakuga_golden_dataset_tps_ready_v1_patch3")
     dst_root = os.path.abspath("data/processed/sakuga_golden_dataset_tps_ready_v1_patch3_270p_v3test")
-    docs_dir = os.path.abspath("docs/v3.0")
+    docs_dir = os.path.abspath("docs/triplet_v3.0_asym_270p_audit")
     os.makedirs(docs_dir, exist_ok=True)
 
     print("=" * 80)

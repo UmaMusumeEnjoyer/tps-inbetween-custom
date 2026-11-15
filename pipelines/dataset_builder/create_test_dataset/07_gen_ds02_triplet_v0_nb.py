@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-create_kaggle_notebook.py
+07_gen_ds02_triplet_v0_nb.py
 Sinh file notebook `generate_tps_dataset_kaggle.ipynb` chuẩn format Jupyter Notebook JSON.
 """
 

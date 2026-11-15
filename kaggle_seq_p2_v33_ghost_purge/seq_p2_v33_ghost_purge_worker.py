@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ddp_worker_tps_sequence_final.py
+seq_p1_v32_ghost_temp_scale_worker.py
 --------------------------------------------------------------------------------
 Động cơ Huấn luyện & Kiểm định DDP 2x GPU Tesla T4 (Kaggle Dual-GPU) cho:
 Fine-tune Mô hình TPS-Inbetween Gốc (model_latest.pt) trên Sakuga Sequence Final Dataset

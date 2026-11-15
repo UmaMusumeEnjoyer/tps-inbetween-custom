@@ -4,17 +4,17 @@
 | Thành phần | Sequence 2 Pha 3 Remake (Giữ Nguyên 100%) | Thử nghiệm Mới: Phase 4 Occlusion Head (Cách ly) |
 | :--- | :--- | :--- |
 | **Tên mã (Codename)** | `Phase3_Remake` / `M3_Best` | `Phase4_Occlusion` / `M4_Occ` |
-| **Thư mục Mã nguồn Kaggle** | `kaggle_finetune_sequence_phase3/` | `kaggle_experiment_occlusion/` |
+| **Thư mục Mã nguồn Kaggle** | `kaggle_seq_p3_multilayer_tps/` | `kaggle_seq_p4_occlusion_head/` |
 | **Thư mục Checkpoint** | `checkpoints/Re-train/Sequence 2 pha 3 remake/` | `checkpoints/Re-train/Sequence 4 Occlusion Head/` |
 | **File Checkpoint Chính** | `model_tps_finetuned_best.pt` | `model_tps_occlusion_best.pt` |
-| **Thư mục Kết quả Benchmark** | `verified_benchmark_sharpener/` | `benchmark_outputs_phase4_occlusion/` |
-| **Script Suy luận / Test** | `pipelines/phase3_inference_pipeline.py` | `pipelines/phase4_occlusion_pipeline.py` |
+| **Thư mục Kết quả Benchmark** | `verified_benchmark_sharpener/` | `bench_outputs_seq_p4_occlusion/` |
+| **Script Suy luận / Test** | `pipelines/seq_p3_inference_pipeline.py` | `pipelines/seq_p4_occlusion_pipeline.py` |
 | **Script Benchmark Đối Đầu** | `pipelines/run_verified_benchmark_suite_p3_sharp.py` | `pipelines/benchmark_pha4_vs_pha3.py` |
 
 ---
 
 ## 2. Kiến Trúc Mô Hình (`TPSInbetweenOcclusion`)
-File: `kaggle_experiment_occlusion/model_occlusion.py`
+File: `kaggle_seq_p4_occlusion_head/seq_p4_occlusion_model.py`
 - **Occlusion Head trong IFNet.block2**: Lớp `ConvTranspose2d` cuối cùng xuất 6 kênh thay vì 5:
   $$\text{Output} = \left[ F_{0\to t}^{(2)}, F_{1\to t}^{(2)}, M_{0\to t}^{(1)}, M_{1\to t}^{(1)} \right]$$
 - **Hai mặt nạ che khuất chuẩn hóa qua Sigmoid**: $M_{0\to t}, M_{1\to t} \in [0.0, 1.0]$.
@@ -45,21 +45,21 @@ Hàm Loss phụ trợ gồm 3 thành phần:
 
 ## 4. Danh Sách Tệp Đã Tạo Trong Thử Nghiệm Cách Ly
 
-1. `kaggle_experiment_occlusion/model_occlusion.py`:
+1. `kaggle_seq_p4_occlusion_head/seq_p4_occlusion_model.py`:
    - Class `TPSInbetweenOcclusion`
    - Class `IFNetOcclusion`
    - Class `OcclusionAwareLoss`
    - Hàm `load_tps_occlusion_weights`
-2. `kaggle_experiment_occlusion/ddp_worker_tps_occlusion.py`:
+2. `kaggle_seq_p4_occlusion_head/seq_p4_occlusion_worker.py`:
    - Động cơ huấn luyện 2x GPU DDP độc lập.
    - Quản lý checkpoint tự động `OcclusionCheckpointManager` (xuất đúng 2 file `model_tps_occlusion_best.pt` và `model_tps_occlusion_last.pt`).
-3. `kaggle_experiment_occlusion/generate_kaggle_occlusion_nb.py`:
+3. `kaggle_seq_p4_occlusion_head/generate_kaggle_occlusion_nb.py`:
    - Script tự động biên soạn notebook Kaggle tự thân hoàn chỉnh.
-4. `kaggle_experiment_occlusion/train_tps_occlusion_kaggle.ipynb`:
+4. `kaggle_seq_p4_occlusion_head/train_tps_occlusion_kaggle.ipynb`:
    - Notebook hoàn chỉnh 10 cells, sẵn sàng tải lên Kaggle và bấm Run ngay lập tức.
-5. `pipelines/phase4_occlusion_pipeline.py`:
+5. `pipelines/seq_p4_occlusion_pipeline.py`:
    - Pipeline suy luận và xuất frame kèm trích xuất trực quan mặt nạ $M_0, M_1$ và Blend Weight.
 6. `pipelines/benchmark_pha4_vs_pha3.py`:
    - Benchmark đối đầu 4 phiên bản trên cùng 1 biểu đồ: Pha 2 Blended vs Pha 3 Raw vs Pha 3 + Sharpener vs Pha 4 Occlusion.
-7. `benchmark_outputs_phase4_occlusion/`:
+7. `bench_outputs_seq_p4_occlusion/`:
    - Thư mục lưu kết quả đối đầu (ảnh 6 cột, GIF hoạt họa, bảng CSV).

@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-ddp_worker_tps_occlusion.py
+seq_p4_occlusion_worker.py
 --------------------------------------------------------------------------------
 ĐỘNG CƠ HUẤN LUYỆN DDP 2x GPU PHA 4 — OCCLUSION-AWARE HEAD (TPSInbetweenOcclusion)
 Thử nghiệm Cách ly Độc lập: Phase 4 Occlusion Head (M4_Occ)
@@ -70,16 +70,16 @@ REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
 
 for _p in (
     SCRIPT_DIR,
-    os.path.join(REPO_ROOT, "kaggle_experiment_occlusion"),
-    os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3"),
-    os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2"),
+    os.path.join(REPO_ROOT, "kaggle_seq_p4_occlusion_head"),
+    os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps"),
+    os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge"),
     os.path.join(REPO_ROOT, "pipelines"),
 ):
     if os.path.isdir(_p) and _p not in sys.path:
         sys.path.insert(0, _p)
 
 # Import model occlusion & loss
-from model_occlusion import (
+from seq_p4_occlusion_model import (
     TPSInbetweenOcclusion,
     load_tps_occlusion_weights,
     OcclusionAwareLoss,
@@ -88,13 +88,13 @@ from model_occlusion import (
 )
 
 # Import dataset & multi-layer pipeline components
-from multi_layer_tps import (
+from seq_p3_multi_layer_tps import (
     FIXED_TPS_ANCHORS,
     solve_multilayer_cache_entry,
     reconstruct_multilayer_flow_batch_from_cache,
 )
 
-from ddp_worker_tps_sequence_phase2 import (
+from seq_p2_v33_ghost_purge_worker import (
     trim_memory,
     AdaptiveLineartLoss,
     BidirectionalStrokeWidthLoss,
@@ -109,7 +109,7 @@ from ddp_worker_tps_sequence_phase2 import (
     _apply_paired_spatial_aug_gpu,
 )
 
-from ddp_worker_tps_sequence_phase3 import (
+from seq_p3_v2_multilayer_tps_worker import (
     Phase3ExactDensityLoss,
     Phase3ZoneCleanlinessLoss,
     SakugaMultiLayerDataset,

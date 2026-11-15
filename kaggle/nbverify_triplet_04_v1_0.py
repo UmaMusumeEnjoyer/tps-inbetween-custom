@@ -11,7 +11,8 @@ if sys.platform.startswith('win'):
     except Exception:
         pass
 
-nb_path = r"e:\CODE\PBL\PBL6\kaggle\notebooks\04_train_tps_inbetween_finetune_v1.0.ipynb"
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+nb_path = os.path.join(SCRIPT_DIR, "triplet_04_v1.0_golden_v1_kaggle.ipynb")
 
 print(f"[*] Đang thẩm định file notebook: {nb_path}")
 

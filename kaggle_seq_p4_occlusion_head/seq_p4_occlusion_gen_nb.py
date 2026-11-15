@@ -35,17 +35,17 @@ if sys.platform.startswith('win'):
 THIS_DIR = os.path.dirname(os.path.abspath(__file__))
 REPO_ROOT = os.path.abspath(os.path.join(THIS_DIR, ".."))
 
-MODEL_OCCLUSION_PATH = os.path.join(THIS_DIR, "model_occlusion.py")
-WORKER_OCCLUSION_PATH = os.path.join(THIS_DIR, "ddp_worker_tps_occlusion.py")
-MULTILAYER_PATH = os.path.join(REPO_ROOT, "pipelines", "multi_layer_tps.py")
-BUILD_CACHE_PATH = os.path.join(REPO_ROOT, "pipelines", "build_tps_cache_multilayer.py")
-WORKER_P2_PATH = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2", "ddp_worker_tps_sequence_phase2.py")
-WORKER_P3_PATH = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase3", "ddp_worker_tps_sequence_phase3.py")
+MODEL_OCCLUSION_PATH = os.path.join(THIS_DIR, "seq_p4_occlusion_model.py")
+WORKER_OCCLUSION_PATH = os.path.join(THIS_DIR, "seq_p4_occlusion_worker.py")
+MULTILAYER_PATH = os.path.join(REPO_ROOT, "pipelines", "seq_p3_multi_layer_tps.py")
+BUILD_CACHE_PATH = os.path.join(REPO_ROOT, "pipelines", "seq_p3_build_multilayer_cache.py")
+WORKER_P2_PATH = os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge", "seq_p2_v33_ghost_purge_worker.py")
+WORKER_P3_PATH = os.path.join(REPO_ROOT, "kaggle_seq_p3_multilayer_tps", "seq_p3_v2_multilayer_tps_worker.py")
 BENCH_SUITE_PATH = os.path.join(
     REPO_ROOT, "Dataset", "sakuga_pipeline_sequence", "final_dataset",
     "sakuga_golden_benchmark_sequences_v2", "run_benchmark_suite.py"
 )
-GLUESTICK_NPZ_PATH = os.path.join(REPO_ROOT, "kaggle_finetune_sequence_phase2", "lineart_test_gluestick_matches.npz")
+GLUESTICK_NPZ_PATH = os.path.join(REPO_ROOT, "kaggle_seq_p2_v33_ghost_purge", "lineart_test_gluestick_matches.npz")
 
 
 def _read_text(path):
@@ -128,9 +128,9 @@ except ImportError:
 torch.backends.cudnn.benchmark = True
 
 IS_KAGGLE = os.path.exists("/kaggle")
-WORKING_DIR = "/kaggle/working" if IS_KAGGLE else os.path.abspath("./kaggle_local_test_ws")
+WORKING_DIR = "/kaggle/working" if IS_KAGGLE else os.path.abspath("./kaggle_seq_01_local_test_workspace")
 OUTPUT_CKPT_DIR = os.path.join(WORKING_DIR, "checkpoints_phase4_occlusion")
-BENCH_OUT_DIR = os.path.join(WORKING_DIR, "benchmark_outputs_phase4_occlusion")
+BENCH_OUT_DIR = os.path.join(WORKING_DIR, "bench_outputs_seq_p4_occlusion")
 for _d in (WORKING_DIR, OUTPUT_CKPT_DIR, BENCH_OUT_DIR):
     os.makedirs(_d, exist_ok=True)
 
@@ -148,27 +148,27 @@ print(f"🧠 Host RAM: Tổng = {{mem.total / (1024**3):.1f}} GB | Trống = {{m
 print("=" * 84)
 
 # Ghi các module cách ly của Phase 4
-model_occ_path = os.path.join(WORKING_DIR, "model_occlusion.py")
+model_occ_path = os.path.join(WORKING_DIR, "seq_p4_occlusion_model.py")
 with open(model_occ_path, "w", encoding="utf-8") as f:
     f.write({repr(model_occ_code)})
 
-worker_occ_path = os.path.join(WORKING_DIR, "ddp_worker_tps_occlusion.py")
+worker_occ_path = os.path.join(WORKING_DIR, "seq_p4_occlusion_worker.py")
 with open(worker_occ_path, "w", encoding="utf-8") as f:
     f.write({repr(worker_occ_code)})
 
-ml_path = os.path.join(WORKING_DIR, "multi_layer_tps.py")
+ml_path = os.path.join(WORKING_DIR, "seq_p3_multi_layer_tps.py")
 with open(ml_path, "w", encoding="utf-8") as f:
     f.write({repr(ml_code)})
 
-build_cache_path = os.path.join(WORKING_DIR, "build_tps_cache_multilayer.py")
+build_cache_path = os.path.join(WORKING_DIR, "seq_p3_build_multilayer_cache.py")
 with open(build_cache_path, "w", encoding="utf-8") as f:
     f.write({repr(build_cache_code)})
 
-worker_p2_path = os.path.join(WORKING_DIR, "ddp_worker_tps_sequence_phase2.py")
+worker_p2_path = os.path.join(WORKING_DIR, "seq_p2_v33_ghost_purge_worker.py")
 with open(worker_p2_path, "w", encoding="utf-8") as f:
     f.write({repr(worker_p2_code)})
 
-worker_p3_path = os.path.join(WORKING_DIR, "ddp_worker_tps_sequence_phase3.py")
+worker_p3_path = os.path.join(WORKING_DIR, "seq_p3_v2_multilayer_tps_worker.py")
 with open(worker_p3_path, "w", encoding="utf-8") as f:
     f.write({repr(worker_p3_code)})
 
@@ -180,9 +180,9 @@ GLUESTICK_TEST_NPZ = os.path.join(WORKING_DIR, "lineart_test_gluestick_matches.n
 with open(GLUESTICK_TEST_NPZ, "wb") as f:
     f.write(base64.b64decode({repr(gluestick_b64)}))
 
-print(f"[✓] Đã ghi model_occlusion.py ({{os.path.getsize(model_occ_path):,}} B)")
-print(f"[✓] Đã ghi ddp_worker_tps_occlusion.py ({{os.path.getsize(worker_occ_path):,}} B)")
-print(f"[✓] Đã ghi multi_layer_tps.py ({{os.path.getsize(ml_path):,}} B)")
+print(f"[✓] Đã ghi seq_p4_occlusion_model.py ({{os.path.getsize(model_occ_path):,}} B)")
+print(f"[✓] Đã ghi seq_p4_occlusion_worker.py ({{os.path.getsize(worker_occ_path):,}} B)")
+print(f"[✓] Đã ghi seq_p3_multi_layer_tps.py ({{os.path.getsize(ml_path):,}} B)")
 print(f"[✓] Đã ghi run_benchmark_suite.py ({{os.path.getsize(bench_script_path):,}} B)")
 sys.stdout.flush()
 '''
@@ -334,7 +334,7 @@ print("=" * 84)
 import os
 import shutil
 import pandas as pd
-from build_tps_cache_multilayer import build_multilayer_cache
+from seq_p3_build_multilayer_cache import build_multilayer_cache
 
 TPS_CACHE_MULTILAYER = os.path.join(SSD_ROOT, "tps_cache_multilayer.npz")
 TRAIN_CSV_IDX_PATH = os.path.join(TRAIN_STAGE_DIR, "train_sequences_indexed.csv")
@@ -366,7 +366,7 @@ else:
 # ==============================================================================
 import gc
 import torch
-from model_occlusion import TPSInbetweenOcclusion, load_tps_occlusion_weights
+from seq_p4_occlusion_model import TPSInbetweenOcclusion, load_tps_occlusion_weights
 
 m4 = TPSInbetweenOcclusion()
 load_tps_occlusion_weights(m4, P3_BEST_CHECKPOINT_PATH, device='cpu', prefer_ema=True, is_rank0=True)
@@ -469,9 +469,9 @@ import gc
 import torch
 import pandas as pd
 from IPython.display import display, Image as IPyImage
-from ddp_worker_tps_sequence_phase2 import TPSInbetweenOriginal, load_tps_weights
-from model_occlusion import TPSInbetweenOcclusion, load_tps_occlusion_weights
-from run_benchmark_suite import run_benchmark_continuous_lineart_test, run_benchmark_defense_geometry_suite
+from seq_p2_v33_ghost_purge_worker import TPSInbetweenOriginal, load_tps_weights
+from seq_p4_occlusion_model import TPSInbetweenOcclusion, load_tps_occlusion_weights
+from seq_dual_benchmark_suite import run_benchmark_continuous_lineart_test, run_benchmark_defense_geometry_suite
 
 device = torch.device('cuda:0' if torch.cuda.is_available() else 'cpu')
 models_dict = {}

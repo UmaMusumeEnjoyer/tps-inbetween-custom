@@ -2,7 +2,7 @@
 # -*- coding: utf-8 -*-
 """
 Script chạy thử nghiệm 2 cặp keyframe mẫu từ dataset ATD-12K trên mô hình TPS-Inbetween.
-- Lưu trữ kết quả dự đoán và toàn bộ ảnh đối chứng vào e:/CODE/PBL/PBL6/Demo_ATD12K_TPS_Inbetween
+- Lưu trữ kết quả dự đoán và toàn bộ ảnh đối chứng vào e:/CODE/PBL/PBL6/demo_01_atd12k_orig_tps
 - Tạo ảnh so sánh trực quan Side-by-Side và Heatmap sai lệch
 """
 
