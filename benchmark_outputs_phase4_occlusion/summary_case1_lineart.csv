@@ -1,0 +1,4 @@
+Phiên Bản,PSNR (dB) (↑),SSIM (↑),Skeleton Recall (%) (↑),Tip Recall (%) (↑),F1 Score (↑),WCD_DoG (px) (↓),Ghost Pixels (px) (↓),IE_MAE (↓),Density Ratio (≈1.0)
+Pha 3 Remake (Newpipeline),14.8169,0.6685,0.5916,0.6002,0.7126,2.5605,9605.7647,16.3138,0.9885
+Pha 4 Occlusion Head (Raw),15.6009,0.6633,0.5884,0.5964,0.7155,2.6239,27226.8235,15.1211,0.9518
+Pha 4 Occlusion Head + Sharp,14.9961,0.6701,0.588,0.5965,0.7141,2.5814,9943.2353,15.8713,0.9583

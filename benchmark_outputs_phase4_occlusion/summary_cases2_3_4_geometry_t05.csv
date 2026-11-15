@@ -1,0 +1,10 @@
+Case,Phiên Bản,PSNR (dB) (↑),SSIM (↑),Exact Skel Recall (%) (↑),Exact Density Ratio (≈1.0),WCD_DoG (px) (↓),Ghost Pixels (px) (↓),IE_MAE (↓)
+Case 2: Deforming Circle (t=0.50),Pha 3 Remake (Newpipeline),26.6456,0.9893,100.0,1.0114,0.904,80.0,0.7868
+Case 2: Deforming Circle (t=0.50),Pha 4 Occlusion Head (Raw),25.7122,0.9866,100.0,0.9378,0.9691,143.0,1.0432
+Case 2: Deforming Circle (t=0.50),Pha 4 Occlusion Head + Sharp,26.1534,0.988,100.0,0.9395,0.9451,64.0,0.9128
+Case 3: Deforming Hollow Cross (t=0.50),Pha 3 Remake (Newpipeline),19.8169,0.966,33.4135,0.8711,7.4909,190.0,2.9925
+Case 3: Deforming Hollow Cross (t=0.50),Pha 4 Occlusion Head (Raw),20.4281,0.9665,31.4904,0.7477,8.156,408.0,2.712
+Case 3: Deforming Hollow Cross (t=0.50),Pha 4 Occlusion Head + Sharp,20.1121,0.9664,31.4904,0.7509,8.0195,167.0,2.8242
+Case 4: Deforming Solid Cross (t=0.50),Pha 3 Remake (Newpipeline),19.8505,0.9702,24.7664,0.8706,7.5555,83.0,2.9527
+Case 4: Deforming Solid Cross (t=0.50),Pha 4 Occlusion Head (Raw),20.5988,0.9707,23.8318,0.817,8.2998,197.0,2.6468
+Case 4: Deforming Solid Cross (t=0.50),Pha 4 Occlusion Head + Sharp,20.2393,0.9706,24.2991,0.818,7.6643,82.0,2.7868
