@@ -1,0 +1,4 @@
+Phiên Bản Mô Hình,Kiến Trúc,Dữ Liệu Huấn Luyện,PSNR (dB) ↑,SSIM ↑,WCD ↓,S-EMD ↓,Stroke Recall (%) ↑,Skeleton Recall (%) ↑,Ghost Pixels ↓
+M0 — TPS Coarse Warp (Lower Bound),Toán tử hình học TPS (lambda=0),Không học (Zero-shot),16.08,0.7859,3.0689,0.0031,94.6%,33.0%,8926
+M1 — TPS-Inbetween Original (Baseline A),M_gốc (Nguyên bản),Dataset A (ML240),16.13,0.8673,2.4778,0.0109,92.5%,66.3%,1797
+M3 — Ours Sequence V1 (Best Ep 14),M_gốc (100% Giống M1),Sequence V1 (B_new - Patch 1),17.42,0.9016,1.8779,0.0125,96.2%,86.9%,642
