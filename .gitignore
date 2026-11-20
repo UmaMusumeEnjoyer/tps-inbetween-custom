@@ -64,3 +64,9 @@ desktop.ini
 # ==============================================================================
 !data_samples/
 !data_samples/**
+!SUPER CẢI THIỆN BENCHMARK BILIBILI/
+!SUPER CẢI THIỆN BENCHMARK BILIBILI/**
+SUPER CẢI THIỆN BENCHMARK BILIBILI/**/__pycache__/
+SUPER CẢI THIỆN BENCHMARK BILIBILI/**/*.py[cod]
+
+
