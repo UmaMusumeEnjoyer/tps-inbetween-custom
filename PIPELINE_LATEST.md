@@ -9,8 +9,9 @@
 
 * **Tên Pipeline:** `Phase 3 Remake Inference Pipeline (Dual-Regime Keypoint Matching & Direct-t TPS)`
 * **File mã nguồn chính:** [`src/sequence_p3_p4/seq_p3_inference_pipeline.py`](file:///e:/CODE/PBL/PBL6/src/sequence_p3_p4/seq_p3_inference_pipeline.py)
-* **Gói độc lập đối chuẩn (Isolated Package):** [`SUPER CẢI THIỆN BENCHMARK BILIBILI/`](file:///e:/CODE/PBL/PBL6/SUPER%20C%E1%BA%A2I%20THI%E1%BB%86N%20BENCHMARK%20BILIBILI)
+* **Commit mới nhất:** `1ac49d8` (*feat(pipeline): add dual-regime keypoint classifier and speed-bound clamp to fix anime lineart deformation*)
 * **Class suy luận chính:** `Phase3InferencePipeline`
+* **Gói độc lập đối chuẩn (Isolated Package):** [`SUPER CẢI THIỆN BENCHMARK BILIBILI/`](file:///e:/CODE/PBL/PBL6/SUPER%20C%E1%BA%A2I%20THI%E1%BB%86N%20BENCHMARK%20BILIBILI)
 
 ### Các module tích hợp đồng bộ:
 1. **Tầng 1 (Coarse TPS Đa lớp):** [`src/sequence_p3_p4/seq_p3_multi_layer_tps.py`](file:///e:/CODE/PBL/PBL6/src/sequence_p3_p4/seq_p3_multi_layer_tps.py)
