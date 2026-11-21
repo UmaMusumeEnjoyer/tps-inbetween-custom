@@ -124,6 +124,10 @@ def _filter_dynamic_outliers(p0_px, p1_px, vel_px, speed_px, k_nn=5, max_rel_err
         except Exception:
             pass
 
+    # 3. Chốt chặn tốc độ tối đa hợp lý: loại bỏ các vector trôi dạt phi lý (> 3.5 * median hoặc > 60px)
+    max_reasonable_speed = max(60.0, 3.5 * float(np.median(speed_px)) + 25.0)
+    local_inlier = local_inlier & (speed_px <= max_reasonable_speed)
+
     return local_inlier
 
 
@@ -727,7 +731,7 @@ def solve_multi_layer_tps(
         effective_falloff = float(falloff_radius_px)
     else:
         static_ref_pts = None
-        effective_falloff = max(float(falloff_radius_px), 0.50 * math.hypot(img_w, img_h))
+        effective_falloff = float(falloff_radius_px)
 
     # BƯỚC 2.3: Tính mặt nạ mềm Soft Blending Mask M dựa trên khoảng cách Hausdorff / Voronoi
     weights_dyn, weight_static, mask_total = compute_soft_voronoi_blending_mask(

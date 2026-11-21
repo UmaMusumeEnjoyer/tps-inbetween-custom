@@ -40,7 +40,9 @@ except ImportError:
     imageio = None
 
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
-REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
+REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, ".."))
+if not os.path.isdir(os.path.join(REPO_ROOT, "training")):
+    REPO_ROOT = os.path.abspath(os.path.join(SCRIPT_DIR, "..", ".."))
 PHASE3_WORKER_DIR = os.path.join(REPO_ROOT, "training", "03_sequence", "p3_multilayer_tps")
 
 for _d in (SCRIPT_DIR, PHASE3_WORKER_DIR):
@@ -119,6 +121,7 @@ def extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32):
     Trích xuất điểm neo dọc theo đường bao nét vẽ Line Art (Polygon-Aware Contour Matching).
     Tự động nhận diện đỉnh góc vuông / đa giác và khóa chặt (pin) các góc để triệt tiêu
     hoàn toàn hiện tượng trượt chu vi (Arc-length Drift) khi tỷ lệ khung hình thay đổi.
+    Chỉ áp dụng cho các hình khối đóng kín hình học đơn giản (như Hình tròn, Chữ thập).
     """
     if cv2 is None:
         return np.zeros((0, 2), dtype=np.float32), np.zeros((0, 2), dtype=np.float32)
@@ -137,6 +140,10 @@ def extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32):
             verts = approx.reshape(-1, 2).astype(np.float64)
             turning = _compute_turning_angles(verts)
             _, _, bw, bh = cv2.boundingRect(c)
+            box_peri = max(1.0, 2.0 * float(bw + bh))
+            hull = cv2.convexHull(c)
+            hull_peri = max(1.0, cv2.arcLength(hull, True))
+            tortuosity = peri / hull_peri
             cx_m, cy_m = pts_raw.mean(axis=0)
             feats.append({
                 'cnt': c,
@@ -144,6 +151,8 @@ def extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32):
                 'verts': verts,
                 'turning': turning,
                 'peri': peri,
+                'tortuosity': tortuosity,
+                'box_peri': box_peri,
                 'cx': cx_m / max(1.0, w),
                 'cy': cy_m / max(1.0, h),
                 'aspect': bw / max(1.0, float(bh)),
@@ -162,6 +171,9 @@ def extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32):
         best_j, best_cost = -1, 1e9
         for j, item1 in enumerate(f1):
             if j in used1:
+                continue
+            peri_ratio = max(item0['peri'], item1['peri']) / max(1.0, min(item0['peri'], item1['peri']))
+            if peri_ratio > 2.5:
                 continue
             d_pos = np.hypot(item0['cx'] - item1['cx'], item0['cy'] - item1['cy'])
             d_asp = abs(item0['aspect'] - item1['aspect']) / max(0.1, item0['aspect'] + item1['aspect'])
@@ -209,7 +221,10 @@ def extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32):
                 p0_match = np.vstack(p0_edge_list)
                 p1_match = np.vstack(p1_edge_list)
             else:
-                # Đồ họa nét cong trơn / hữu cơ: lấy mẫu đều theo chu vi
+                # Đồ họa nét cong trơn / hữu cơ đóng kín: loại trừ mạng lưới nhánh cây
+                if item0['tortuosity'] > 1.7 or item1['tortuosity'] > 1.7 or item0['peri'] > 2.2 * item0['box_peri']:
+                    continue
+
                 diffs0 = np.diff(np.vstack([c0, c0[0]]), axis=0)
                 cum0 = np.concatenate([[0.0], np.cumsum(np.linalg.norm(diffs0, axis=1))])
                 targets0 = np.linspace(0.0, cum0[-1], n_pts_per_comp, endpoint=False)
@@ -295,19 +310,93 @@ def extract_sift_keypoints_pair(ink0, ink1, max_pts=120):
     return p0.astype(np.float32), p1.astype(np.float32)
 
 
+def extract_stroke_guided_pyrlk_sift(ink0, ink1, max_pts=256):
+    """
+    Trích xuất điểm neo cho Anime Lineart kết hợp:
+    1. Shi-Tomasi Stroke Corners trên nét vẽ (GoodFeaturesToTrack) + Bidirectional PyrLK kiểm tra khứ hồi.
+    2. SIFT Keypoints + RANSAC cho các biến dạng tịnh tiến / xoay.
+    """
+    if cv2 is None:
+        return np.zeros((0, 2), dtype=np.float32), np.zeros((0, 2), dtype=np.float32)
+    h, w = ink0.shape
+    u0 = np.clip((1.0 - ink0) * 255.0, 0, 255).astype(np.uint8)
+    u1 = np.clip((1.0 - ink1) * 255.0, 0, 255).astype(np.uint8)
+
+    # 1. Bắt điểm neo trên các nét vẽ
+    mask0 = (ink0 > 0.12).astype(np.uint8) * 255
+    p0_gf = cv2.goodFeaturesToTrack(u0, maxCorners=400, qualityLevel=0.01, minDistance=8, mask=mask0)
+    lk_p0, lk_p1 = np.zeros((0, 2), dtype=np.float32), np.zeros((0, 2), dtype=np.float32)
+    if p0_gf is not None and len(p0_gf) > 0:
+        lk_params = dict(winSize=(31, 31), maxLevel=4, criteria=(cv2.TERM_CRITERIA_EPS | cv2.TERM_CRITERIA_COUNT, 30, 0.01))
+        p1_f, st1, _ = cv2.calcOpticalFlowPyrLK(u0, u1, p0_gf, None, **lk_params)
+        p0_b, st0, _ = cv2.calcOpticalFlowPyrLK(u1, u0, p1_f, None, **lk_params)
+        fb_err = np.linalg.norm((p0_gf - p0_b).reshape(-1, 2), axis=-1)
+        p0_2d = p0_gf.reshape(-1, 2)
+        p1_2d = p1_f.reshape(-1, 2)
+
+        x1_i = np.clip(np.round(p1_2d[:, 0]).astype(int), 0, w - 1)
+        y1_i = np.clip(np.round(p1_2d[:, 1]).astype(int), 0, h - 1)
+        on_ink1 = ink1[y1_i, x1_i] > 0.08
+        valid = (st1.ravel() == 1) & (st0.ravel() == 1) & (fb_err < 2.0) & on_ink1
+        if np.sum(valid) >= 4:
+            scale_wh = np.array([max(1.0, w - 1.0), max(1.0, h - 1.0)], dtype=np.float32)
+            lk_p0 = p0_2d[valid] / scale_wh
+            lk_p1 = p1_2d[valid] / scale_wh
+
+    s0, s1 = extract_sift_keypoints_pair(ink0, ink1, max_pts=120)
+    if len(lk_p0) > 0 and len(s0) > 0:
+        k0 = np.vstack([lk_p0, s0])
+        k1 = np.vstack([lk_p1, s1])
+    elif len(lk_p0) > 0:
+        k0, k1 = lk_p0, lk_p1
+    else:
+        k0, k1 = s0, s1
+
+    if len(k0) > max_pts:
+        idx = np.linspace(0, len(k0) - 1, max_pts, dtype=int)
+        k0, k1 = k0[idx], k1[idx]
+    return k0.astype(np.float32), k1.astype(np.float32)
+
+
 def extract_auto_keypoints_pair(ink0, ink1):
     """
-    Cơ chế trích xuất điểm neo thông minh:
-    1. Ưu tiên Contour Matching cho Line Art / vẽ tay.
-    2. Fallback sang SIFT nếu là ảnh tả thực có chất liệu phong phú.
+    Cơ chế trích xuất điểm neo thông minh theo hình thái cảnh (Dual-Regime Keypoint Matching):
+    1. Chế độ Hình học đóng (Case 2 Circle, Case 3 Cross, v.v.):
+       Khi cảnh gồm ít contour đóng kín (<= 6), không có cấu trúc nhánh cây phức tạp
+       và Contour Matching khớp được đầy đủ -> Dùng Polygon-Aware Contour Matching.
+    2. Chế độ Hoạt họa Anime Lineart thực tế (Case 1, Sakuga, Bilibili lineart):
+       Dùng Stroke-Guided PyrLK + SIFT Hybrid.
     """
-    k0, k1 = extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32)
-    if len(k0) >= 8:
-        return k0, k1
-    s0, s1 = extract_sift_keypoints_pair(ink0, ink1)
-    if len(s0) > len(k0):
-        return s0, s1
-    return k0, k1
+    if cv2 is None:
+        return np.zeros((0, 2), dtype=np.float32), np.zeros((0, 2), dtype=np.float32)
+
+    h, w = ink0.shape
+    m0 = (ink0 > 0.15).astype(np.uint8) * 255
+    m1 = (ink1 > 0.15).astype(np.uint8) * 255
+    cnts0, _ = cv2.findContours(m0, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    cnts1, _ = cv2.findContours(m1, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+    v0 = [c for c in cnts0 if cv2.arcLength(c, True) >= 15.0]
+    v1 = [c for c in cnts1 if cv2.arcLength(c, True) >= 15.0]
+
+    has_tree_contour = False
+    for c in v0 + v1:
+        peri = cv2.arcLength(c, True)
+        if peri > 150.0:
+            hull = cv2.convexHull(c)
+            hull_peri = max(1.0, cv2.arcLength(hull, True))
+            _, _, bw, bh = cv2.boundingRect(c)
+            box_peri = max(1.0, 2.0 * float(bw + bh))
+            if (peri / hull_peri > 1.85) or (peri / box_peri > 2.2):
+                has_tree_contour = True
+                break
+
+    is_simple_geometry = (len(v0) <= 6 and len(v1) <= 6 and not has_tree_contour)
+    if is_simple_geometry:
+        k0, k1 = extract_hybrid_contour_matches(ink0, ink1, n_pts_per_comp=32)
+        if len(k0) >= 8:
+            return k0, k1
+
+    return extract_stroke_guided_pyrlk_sift(ink0, ink1)
 
 
 class Phase3InferencePipeline:
